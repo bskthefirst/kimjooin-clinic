@@ -2831,3 +2831,74 @@ h2.hero-main-copy,
 .footer-lang a:hover {
   color: #ffffff !important;
 }
+
+/* ============================================================
+   FONT ENFORCEMENT — JejuMyeongjo on footer & intro
+   (higher specificity than legacy !important rules)
+   ============================================================ */
+.footer .foot_cont *,
+.footer .copyright *,
+.footer address,
+.footer p,
+.footer h4,
+.footer-phones,
+.footer-hours,
+.footer-lang,
+.footer-lang a {
+  font-family: 'JejuMyeongjo', serif !important;
+}
+
+.home-intro,
+.home-intro *,
+.intro-lead,
+.intro-columns,
+.intro-col,
+.intro-col *,
+.intro-col h3,
+.intro-col ul,
+.intro-col li {
+  font-family: 'JejuMyeongjo', serif !important;
+}
+
+/* ============================================================
+   MOBILE HEADER — fix lang buttons getting clipped
+   ============================================================ */
+@media (max-width: 1024px) {
+  .head_bar_2 .head_cont h1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .head_bar_2 .head_cont h1 a {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .header-lang {
+    flex-shrink: 0 !important;
+    margin-left: 8px !important;
+  }
+}
+
+/* ============================================================
+   MOBILE PHONE NUMBERS — side by side instead of stacked
+   ============================================================ */
+@media (max-width: 768px) {
+  .phone-numbers {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0 8px !important;
+  }
+
+  .phone-divider {
+    display: inline !important;
+  }
+
+  .phone-number {
+    font-size: 20px !important;
+  }
+}
