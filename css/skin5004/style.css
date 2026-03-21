@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/*작업자 : 진재남 / 작업일자 : 2016-08-19*/
 body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, legend, p, form, fieldset, input, textarea, select, blockquote, th, td { font-family: 'Spoqa Han Sans', sans-serif !important; line-height: 1; }
 li, ol, ul { margin: 0; padding: 0; list-style: none inside }
 
