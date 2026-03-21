@@ -216,7 +216,7 @@ a {
   height: 50px !important;
   width: auto !important;
   mix-blend-mode: multiply !important;
-  filter: brightness(1.1) !important;
+  /* no filter — filter creates isolated stacking context, breaking mix-blend-mode */
 }
 
 /* Nav: right-aligned, same line as logo */
@@ -2880,6 +2880,28 @@ h2.hero-main-copy,
   .header-lang {
     flex-shrink: 0 !important;
     margin-left: 8px !important;
+  }
+}
+
+/* ============================================================
+   MOBILE LOGO — shrink so lang buttons have room
+   ============================================================ */
+@media (max-width: 768px) {
+  .head_bar_2 .head_cont h1 a img {
+    height: 34px !important;
+    max-width: 130px !important;
+    width: auto !important;
+  }
+
+  .head_bar_2 .head_cont h1 {
+    overflow: visible !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .header-lang {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    flex-shrink: 0 !important;
   }
 }
 
