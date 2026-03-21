@@ -830,10 +830,11 @@ h2.hero-main-copy,
 }
 
 .section-phone p {
-  color: rgba(255, 255, 255, 0.75) !important;
-  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 18px !important;
   margin: 0 0 28px !important;
   line-height: 1.7 !important;
+  font-family: 'JejuMyeongjo', serif !important;
 }
 
 /* phone-btn removed — using phone-numbers layout instead */
@@ -2861,47 +2862,41 @@ h2.hero-main-copy,
 }
 
 /* ============================================================
-   MOBILE HEADER — fix lang buttons getting clipped
+   MOBILE HEADER — lang buttons via absolute positioning
+   (flexbox unreliable due to legacy width:240px on h1 a)
    ============================================================ */
 @media (max-width: 1024px) {
   .head_bar_2 .head_cont h1 {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    position: relative !important;
     width: 100% !important;
+    display: block !important;
+    float: none !important;
     text-align: left !important;
+    padding-right: 90px !important; /* room for lang buttons */
   }
 
   .head_bar_2 .head_cont h1 a {
+    display: inline-flex !important;
     margin: 0 !important;
-    flex-shrink: 0 !important;
-  }
-
-  .header-lang {
-    flex-shrink: 0 !important;
-    margin-left: 8px !important;
-  }
-}
-
-/* ============================================================
-   MOBILE LOGO — shrink so lang buttons have room
-   ============================================================ */
-@media (max-width: 768px) {
-  .head_bar_2 .head_cont h1 a img {
-    height: 34px !important;
-    max-width: 130px !important;
     width: auto !important;
   }
 
-  .head_bar_2 .head_cont h1 {
-    overflow: visible !important;
-    flex-wrap: nowrap !important;
+  .head_bar_2 .head_cont h1 a img {
+    height: 36px !important;
+    width: auto !important;
+    max-width: 150px !important;
   }
 
   .header-lang {
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     white-space: nowrap !important;
-    overflow: visible !important;
-    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    margin-left: 0 !important;
   }
 }
 
