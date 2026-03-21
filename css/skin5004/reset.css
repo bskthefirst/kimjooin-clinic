@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* ================================
+RESET CSS
+================================ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, p, q, b, i, s, u, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+dl, ol, ul, menu, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	font-weight: normal;
+}
+:active, :focus {
+	outline: 0;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a img {
+	border: 0;
+	padding: 0;
+}
+table {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+caption {
+	display: none;
+}
+// --------------------------------
+/* 2016-08-19 추가 */
+input, select, textarea, button {
+	vertical-align: middle
+}
+input::-ms-clear {
+	display: none
+}
+button {
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer
+}
+address, caption, cite, code, dfn, em, var {
+	font-style: normal;
+	font-weight: normal
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none
+}

@@ -1,0 +1,87 @@
+/*===============================================================*
+											인트로
+*===============================================================*/
+
+/*인사말*/
+.about_fontload{margin:10px;}
+.about_fontload ul{float:right;width:390px;}
+.about_fontload ul li{text-align:right; color:#1483a3; font-size:22px; height:24px;padding-top:5px;}
+.about_fontload ul li.s_text{font-size:12px; color:#8b8b8b; line-height:18px; padding-top:5px;}
+.about_fontload ul li.s_text .cufon {padding:2px 0;}
+.about_fontload ul li.s_text .cufon cufon-canvas{font-size:12px; color:#8b8b8b; height:20px; line-height:20px; padding-top:5px;}
+
+
+/* 2019-05-28  style 수정 */
+.doctor:after{display:block;content:''; clear:both}
+/* //2019-05-28  */
+.greeting_text {margin:10px;text-align:justify;}
+.doctor {width:598px;margin: 0px auto;padding-bottom:30px; }
+.doctor .name_fontload {width:598px;height:32px;color:#1483a3;font-size:24px;letter-spacing:-1pt;}
+.doctor .about{width:558px;border:10px solid #b6c7da;padding:10px;background:url(../images/intro01/intro_about_img02.gif) no-repeat 100% 0%}
+.doctor .about dl	{}
+.doctor .about dt	img	{border:3px solid #7694b6;margin-right:10px;width:135px;height:140px;}
+.doctor .about dd	{width:380px;}
+.doctor .doc_tel_email{clear: both; background-color: #b6c7da}
+.doctor .doc_tel_email dl{padding:0 10px 10px 10px;height: 20px; }
+.doctor .doc_tel_email dl dt{float: left;padding-right: 5px;}
+.doctor .doc_tel_email dl dd{float: left;padding-right: 20px;color: #4d7fb7;font-size: 14px;font-weight: bold;letter-spacing: -1px}
+
+
+
+/*진료정보*/
+.info {position:relative;background:url(../images/intro01/intro_guide_img01.gif) 0 0 no-repeat;width:630px;height:160px; margin:0 auto}
+
+.info .detail_fontload {position:absolute;width:380px;top:80px;right:0px;}
+
+.info dl {overflow:hidden;}
+.info dt {width:33px;height:23px;}
+/* .info dd {height:23px;} */
+
+.info .detail_fontload .address{font-size:14px; width:345px;}
+.info .detail_fontload .address .cufon {padding:2px 0;}
+.info .detail_fontload .address .cufon cufon-canvas{padding:3px 0;line-height:18px;}
+.info .detail_fontload .num{font-size:18px;letter-spacing:-1pt;padding-right:5px;}
+.info .detail_fontload .fax{padding-left:40px;padding-right:5px;}
+
+.info em {position:absolute; width:0; height:0; font-size:0; line-height:0; top:-5000px;}
+
+
+.map {margin: 0px auto;padding:15px 5px 5px 5px;text-align:center;margin-top:25px;margin-bottom:25px;}
+.map img{border:1px solid #e7e7e7;}
+.guide {width:630px;border:10px solid #b6c7da; margin:0 auto;}
+.guide .traffic{background:url(../images/intro01/intro_guide_traffic_bg.gif) no-repeat;min-height:140px;padding-left:140px;padding-top:15px;}
+.guide .traffic dt {background:url(../images/intro01/intro_guide_traffic_titlebg.gif) no-repeat 0% 0%;width:67px;height:22px;font-weight:bold;color:#3a5778;text-align:center;}
+.guide .traffic dd {padding-left:5px;padding-bottom:15px;width:400px;min-height:25px;}
+.guide .line {border-top:1px solid #dedede}
+
+.guide .hours{background:url(../images/intro01/intro_guide_hours_bg.gif) no-repeat 100% 100%;min-height:170px;padding-left:10px;padding-top:10px;}
+.guide .hours_detail{width:260px;padding-top:5px;}
+.guide .hours_detail dt {background:url(../images/intro01/intro_guide_hours_titlebg.gif) no-repeat 0% 0%;width:101px;height:22px;font-weight:bold;color:#3a5778;text-align:center;}
+.guide .hours_detail dd {padding-left:5px;width:130px;height:26px;}
+.guide .hours_notice dd{width:170px;padding:5px;color:#782323}
+
+
+/*둘러보기*/
+.est {}
+.est_list {float:left;background:url(../images/intro01/intro_est_text_bg.gif) no-repeat ;padding-top:40px;width:143px;border:10px solid #b6c7da;}
+.est_list li a{display:block; color:#3d3d3d;text-decoration:none;margin-left:8px;border-bottom:1px solid #e7e7e7;height:22px;}
+.est_list li .on {background-color:#406da0;padding:3px;font-weight:bold;color:#FFF;display:block; }
+
+.est_photo {float:left;background:url(../images/intro01/intro_est_bg.gif) no-repeat 0% 0%;width:465px;min-height:200px;margin-left:5px;}
+.est_photo img{width:440px;margin:11px}
+
+
+/*사이트맵*/
+.sitemap_bg_fontload {background:url(../images/intro01/sitemap_bg.gif) no-repeat;width:181px;height:53px;text-align:center;font-size:18px;}
+.sitemap_bg_fontload p{font-size:16px;padding-right:15px;height:40px;padding-top:15px;}
+
+
+.menu3_tab {clear:both; padding:20px 0 10px; overflow:hidden;}
+.menu3_tab ul {margin:0; padding:0 0 0 1px; list-style:none; border-bottom:1px solid #225182; overflow:hidden; float:left; width:100%;}
+.menu3_tab ul li {margin:0 0 0 -1px; padding:0; float:left;}
+.menu3_tab ul li a {display:block; padding:0 0 0 2px; background:url(/Module/images/hp_type1/cms_type1/cms_tab03_bg.gif) 0 0 repeat-x; text-decoration:none; color:#999; font-family:돋움, Dotum;}
+.menu3_tab ul li a strong {display:block; height:35px; _height:auto; line-height:35px;  padding:0 16px 0; background:url(/Module/images/hp_type1/cms_type1/cms_tab03_bg.gif) 100% 0 repeat-x; text-decoration:none; font-weight:normal; font-size:13px; white-space:nowrap; color:#999; font-family:돋움, Dotum; cursor:pointer}
+.menu3_tab ul li a.on {background:url(/Module/images/hp_type1/cms_type1/cms_tab03_bg.gif) 0 -36px repeat-x; padding-right:1px}
+.menu3_tab ul li a.on strong {background:url(/Module/images/hp_type1/cms_type1/cms_tab03_bg.gif) 100% -36px no-repeat; color:#FFF; font-weight:bold;}
+.menu3_tab ul li a:hover ,
+.menu3_tab ul li a:hover strong {background:url(/Module/images/hp_type1/cms_type1/cms_tab03_bg.gif) 0 100% no-repeat; color:#FFF;  cursor:pointer}

@@ -1,0 +1,1 @@
+window.CLINIC_GA4_ID = window.CLINIC_GA4_ID || 'G-XXXXXXXXXX';

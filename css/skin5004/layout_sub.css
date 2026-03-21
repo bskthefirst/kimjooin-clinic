@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+
+/*작업자 : 진재남 / 작업일자 : 2016-08-19*/
+
+/* 서브 비쥬얼 */
+.sub_visual_area { background: #dadada; height: 112px; }
+.sub_visual { margin: 0 auto; width: 1091px; height: 112px; overflow: hidden; background: url('/images/skin5004/sub_visual_bg.png') no-repeat center; }
+
+/* 서브 컨테이너 */
+.sub_container { background: #ffffff; margin-left: auto; margin-right: auto; margin-top: -60px; width: 1091px; padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 100px; }
+.sub_container:before, .sub_container:after { content: " "; display: table; }
+.sub_container:after { clear: both; }
+
+/* 서브 레프트 */
+.sub_container #sub_left { float: left; width: 260px; }
+#sub_left h2 { color: #5f5f5f; font-size: 26px; font-weight: 700; padding-left: 10px; line-height: 1; }
+#sub_left .snb { margin-top: 35px; border-top: 3px solid #5e6782; border-bottom: 3px solid #5e6782; padding: 25px 13px 25px 7px; }
+#sub_left .snb ul li { }
+#sub_left .snb ul li a { padding: 0 20px; height: 43px; line-height: 43px; font-size: 15px; color: #767676; display: block; border: 1px solid #ffffff; }
+#sub_left .snb ul li a:hover { color: #373737; background: #f9f9f9 url('/images/skin5004/snb_arr.png') no-repeat 95% center; height: 43px; line-height: 43px; border: 1px solid #aaaaaa; }
+#sub_left .snb ul li a.on { color: #373737; background: #f9f9f9 url('/images/skin5004/snb_arr.png') no-repeat 95% center; height: 43px; line-height: 43px; border: 1px solid #aaaaaa; }
+
+/* 진료시간안내 */
+#sub_left .sub_time { padding: 45px 13px 0 7px; }
+#sub_left .sub_time h3 { font-size: 21px; color: #434343; line-height: 1; }
+#sub_left .sub_time ul { margin-top: 25px; }
+#sub_left .sub_time ul li { height: 37px; line-height: 37px; border-bottom: 1px solid #eeeeed; border-left: 1px solid #eeeeed; border-right: 1px solid #eeeeed; color: #686868; font-size: 14px; padding-left: 10px; }
+#sub_left .sub_time ul li:first-child { border-top: 1px solid #eeeeed; }
+#sub_left .sub_time ul li span { display: inline-block; width: 90px; }
+#sub_left .sub_time p { background: #eeeeee; font-size: 13px; line-height: 1.5; color: #555555; padding: 10px 17px; }
+
+/* 전화상담문의 */
+#sub_left .sub_call { text-align: center; margin-top: 22px; margin-bottom:22px }
+#sub_left .sub_call p { font-size: 26px; color: #515151; height: 43px; line-height: 43px; padding-left: 35px; }
+#sub_left .sub_sm_call p {padding-left:5px;font-size:18px;color:#858484;line-height:32px}
+
+/* 서브 컨테이너 */
+.sub_container #sub_contents { float: right; width: 780px; }
+.sub_container #sub_contents table { table-layout: auto !important; }
+
+/* 서브 헤드 */
+#sub_contents .sub_head { position: relative; margin-bottom: 55px; }
+#sub_contents .sub_head h3 { font-size: 36px; font-weight: 400; color: #5f5f5f; }
+#sub_contents .sub_head ul { position: absolute; top: -80px; right: 0; font-size: 13px; color: #4e4e4e; float: right; overflow: hidden; }
+#sub_contents .sub_head ul li { float: left; background: url('/images/skin5004/sub_location_arr.png') no-repeat left center; color: #4e4e4e; padding-left: 14px; margin-left: 10px; }
+#sub_contents .sub_head ul li:first-child { background: none }
+
+/* 서브 컨텐츠 */
+.sub_con_area div, .sub_con_area dl, .sub_con_area dt, .sub_con_area dd, .sub_con_area h1, .sub_con_area h2, .sub_con_area h3, .sub_con_area h4, .sub_con_area h5, .sub_con_area h6, .sub_con_area pre, .sub_con_area legend, .sub_con_area p, .sub_con_area form, .sub_con_area fieldset, .sub_con_area input, .sub_con_area textarea, .sub_con_area select, .sub_con_area blockquote, .sub_con_area th, .sub_con_area td { font-family: 'Nanum Gothic', sans-serif !important; line-height: 1.5; }
+.sub_con_area .sub_article { margin-top: 6em; margin-bottom: 6em; color: #4e4e4e; overflow: hidden; }
+.sub_article h3.tit { font-size: 1.9em; font-weight: bold; margin-bottom: 1em; }
+.sub_article p { font-size: 1.2em; line-height: 1.5; margin-bottom: 2em; }
+.sub_article table { border-top: 3px solid #12b0bd; font-size: 1.2em; line-height: 1.5; }
+.sub_article table th, .sub_article table td { padding: 15px 0; }
+.sub_article table thead { background: #ebf7f8; border-bottom: 1px solid #e4e4e4; font-size: 1.2em; }
+.sub_article table tbody tr { border-bottom: 1px solid #e4e4e4; }
+.sub_article table tbody th { background: #f9f9f9; font-size: 1.1em; font-weight: bold; vertical-align: middle; text-align: left; padding: .5em 2em; }
+.sub_article table tbody ul { padding: .5em 3em; }
+.sub_article table tbody ul li { padding: .5em 0; list-style: disc; line-height: 1.3; }
+.sub_article table.table_1 { float: left; width: 48%; }
+.sub_article table.table_2 { float: right; width: 48%; }
+.sub_article table.table_1 tbody td, .sub_article table.table_2 tbody td { height: 320px; }
+.sub_article table.table_3 tbody td { padding-left: 2em; padding-right: 2em; }
+
+/* 클릭메디 수정 */
+#sub_contents .cms_skin>.cms_box01 { padding: 0 !important; }

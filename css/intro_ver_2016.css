@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*===============================================================*
+											인트로
+*===============================================================*/
+
+/*인사말*/
+.about { width: 100%; line-height: 1.5; }
+.about:after, .about:before { content: " "; display: table }
+.about:after { clear: both; }
+/* .about .greeting { padding: 50px 40px; background: #f1f1f1 url('/images/skin5001/intro_0101.png') no-repeat right top; }*/
+/* .about .greeting { padding: 50px 40px; background: #f1f1f1 no-repeat right top; } */
+.about .greeting h3 { font-size: 28px; font-weight: 400; }
+.about .greeting h3 em { color: #12b0be; }
+.about .greeting p.thanks { position: relative; font-size: 12px; margin-top: 10px; color: #4e4e4e; }
+.about .greeting p.thanks:after { content: " "; display: block; position: absolute; left: 0; bottom: -20px; background: #d1d1d1; width: 50px; height: 1px; }
+.about .greeting .slogan { color: #656565; font-size: 14px; margin-top: 60px; line-height: 1.5; }
+.about .doctor { padding-top: 50px; }
+.about .doctor .wrap:after, .about .doctor .wrap:before { content: " "; display: table }
+.about .doctor .wrap:after { clear: both; }
+.about .doctor .wrap { padding-bottom: 20px; margin-bottom: 40px; border-bottom: 1px solid #e5e5e6; }
+.about .doctor .wrap ul { margin-bottom: 5px; overflow: hidden; }
+.about .doctor .wrap ul li { float: left; }
+.about .doctor .wrap ul li.pic { width: 190px; }
+.about .doctor .wrap ul li.name { width: 400px; padding-left: 40px; padding-top: 10px; }
+.about .doctor .wrap ul li.career { width: 432px; }
+.about .doctor .wrap ul li.pic img { width: 100%; height: auto; }
+.about .doctor .wrap ul li.name span { font-size: 26px; font-weight: 600; color: #4e4e4e; position: relative; }
+.about .doctor .wrap ul li.name span:after { content: " "; display: block; position: absolute; left: 0; bottom: -20px; background: #d1d1d1; width: 25px; height: 1px; }
+.about .doctor .wrap ul li.career dl { padding-left: 40px; padding-top: 20px; }
+.about .doctor .wrap ul li.career dl dt { font-size: 16px; font-weight: 600; color: #12b0be; margin-bottom: 20px; }
+.about .doctor .wrap ul li.career dl dd { }
+.about .doctor .wrap ul li.career dl dd p { font-size: 12px; margin-bottom: 5px; color: #4e4e4e; }
+.about .doctor .wrap .call { overflow: hidden; }
+.about .doctor .wrap .call dl { float: left; margin-right: 20px; font-size: 13px; overflow: hidden; }
+.about .doctor .wrap .call dl dt { font-weight: 600; color: #12b0be; float: left; margin-right: 5px; }
+.about .doctor .wrap .call dl dd { color: #333333; float: left; }
+
+/*찾아오시는길*/
+.guide { width: 100%; line-height: 1.5; }
+.guide:after, .guide:before { content: " "; display: table }
+.guide:after { clear: both; }
+.guide .time {
+	background: url('/external/fileupload.drline.net/HospiBrowse_IMG_9830.JPG') no-repeat center;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	position: relative;
+}
+.guide .time:before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.34);
+}
+.guide .time > * {
+	position: relative;
+	z-index: 1;
+}
+.guide .time p.information {
+	font-size: 24px;
+	text-align: center;
+	color: #2344a6;
+	margin-bottom: 30px;
+	font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif !important;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.35;
+	text-shadow: none;
+}
+.guide .time p.information em {
+	color: #1d57d2;
+	font-weight: 800;
+	font-style: normal;
+}
+.guide .time .inner { background: #ffffff; width: 600px; margin: 0 auto; padding: 30px 0; }
+.guide .time .inner .day { width: 500px; margin: 20px auto; overflow: hidden; }
+.guide .time .inner .day ul { text-align: center; width: 100%; }
+.guide .time .inner .day ul li { float: left; width: 50%; margin-bottom: 5px; font-size: 15px; font-weight: 700; color: #000000; line-height: 1.5; font-family: 'Lato', 'Nanum Gothic', 'Nanum Barun Gothic', sans-serif !important; text-align: left; }
+.guide .time .inner .day ul li span { display: inline-block; width: 80px; color: #3a3a3a; font-weight: 700; }
+.guide .time .inner .em { font-size: 12px; padding-left: 40px; color: #12b0be; width: 500px; margin: 0 auto; text-align: justify; background: url('/images/skin5001/intro_0202.png') no-repeat 20px 3px; }
+.guide .map { overflow: hidden; margin-top: 60px; margin-bottom: 0; }
+.guide .guide_table { margin-top: 50px; }
+.guide .guide_table h3 { font-size: 24px; font-weight: 600; color: #4e4e4e; font-weight: 400; }
+.guide .guide_table table { width: 100%; table-layout: fixed; border-top: 2px solid #c0c0c0; }
+.guide .guide_table table caption { display: none; }
+.guide .guide_table table tr { text-align: justify; border-bottom: 1px solid #e7e7e7; color: #4e4e4e; font-size: 13px; }
+.guide .guide_table table tr th { vertical-align: middle; background: url('/images/skin5001/intro_0203.png') no-repeat 5px center; }
+.guide .guide_table table tr th, .guide .guide_table table tr td { padding: 15px 20px; font-size: 16px; }
+.guide .guide_table.transit { margin-top: 24px; }
+.guide .guide_table.transit h3 {
+	font-size: 22px;
+	font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif !important;
+	font-weight: 700;
+	color: #203f9f;
+	letter-spacing: -0.01em;
+}
+.guide .guide_table.transit table tr th {
+	width: 140px;
+	color: #253654;
+	background: none;
+	font-weight: 700;
+}
+.guide .guide_table.transit table tr td {
+	color: #445067;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+/*둘러보기*/
+.est { width: 100%; line-height: 1.5; }
+.est:after, .est:before { content: " "; display: table }
+.est:after { clear: both; }
+.est .space { padding: 50px 40px; background: #f1f1f1 url('/images/skin5001/intro_0301.png') no-repeat right bottom; }
+.est .space h3 { font-size: 28px; font-weight: 400; }
+.est .space h3 em { color: #12b0be; }
+.est .space p.effort { position: relative; font-size: 14px; margin-top: 10px; color: #4e4e4e; margin-bottom: 10px; }
+.est .space p.effort:after { content: " "; display: block; position: absolute; left: 0; bottom: -20px; background: #d1d1d1; width: 50px; height: 1px; }
+.est .facility { margin-top: 50px; }
+.est .facility:after, .est .facility:before { content: " "; display: table; }
+.est .facility:after { clear: both; }
+.est .facility ul.floor { float: left; width: 25%; margin-right: 5%; }
+.est .facility ul.floor h3 { font-size: 22px; font-weight: 600; color: #4c4c4c; margin-bottom: 20px; font-weight: 400; }
+.est .facility ul.floor li { border-bottom: 1px solid #e7e7e7; }
+.est .facility ul.floor li a { display: block; padding: 10px 30px; font-size: 13px; text-decoration: none; }
+.est .facility ul.floor li a:hover { color: #ffffff; background: #5e5e5e url('/images/skin5001/intro_0302.png') no-repeat 15px center; }
+.est .facility ul.floor li.current a { color: #ffffff; background: #4d4d4d url('/images/skin5001/intro_0302.png') no-repeat 15px center; }
+.est .facility .look { float: left; width: 70%; overflow: hidden; }
+.est .facility .look img { display: block; width: 100%; height: auto; }
+
+/*사이트맵*/
+table.f5_sitemap { clear: both; width: 100%; line-height: 1.5; margin-top: 50px; }
+table.f5_sitemap td.depth_1 { height: 60px; border-bottom: 1px solid #eeeeee; }
+table.f5_sitemap td.depth_1 p { font-size: 26px; color: #333333; }
+table.f5_sitemap td.depth_2 { height: 30px; }
+table.f5_sitemap td.depth_2 a { font-size: 13px; margin-left: 5px; color: #888888; position: relative; display: block; }
+table.f5_sitemap td.depth_2 a:hover { color: #333333; }
+table.f5_sitemap td.depth_2 a:before { content: ' '; position: absolute; width: 2px; height: 2px; background: #a1a1a1; top: 7px; left: -8px; }
+
+/* 2019-08-01 tab style modify */
+.menu3_tab { margin-bottom: 20px; }
+.menu3_tab ul:after { display:block; content:''; clear:both }
+.menu3_tab ul { border-bottom:1px solid #727272 }
+.menu3_tab ul li { display:block; float:left; height:48px; line-height:48px; margin-right:-1px; margin-bottom: 1px;}
+.menu3_tab ul li a {  display:block; height:48px; line-height:48px; padding:0 25px; font-size:15px; color:#363636; font-weight:normal; text-align:center; background:#fff; border:1px solid #727272 }
+.menu3_tab ul li a.on { background:#3f4044; color:#fff; border-color:#727272 }

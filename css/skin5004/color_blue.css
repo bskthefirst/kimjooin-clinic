@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* Color - Blue */
+.head_bar_1 .head_quick .member li a {
+	color: #868f9b;
+}
+.head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn.arrow {
+	background: url('/images/skin5004/blue/gnb_arr.png') no-repeat center 80%;
+}
+.head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn.on {
+	background: url('/images/skin5004/blue/gnb_arr.png') no-repeat center 80%;
+}
+.head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content .lnb a:hover {
+	color: #3383c6;
+}
+#all_menu_gnb #all_gnb {
+	background-color: #b9c2c9;
+}
+#all_menu_gnb #all_gnb .nav li .list .nav_title {
+	color: #ffffff;
+}
+#all_menu_gnb #all_gnb .nav li .list .nav_title span {
+	background: url('/images/skin5004/all_menu_blt_white.png') no-repeat left 5px;
+}
+.f5_quick .quick_menu_panel ul li a:hover {
+	color: #b9c2c9;
+}
+.contents_area_1 .main_slide_box .slide_slogan .txt_02 {
+	background: #3f4d70;
+}
+.contents_area_2 .clinic .clinic_box ul {
+	border: none;
+	background: url('/images/skin5004/blue/clinic_bg.png') no-repeat center;
+}
+.contents_area_2 .clinic .clinic_box ul li a:hover:before {
+	background: url('/images/skin5004/blue/clinic_hover_bg.png');
+}
+.contents_area_2 .clinic .clinic_box ul li.clinic_01, .contents_area_2 .clinic .clinic_box ul li.clinic_02, .contents_area_2 .clinic .clinic_box ul li.clinic_05, .contents_area_2 .clinic .clinic_box ul li.clinic_06 {
+	background: url('/images/skin5004/clinic_more_white.png') no-repeat center 180px;
+}
+.contents_area_2 .clinic .clinic_box ul li.clinic_01 a, .contents_area_2 .clinic .clinic_box ul li.clinic_02 a, .contents_area_2 .clinic .clinic_box ul li.clinic_05 a, .contents_area_2 .clinic .clinic_box ul li.clinic_06 a {
+	color: #ffffff;
+}
+.contents_area_3 .gallery ul li h2:after {
+	background: url('/images/skin5004/blue/gallery_dot.png') no-repeat center;
+}
+.contents_area_4 .about ul li.about_01 a {
+	background-image: url('/images/skin5004/blue/about_ico_01.png');
+}
+.contents_area_4 .about ul li.about_02 a {
+	background-image: url('/images/skin5004/blue/about_ico_02.png');
+}
+.contents_area_4 .about ul li.about_03 a {
+	background-image: url('/images/skin5004/blue/about_ico_03.png');
+}
+.contents_area_4 .about ul li.about_04 a {
+	background-image: url('/images/skin5004/blue/about_ico_04.png');
+}
+.contents_area_2 .clinic .clinic_box ul li a:hover:after {
+	background: url('/images/skin5004/blue/clinic_hover_ico.png') no-repeat center;
+}
+.contents_area_4 .about ul li a h3 {
+	color: #676f80;
+}
+.contents_area_4 .call {
+	background: url('/images/skin5004/blue/call_ico.png') no-repeat 55px 15px;
+}
+#sub_left .sub_call p {
+	background: url('/images/skin5004/blue/call_ico.png') no-repeat 10px center;
+}
+#sub_contents .sub_head ul li.current {
+	color: #676f80;
+}
