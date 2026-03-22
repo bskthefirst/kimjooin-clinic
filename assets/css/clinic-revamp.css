@@ -832,7 +832,7 @@ h2.hero-main-copy,
 .section-phone p {
   color: rgba(255, 255, 255, 0.85) !important;
   font-size: 18px !important;
-  margin: 0 0 28px !important;
+  margin: 0 !important;
   line-height: 1.7 !important;
   font-family: 'JejuMyeongjo', serif !important;
 }
