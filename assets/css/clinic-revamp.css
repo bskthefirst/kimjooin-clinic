@@ -442,9 +442,9 @@ h2.hero-main-copy,
 }
 
 .hero-main-copy-2 {
-  font-size: 38px !important;
+  font-size: 28px !important;
   margin: 0 auto 36px !important;
-  white-space: normal !important;
+  white-space: nowrap !important;
   text-align: center !important;
 }
 
