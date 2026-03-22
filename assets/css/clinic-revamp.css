@@ -444,7 +444,8 @@ h2.hero-main-copy,
 .hero-main-copy-2 {
   font-size: 50px !important;
   margin: 0 auto 36px !important;
-  white-space: nowrap !important;
+  white-space: normal !important;
+  text-align: center !important;
 }
 
 .hero-sub-copy {
