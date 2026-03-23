@@ -14,7 +14,8 @@
 
 @font-face {
   font-family: 'JejuMyeongjo';
-  src: url('/assets/fonts/JejuMyeongjo.otf') format('opentype');
+  src: url('/assets/fonts/JejuMyeongjo.woff2') format('woff2'),
+       url('/assets/fonts/JejuMyeongjo.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -2858,7 +2859,11 @@ h2.hero-main-copy,
 .intro-col *,
 .intro-col h3,
 .intro-col ul,
-.intro-col li {
+.intro-col li,
+.intro-tags,
+.hours-note,
+.hours-label,
+.hours-value {
   font-family: 'JejuMyeongjo', serif !important;
 }
 
