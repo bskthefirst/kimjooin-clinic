@@ -29,35 +29,86 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "Kim Joo-in Internal Medicine Clinic",
-		"alternateName": "김주인내과",
-		"telephone": "051-802-7550",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "8F, Cheongseok Building, 64 Seomyeon-ro",
-			"addressLocality": "Busanjin-gu",
-			"addressRegion": "Busan",
-			"addressCountry": "KR"
-		},
-		"openingHoursSpecification": [
+		"@graph": [
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-				"opens": "09:15",
-				"closes": "18:15"
+				"@type": "MedicalClinic",
+				"name": "Kim Joo-in Internal Medicine Clinic",
+				"alternateName": "김주인내과",
+				"url": "https://kimjooin.com/en.html",
+				"telephone": ["051-802-7550", "051-802-7552"],
+				"image": "https://kimjooin.com/images/clinic/reception.jpg",
+				"description": "English-speaking internal medicine clinic in Busan Seomyeon. Foreigner-friendly. No appointment needed. 5 min walk from Seomyeon Station Exit 7.",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "8F, Cheongseok Building, 64 Seomyeon-ro",
+					"addressLocality": "Busanjin-gu",
+					"addressRegion": "Busan",
+					"postalCode": "47248",
+					"addressCountry": "KR"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 35.1578,
+					"longitude": 129.0598
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:15",
+						"closes": "18:15"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "09:15",
+						"closes": "14:00"
+					}
+				],
+				"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology", "Allergy"],
+				"availableLanguage": ["Korean", "English"],
+				"availableService": [
+					{"@type": "MedicalProcedure", "name": "Pulmonary Function Test"},
+					{"@type": "MedicalProcedure", "name": "Bronchoscopy"},
+					{"@type": "MedicalProcedure", "name": "Gastroscopy (Endoscopy)"},
+					{"@type": "MedicalProcedure", "name": "Abdominal Ultrasound"},
+					{"@type": "MedicalProcedure", "name": "Cardiac Ultrasound (Echocardiogram)"},
+					{"@type": "MedicalProcedure", "name": "Thyroid Ultrasound"},
+					{"@type": "MedicalProcedure", "name": "Allergy Skin Prick Test"},
+					{"@type": "MedicalProcedure", "name": "Comprehensive Health Checkup"},
+					{"@type": "MedicalProcedure", "name": "Blood Tests (CBC, Lipid Panel)"},
+					{"@type": "MedicalProcedure", "name": "ECG (Electrocardiogram)"},
+					{"@type": "MedicalProcedure", "name": "Bone Density Test"}
+				],
+				"sameAs": [
+					"https://map.naver.com/p/entry/place/12799962",
+					"https://dev.to/lifeinbusan"
+				],
+				"priceRange": "$$",
+				"paymentAccepted": "Cash, Credit Card, Korean Health Insurance (NHIS)"
 			},
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Saturday",
-				"opens": "09:15",
-				"closes": "14:00"
+				"@type": "Physician",
+				"name": "Dr. Kim Joo-in",
+				"alternateName": "김주인",
+				"description": "14-year professor at Inje University Busan Paik Hospital. Clinical & Research Fellow at Washington University in St. Louis School of Medicine and Barnes-Jewish Hospital. Best Doctor award in Respiratory & Allergy Medicine.",
+				"medicalSpecialty": ["Pulmonology", "Allergy", "InternalMedicine"],
+				"availableLanguage": ["Korean", "English"],
+				"worksFor": {
+					"@type": "MedicalClinic",
+					"name": "Kim Joo-in Internal Medicine Clinic"
+				},
+				"alumniOf": [
+					{"@type": "EducationalOrganization", "name": "Inje University College of Medicine"},
+					{"@type": "EducationalOrganization", "name": "Washington University in St. Louis School of Medicine"},
+					{"@type": "EducationalOrganization", "name": "Barnes-Jewish Hospital"}
+				],
+				"award": [
+					"Best Doctor in Respiratory & Allergy Medicine (Busan Ilbo)",
+					"Outstanding Respiratory Disease Hospital — 3 consecutive years (National Health Insurance Review)"
+				]
 			}
-		],
-		"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology"],
-		"availableLanguage": ["Korean", "English"],
-		"url": "https://kimjooin.com/en.html",
-		"description": "English-speaking internal medicine specialist in Busan Seomyeon. Dr. Kim Joo-in has 14 years of experience as a professor at Busan Paik Hospital. Specializing in respiratory diseases, allergy, diabetes, and hypertension."
+		]
 	}
 	</script>
 <style>

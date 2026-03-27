@@ -28,32 +28,73 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "キム・ジュイン内科",
-		"alternateName": "김주인내과",
-		"telephone": "051-802-7550",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "西面路64 青石ビル8階",
-			"addressLocality": "釜山鎮区",
-			"addressRegion": "釜山",
-			"addressCountry": "KR"
-		},
-		"openingHoursSpecification": [
+		"@graph": [
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-				"opens": "09:15",
-				"closes": "18:15"
+				"@type": "MedicalClinic",
+				"name": "キム・ジュイン内科",
+				"alternateName": "김주인내과",
+				"url": "https://kimjooin.com/jp.html",
+				"telephone": ["051-802-7550", "051-802-7552"],
+				"image": "https://kimjooin.com/images/clinic/reception.jpg",
+				"description": "釜山西面の英語対応内科クリニック。釜山ペク病院14年教授経歴。呼吸器・アレルギー・糖尿病・高血圧専門。英語で診察を受けられます。",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "西面路64, 青石ビル8階",
+					"addressLocality": "釜山鎮区",
+					"addressRegion": "釜山",
+					"postalCode": "47248",
+					"addressCountry": "KR"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 35.1578,
+					"longitude": 129.0598
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:15",
+						"closes": "18:15"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "09:15",
+						"closes": "14:00"
+					}
+				],
+				"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology", "Allergy"],
+				"availableLanguage": ["Korean", "English"],
+				"availableService": [
+					{"@type": "MedicalProcedure", "name": "肺機能検査"},
+					{"@type": "MedicalProcedure", "name": "気管支鏡検査"},
+					{"@type": "MedicalProcedure", "name": "胃カメラ（内視鏡）"},
+					{"@type": "MedicalProcedure", "name": "腹部超音波"},
+					{"@type": "MedicalProcedure", "name": "心臓超音波（心エコー）"},
+					{"@type": "MedicalProcedure", "name": "甲状腺超音波"},
+					{"@type": "MedicalProcedure", "name": "アレルギー検査"},
+					{"@type": "MedicalProcedure", "name": "総合健康診断"},
+					{"@type": "MedicalProcedure", "name": "血液検査"},
+					{"@type": "MedicalProcedure", "name": "心電図"}
+				],
+				"sameAs": ["https://map.naver.com/p/entry/place/12799962"]
 			},
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Saturday",
-				"opens": "09:15",
-				"closes": "14:00"
+				"@type": "Physician",
+				"name": "金柱仁（キム・ジュイン）",
+				"alternateName": "Kim Joo-in",
+				"description": "仁済大学釜山ペク病院内科教授を14年歴任。米国ワシントン大学医学部およびBarnes-Jewish病院にて臨床研究フェロー。釜山日報ベストドクター受賞。",
+				"medicalSpecialty": ["Pulmonology", "Allergy", "InternalMedicine"],
+				"availableLanguage": ["Korean", "English"],
+				"alumniOf": [
+					{"@type": "EducationalOrganization", "name": "仁済大学医学部"},
+					{"@type": "EducationalOrganization", "name": "Washington University in St. Louis School of Medicine"},
+					{"@type": "EducationalOrganization", "name": "Barnes-Jewish Hospital"}
+				],
+				"award": ["釜山日報ベストドクター（呼吸器・アレルギー）", "優秀呼吸器疾患病院3年連続認定"]
 			}
-		],
-		"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology"]
+		]
 	}
 	</script>
 <style>

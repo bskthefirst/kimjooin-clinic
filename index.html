@@ -47,31 +47,92 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "김주인내과",
-		"telephone": "051-802-7550",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "서면로 64, 청석빌딩 8층",
-			"addressLocality": "부산진구",
-			"addressRegion": "부산",
-			"addressCountry": "KR"
-		},
-		"openingHoursSpecification": [
+		"@graph": [
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-				"opens": "09:15",
-				"closes": "18:15"
+				"@type": "MedicalClinic",
+				"name": "김주인내과",
+				"alternateName": "Kim Joo-in Internal Medicine Clinic",
+				"url": "https://kimjooin.com/",
+				"telephone": ["051-802-7550", "051-802-7552"],
+				"image": "https://kimjooin.com/images/clinic/reception.jpg",
+				"description": "부산 서면 호흡기·알레르기 전문 내과. 부산백병원 14년 교수 출신 내과 전문의. 영어 진료 가능.",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "서면로 64, 청석빌딩 8층",
+					"addressLocality": "부산진구",
+					"addressRegion": "부산광역시",
+					"postalCode": "47248",
+					"addressCountry": "KR"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 35.1578,
+					"longitude": 129.0598
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:15",
+						"closes": "18:15"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "09:15",
+						"closes": "14:00"
+					}
+				],
+				"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology", "Allergy"],
+				"availableLanguage": ["Korean", "English"],
+				"availableService": [
+					{"@type": "MedicalProcedure", "name": "폐기능검사 (Pulmonary Function Test)"},
+					{"@type": "MedicalProcedure", "name": "기관지내시경 (Bronchoscopy)"},
+					{"@type": "MedicalProcedure", "name": "위내시경 (Gastroscopy)"},
+					{"@type": "MedicalProcedure", "name": "복부초음파 (Abdominal Ultrasound)"},
+					{"@type": "MedicalProcedure", "name": "심장초음파 (Cardiac Ultrasound)"},
+					{"@type": "MedicalProcedure", "name": "갑상선초음파 (Thyroid Ultrasound)"},
+					{"@type": "MedicalProcedure", "name": "알레르기검사 (Allergy Testing)"},
+					{"@type": "MedicalProcedure", "name": "동맥경화검사 (Arteriosclerosis Test)"},
+					{"@type": "MedicalProcedure", "name": "종합건강검진 (Comprehensive Health Checkup)"},
+					{"@type": "MedicalProcedure", "name": "혈액검사 (Blood Tests)"},
+					{"@type": "MedicalProcedure", "name": "심전도검사 (ECG)"},
+					{"@type": "MedicalProcedure", "name": "골다공증검사 (Bone Density Test)"}
+				],
+				"sameAs": [
+					"https://map.naver.com/p/entry/place/12799962",
+					"https://dev.to/lifeinbusan"
+				],
+				"priceRange": "$$",
+				"paymentAccepted": "Cash, Credit Card, Korean Health Insurance (NHIS)",
+				"isAccessibleForFree": false
 			},
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Saturday",
-				"opens": "09:15",
-				"closes": "14:00"
+				"@type": "Physician",
+				"name": "김주인",
+				"alternateName": "Kim Joo-in",
+				"description": "인제대학교 부산백병원 내과 교수 14년 역임. 미국 워싱턴대학교 의과대학 및 Barnes-Jewish Hospital 임상연구 펠로우. 부산일보 선정 최고의 명의.",
+				"medicalSpecialty": ["Pulmonology", "Allergy", "InternalMedicine"],
+				"availableLanguage": ["Korean", "English"],
+				"worksFor": {
+					"@type": "MedicalClinic",
+					"name": "김주인내과"
+				},
+				"alumniOf": [
+					{"@type": "EducationalOrganization", "name": "Inje University College of Medicine"},
+					{"@type": "EducationalOrganization", "name": "Washington University in St. Louis School of Medicine"},
+					{"@type": "EducationalOrganization", "name": "Barnes-Jewish Hospital"}
+				],
+				"award": [
+					"부산일보 최고의 명의 (호흡기·알레르기)",
+					"국민건강보험 심사평가원 우수 호흡기질환 병원 3년 연속 인정"
+				],
+				"hasCredential": {
+					"@type": "EducationalOccupationalCredential",
+					"credentialCategory": "Internal Medicine Specialist"
+				}
 			}
-		],
-		"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology"]
+		]
 	}
 	</script>
 <style>
