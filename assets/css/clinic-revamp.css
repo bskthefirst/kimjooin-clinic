@@ -788,6 +788,97 @@ h2.hero-main-copy,
 }
 
 /* Phone */
+/* FAQ section */
+.section-faq {
+  padding: 6px 0 !important;
+}
+
+.section-faq .section-inner {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 28px 24px !important;
+  max-width: 620px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  margin-bottom: 12px !important;
+}
+
+.section-faq h2 {
+  font-size: 22px !important;
+  color: var(--heading) !important;
+  margin: 0 0 18px !important;
+  text-align: center !important;
+}
+
+.faq-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.faq-item {
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.faq-item:last-child {
+  border-bottom: none !important;
+}
+
+.faq-question {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  background: none !important;
+  border: none !important;
+  padding: 14px 0 !important;
+  font-size: 16px !important;
+  color: var(--heading) !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  line-height: 1.5 !important;
+  font-family: inherit !important;
+}
+
+.faq-question::before {
+  content: '•' !important;
+  color: #0F4D92 !important;
+  font-size: 20px !important;
+  margin-right: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+.faq-question::after {
+  content: '+' !important;
+  margin-left: auto !important;
+  font-size: 20px !important;
+  color: #999 !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.2s ease !important;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−' !important;
+  color: #0F4D92 !important;
+}
+
+.faq-answer {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.3s ease, padding 0.3s ease !important;
+  padding: 0 0 0 20px !important;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px !important;
+  padding: 0 0 14px 20px !important;
+}
+
+.faq-answer p {
+  font-size: 15px !important;
+  color: var(--text) !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
 .section-phone {
   background: transparent !important;
   text-align: center !important;

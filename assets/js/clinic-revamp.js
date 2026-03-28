@@ -450,4 +450,25 @@
       }
     }
   });
+  // FAQ accordion
+  document.addEventListener('DOMContentLoaded', function () {
+    var faqButtons = document.querySelectorAll('.faq-question');
+    for (var i = 0; i < faqButtons.length; i++) {
+      faqButtons[i].addEventListener('click', function () {
+        var item = this.parentElement;
+        var isOpen = item.classList.contains('open');
+        // close all
+        var allItems = document.querySelectorAll('.faq-item');
+        for (var j = 0; j < allItems.length; j++) {
+          allItems[j].classList.remove('open');
+          allItems[j].querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        }
+        // toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
 })();
