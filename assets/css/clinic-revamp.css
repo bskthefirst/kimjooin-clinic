@@ -792,6 +792,8 @@ h2.hero-main-copy,
 .header-back {
   color: #fff !important;
   font-size: 13px !important;
+  font-family: 'Futura', 'Futura-Medium', 'Century Gothic', sans-serif !important;
+  letter-spacing: 0.5px !important;
   text-decoration: none !important;
   line-height: 1 !important;
   opacity: 0.85 !important;
