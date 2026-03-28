@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /Module/
+Disallow: /BasicJS/
+Disallow: /css/
 
 Sitemap: https://kimjooin.com/sitemap.xml
