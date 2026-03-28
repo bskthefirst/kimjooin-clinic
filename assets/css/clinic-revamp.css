@@ -877,6 +877,7 @@ h2.hero-main-copy,
   color: var(--text) !important;
   line-height: 1.7 !important;
   margin: 0 !important;
+  font-family: 'JejuMyeongjo', serif !important;
 }
 
 .section-phone {
