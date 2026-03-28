@@ -904,7 +904,11 @@ h2.hero-main-copy,
   color: #4A5568 !important;
   line-height: 1.7 !important;
   margin: 0 !important;
-  font-family: 'JejuMyeongjo', serif !important;
+}
+
+.faq-answer a {
+  color: #0F4D92 !important;
+  text-decoration: underline !important;
 }
 
 .section-phone {
