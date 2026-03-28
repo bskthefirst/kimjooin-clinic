@@ -815,12 +815,18 @@ h2.hero-main-copy,
   padding: 0 !important;
 }
 
-.faq-item {
+.faq-list .faq-item {
   border-bottom: 1px solid #f0f0f0 !important;
+  padding: 0 !important;
 }
 
-.faq-item:last-child {
+.faq-list .faq-item:last-child {
   border-bottom: none !important;
+}
+
+.faq-list .faq-item::before {
+  content: none !important;
+  display: none !important;
 }
 
 .faq-question {
@@ -829,35 +835,40 @@ h2.hero-main-copy,
   width: 100% !important;
   background: none !important;
   border: none !important;
-  padding: 14px 0 !important;
-  font-size: 16px !important;
-  color: var(--heading) !important;
+  padding: 12px 0 !important;
+  font-size: 15px !important;
+  color: #1B2E4B !important;
   cursor: pointer !important;
   text-align: left !important;
   line-height: 1.5 !important;
   font-family: inherit !important;
+  gap: 0 !important;
 }
 
 .faq-question::before {
   content: '•' !important;
-  color: #0F4D92 !important;
-  font-size: 20px !important;
-  margin-right: 10px !important;
+  color: #83a731 !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  width: 20px !important;
   flex-shrink: 0 !important;
+  text-align: center !important;
 }
 
 .faq-question::after {
   content: '+' !important;
   margin-left: auto !important;
-  font-size: 20px !important;
-  color: #999 !important;
+  font-size: 18px !important;
+  color: #bbb !important;
   flex-shrink: 0 !important;
-  transition: transform 0.2s ease !important;
+  width: 20px !important;
+  text-align: center !important;
+  transition: color 0.2s ease !important;
 }
 
 .faq-item.open .faq-question::after {
   content: '−' !important;
-  color: #0F4D92 !important;
+  color: #83a731 !important;
 }
 
 .faq-answer {
@@ -873,8 +884,8 @@ h2.hero-main-copy,
 }
 
 .faq-answer p {
-  font-size: 15px !important;
-  color: var(--text) !important;
+  font-size: 14px !important;
+  color: #4A5568 !important;
   line-height: 1.7 !important;
   margin: 0 !important;
   font-family: 'JejuMyeongjo', serif !important;
