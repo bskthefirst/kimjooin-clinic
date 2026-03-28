@@ -788,6 +788,24 @@ h2.hero-main-copy,
 }
 
 /* Phone */
+/* Back button in language page headers */
+.header-back {
+  position: absolute !important;
+  left: 16px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #fff !important;
+  font-size: 24px !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  opacity: 0.85 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.header-back:hover {
+  opacity: 1 !important;
+}
+
 /* FAQ section */
 .section-faq {
   padding: 6px 0 !important;
