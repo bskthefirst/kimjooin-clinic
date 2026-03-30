@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kimjooin.com/</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kimjooin.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kimjooin.com/cn.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kimjooin.com/jp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kimjooin.com/" />
   </url>
   <url>
     <loc>https://kimjooin.com/en.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kimjooin.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kimjooin.com/cn.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kimjooin.com/jp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kimjooin.com/" />
   </url>
   <url>
     <loc>https://kimjooin.com/cn.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kimjooin.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kimjooin.com/cn.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kimjooin.com/jp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kimjooin.com/" />
   </url>
   <url>
     <loc>https://kimjooin.com/jp.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kimjooin.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kimjooin.com/cn.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kimjooin.com/jp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kimjooin.com/" />
   </url>
 </urlset>
