@@ -45,4 +45,52 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kimjooin.com/jp.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kimjooin.com/" />
   </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39849.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39855.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39856.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39857.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39858.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39859.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/Intro/GuideView.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/Module/Intro/EstView.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
