@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="naver-site-verification" content="62d31bfa7dc12da62e73b9343ce346cbc2d355f2" />
-	<link rel="preload" as="image" href="/external/fileupload.drline.net/MainImage_main_img.jpg">
+	<link rel="preload" as="image" href="/external/fileupload.drline.net/MainImage_main_img.webp" type="image/webp">
+	<link rel="preload" as="image" href="/external/fileupload.drline.net/MainImage_main_img_mobile.webp" type="image/webp" media="(max-width: 768px)">
 	<link rel="stylesheet" type="text/css" href="/assets/css/clinic-revamp.css?v=20260329" />
 	<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/JejuMyeongjo.woff2" crossorigin>
 	<script type="text/javascript" src="/assets/js/clinic-revamp.js?v=20260321" defer></script>
@@ -341,24 +342,28 @@
 					<p class="hero-sub-copy">내 몸을 위한 가장 가까운 주치의, 정교한 진단과 믿을 수 있는 진료</p>
 				</div>
 				<div class="hero-main-image">
-					<img src='/external/fileupload.drline.net/MainImage_main_img.jpg' alt='김주인내과 접수실'/>
+					<picture>
+						<source srcset='/external/fileupload.drline.net/MainImage_main_img_mobile.webp' type='image/webp' media='(max-width: 768px)'>
+						<source srcset='/external/fileupload.drline.net/MainImage_main_img.webp' type='image/webp'>
+						<img src='/external/fileupload.drline.net/MainImage_main_img.jpg' alt='김주인내과 접수실' width='1200' height='900' fetchpriority='high' decoding='async'>
+					</picture>
 				</div>
 				<div class="hero-carousel-strip">
 					<div class="carousel-track">
 						<!-- set 1 -->
-						<img src='/images/custom/IMG_3440.JPG' alt='김주인내과 인증서' />
-						<img src='/images/custom/IMG_5854.jpg' alt='김주인내과 대기실' />
-						<img src='/images/custom/IMG_9833.jpg' alt='김주인내과 원내 게시판' />
-						<img src='/images/custom/IMG_9836_new.jpg' alt='김주인내과 입구 진료과목' />
-						<img src='/images/custom/IMG_9831.JPG' alt='김주인내과 접수처' />
-						<img src='/images/custom/IMG_5172.jpg' alt='김주인내과 로비' />
+						<picture><source srcset='/images/custom/IMG_3440.webp' type='image/webp'><img src='/images/custom/IMG_3440.JPG' alt='김주인내과 인증서' /></picture>
+						<picture><source srcset='/images/custom/IMG_5854.webp' type='image/webp'><img src='/images/custom/IMG_5854.jpg' alt='김주인내과 대기실' /></picture>
+						<picture><source srcset='/images/custom/IMG_9833.webp' type='image/webp'><img src='/images/custom/IMG_9833.jpg' alt='김주인내과 원내 게시판' /></picture>
+						<picture><source srcset='/images/custom/IMG_9836_new.webp' type='image/webp'><img src='/images/custom/IMG_9836_new.jpg' alt='김주인내과 입구 진료과목' /></picture>
+						<picture><source srcset='/images/custom/IMG_9831.webp' type='image/webp'><img src='/images/custom/IMG_9831.JPG' alt='김주인내과 접수처' /></picture>
+						<picture><source srcset='/images/custom/IMG_5172.webp' type='image/webp'><img src='/images/custom/IMG_5172.jpg' alt='김주인내과 로비' /></picture>
 						<!-- set 2 — exact duplicate for seamless loop -->
-						<img src='/images/custom/IMG_3440.JPG' alt='김주인내과 인증서' />
-						<img src='/images/custom/IMG_5854.jpg' alt='김주인내과 대기실' />
-						<img src='/images/custom/IMG_9833.jpg' alt='김주인내과 원내 게시판' />
-						<img src='/images/custom/IMG_9836_new.jpg' alt='김주인내과 입구 진료과목' />
-						<img src='/images/custom/IMG_9831.JPG' alt='김주인내과 접수처' />
-						<img src='/images/custom/IMG_5172.jpg' alt='김주인내과 로비' />
+						<picture><source srcset='/images/custom/IMG_3440.webp' type='image/webp'><img src='/images/custom/IMG_3440.JPG' alt='김주인내과 인증서' /></picture>
+						<picture><source srcset='/images/custom/IMG_5854.webp' type='image/webp'><img src='/images/custom/IMG_5854.jpg' alt='김주인내과 대기실' /></picture>
+						<picture><source srcset='/images/custom/IMG_9833.webp' type='image/webp'><img src='/images/custom/IMG_9833.jpg' alt='김주인내과 원내 게시판' /></picture>
+						<picture><source srcset='/images/custom/IMG_9836_new.webp' type='image/webp'><img src='/images/custom/IMG_9836_new.jpg' alt='김주인내과 입구 진료과목' /></picture>
+						<picture><source srcset='/images/custom/IMG_9831.webp' type='image/webp'><img src='/images/custom/IMG_9831.JPG' alt='김주인내과 접수처' /></picture>
+						<picture><source srcset='/images/custom/IMG_5172.webp' type='image/webp'><img src='/images/custom/IMG_5172.jpg' alt='김주인내과 로비' /></picture>
 					</div>
 				</div>
 			</div>
