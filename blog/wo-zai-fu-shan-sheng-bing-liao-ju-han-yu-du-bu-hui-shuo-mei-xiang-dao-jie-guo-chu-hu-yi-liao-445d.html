@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="/Design/skin5004/Js/ui.js?v=20260321" defer></script>
 	<link rel="stylesheet" type="text/css" href="/css/skin5004/reset.css" />
 	<link rel="stylesheet" type="text/css" href="/css/skin5004/style.css?v=20260321" />
+	<link rel="stylesheet" type="text/css" href="/css/skin5004/layout_sub.css" />
 	<link rel="stylesheet" type="text/css" href="/css/skin5004/color_blue.css" />
 	<link rel="canonical" href="https://kimjooin.com/blog/wo-zai-fu-shan-sheng-bing-liao-ju-han-yu-du-bu-hui-shuo-mei-xiang-dao-jie-guo-chu-hu-yi-liao-445d.html" />
 <style>
@@ -47,14 +48,14 @@
 .blog-back-link { display: inline-block; margin-bottom: 20px; color: #83a731; text-decoration: none; font-size: 14px; font-weight: 600; }
 .blog-back-link:hover { text-decoration: underline; }
 
-/* Fix layout without sub_visual */
-.sub_container { display: flex !important; flex-wrap: wrap !important; gap: 20px !important; margin-top: 0 !important; padding-top: 30px !important; }
-#sub_left { float: none !important; width: 260px !important; flex-shrink: 0 !important; }
-#sub_contents { float: none !important; width: auto !important; flex: 1 !important; min-width: 0 !important; }
-#sub_contents .sub_head { margin-bottom: 20px !important; }
+/* Kill clearfix pseudo-elements that conflict with flexbox */
+.sub_container::before, .sub_container::after { display: none !important; content: none !important; }
+.sub_container { margin-top: 0 !important; display: flex !important; flex-wrap: wrap !important; gap: 20px !important; padding-top: 30px !important; }
+#sub_left { float: none !important; }
+#sub_contents { float: none !important; flex: 1 !important; min-width: 0 !important; }
+#sub_contents .sub_head { position: static !important; margin-bottom: 16px !important; }
 #sub_contents .sub_head ul { display: none !important; }
-#sub_contents .sub_head { margin-bottom: 16px !important; position: static !important; }
-.sub_con_area { display: block !important; visibility: visible !important; }
+.sub_con_area { display: block !important; }
 .rn-link{color:#2563eb;text-decoration:none;font-weight:600;font-size:16px;transition:color 0.3s;}
 .rn-link:hover{animation:rainbow 1.5s linear infinite;}
 @keyframes rainbow{0%{color:#ff0000}14%{color:#ff8800}28%{color:#ffdd00}42%{color:#33cc33}57%{color:#3399ff}71%{color:#6633ff}85%{color:#cc33cc}100%{color:#ff0000}}
