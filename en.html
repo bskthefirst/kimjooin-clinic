@@ -177,8 +177,10 @@ body { background: #83a731 !important; }
 .en-card .hours-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 6px; }
 .en-card .hours-table td { padding: 4px 0; }
 .en-card .hours-table td:first-child { font-weight: bold; width: 120px; }
-.en-header { background: #83a731; padding: 18px 16px 14px; display: flex; align-items: center; justify-content: center; }
+.en-header { background: #83a731; padding: 18px 16px 14px; display: flex; align-items: center; justify-content: center; position: relative; }
 .en-header img { height: 50px; }
+.en-header .header-back { position: absolute; left: 16px; }
+.en-header .header-blog { position: absolute; right: 16px; color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.5); border-radius: 6px; }
 .en-wrapper { padding: 24px 16px 40px; }
 </style>
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -188,7 +190,7 @@ body { background: #83a731 !important; }
 <div class="en-header">
 	<a href="/" class="header-back" aria-label="Home">&#8592; back</a>
 	<a href="/index.html"><img src='/external/fileupload.drline.net/Logo_logo.png' alt='Kim Joo-in Internal Medicine Logo' /></a>
-	<a href="/blog/" style="color:#fff;text-decoration:none;font-size:14px;font-weight:600;margin-left:auto;padding:6px 14px;border:1px solid rgba(255,255,255,0.5);border-radius:6px;">Blog</a>
+	<a href="/blog/" class="header-blog">Blog</a>
 </div>
 
 <div class="en-wrapper">
