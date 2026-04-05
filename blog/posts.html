@@ -33,6 +33,11 @@
   content: '|'; color: rgba(255,255,255,0.4); margin-right: 0; font-weight: 300; font-size: 14px;
   position: relative; top: -1px;
 }
+/* CJK fix for sub_head, sidebar, breadcrumb */
+.sub_head h3, .sub_head h3 span, .sub_head em,
+.snb a, .snb a.on,
+.dropdown-content a,
+.mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
 
 /* Blog filter buttons */
 .blog-filters { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
