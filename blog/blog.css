@@ -1,0 +1,275 @@
+/* ============================================================
+   Kim Joo-in Clinic Blog — Clean Reading Experience
+   ============================================================ */
+
+:root {
+  --blog-bg: #fafafa;
+  --blog-surface: #ffffff;
+  --blog-text: #1a1a1a;
+  --blog-text-secondary: #555;
+  --blog-accent: #2563eb;
+  --blog-accent-light: #eff6ff;
+  --blog-border: #e5e7eb;
+  --blog-max-width: 720px;
+  --blog-font: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--blog-font);
+  background: var(--blog-bg);
+  color: var(--blog-text);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Header --- */
+.blog-header {
+  background: var(--blog-surface);
+  border-bottom: 1px solid var(--blog-border);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.blog-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-header a { text-decoration: none; color: var(--blog-text); }
+.blog-brand {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.blog-brand span { color: var(--blog-accent); }
+.blog-nav { display: flex; gap: 20px; font-size: 14px; }
+.blog-nav a { color: var(--blog-text-secondary); transition: color 0.2s; }
+.blog-nav a:hover { color: var(--blog-accent); }
+
+/* --- Index page --- */
+.blog-index {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.blog-index h2 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+.blog-index-subtitle {
+  color: var(--blog-text-secondary);
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+.post-card {
+  background: var(--blog-surface);
+  border: 1px solid var(--blog-border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: box-shadow 0.2s, transform 0.15s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.post-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.post-card-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--blog-accent);
+  background: var(--blog-accent-light);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.post-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.post-card p {
+  font-size: 14px;
+  color: var(--blog-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.post-card-meta {
+  font-size: 13px;
+  color: #999;
+}
+
+/* --- Article page --- */
+.blog-article {
+  max-width: var(--blog-max-width);
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+.blog-article-header {
+  margin-bottom: 40px;
+}
+.blog-article-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--blog-accent);
+  background: var(--blog-accent-light);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.blog-article-header h1 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.blog-article-meta {
+  color: var(--blog-text-secondary);
+  font-size: 14px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.blog-article-meta span { display: flex; align-items: center; gap: 4px; }
+
+/* --- Article body --- */
+.blog-body h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--blog-accent-light);
+}
+.blog-body h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+}
+.blog-body p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.blog-body ul, .blog-body ol {
+  margin: 0 0 20px 24px;
+  font-size: 17px;
+}
+.blog-body li { margin-bottom: 8px; }
+.blog-body strong { font-weight: 600; }
+
+.blog-body blockquote {
+  border-left: 3px solid var(--blog-accent);
+  background: var(--blog-accent-light);
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+}
+
+.info-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 15px;
+}
+.info-box-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.warning-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 15px;
+}
+.detail-table th, .detail-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--blog-border);
+}
+.detail-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  width: 35%;
+}
+
+/* --- CTA box --- */
+.cta-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 28px;
+  margin: 40px 0;
+  text-align: center;
+}
+.cta-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.cta-box p { font-size: 15px; color: var(--blog-text-secondary); margin-bottom: 16px; }
+.cta-btn {
+  display: inline-block;
+  background: var(--blog-accent);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.cta-btn:hover { background: #1d4ed8; }
+
+/* --- Footer --- */
+.blog-footer {
+  border-top: 1px solid var(--blog-border);
+  padding: 32px 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+.blog-footer a { color: var(--blog-accent); text-decoration: none; }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .blog-article-header h1 { font-size: 26px; }
+  .blog-body h2 { font-size: 21px; }
+  .blog-body p, .blog-body ul, .blog-body ol { font-size: 16px; }
+  .post-grid { grid-template-columns: 1fr; }
+  .blog-nav { gap: 12px; }
+}
