@@ -297,12 +297,16 @@ a {
   color: var(--text) !important;
   font-size: 14px !important;
   font-weight: 500 !important;
-  font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important;
   padding: 10px 20px !important;
   border-left: 3px solid transparent !important;
   transition: background 200ms ease, border-color 200ms ease, color 200ms ease !important;
   display: block !important;
   text-decoration: none !important;
+}
+.head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content a[href*="blog"],
+#sub_left .snb a[href*="blog"],
+.mobile-menu-group a[href*="blog"] {
+  font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
 }
 
 .head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content a:hover,
