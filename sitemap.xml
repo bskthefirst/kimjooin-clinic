@@ -339,4 +339,60 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- Korean posts: new, targeting Korean audience -->
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeon-hohupgi-naegwa-gimjuinnaegwa.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeon-naegwa-chucheon-gimjuinnaegwa.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/gimjuinnaegwa-huji-hwanja-ribyu.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-doggam-yebangjeobjong-gaideu-2026.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeon-geongang-geomjin-gaideu.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Korean posts: existing, written for Korean-reading foreigners -->
+  <url>
+    <loc>https://kimjooin.com/blog/gimjuinnaegwa-silje-hwanja-ribyu-yeongsujeung-hwagindoen-soljig-hugi-moeum-10m1.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/oegugineul-wihan-busan-byeongweon-jinryo-wanjeon-gaideu-2026-14cl.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busaneseo-yeongmun-jindanseo-balgeubbadneun-bangbeob-oeguginbijaboheomyong-460g.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeoneseo-doggam-yebangjeobjong-majgi-oegugindo-yeyag-eobsi-ok-1jd1.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
