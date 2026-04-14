@@ -276,11 +276,30 @@
 
 <link rel="stylesheet" type="text/css" href="/Module/Css/hp_type1/CMS/Skin001.css" />
 <div class="cms_skin">    <div class="cms_box01">
-    	
+
         <div>
-	        <p style="text-align: center;"><img src="/external/fileupload.drline.net/Editor_images_000001_intro_doctor_01.jpg" title="" alt="1" style="vertical-align: baseline; border: 0px solid rgb(0, 0, 0); width: 650px;" width="650" height="402"loading="lazy" /></p>
+	        <p style="text-align: center;"><img src="/external/fileupload.drline.net/Editor_images_000001_intro_doctor_01.jpg" title="" alt="1" style="vertical-align: baseline; border: 0px solid rgb(0, 0, 0); width: 650px; max-width: 100%; height: auto;" width="650" height="402"loading="lazy" /></p>
         </div>
     </div></div>
+
+<!-- Real Patient Reviews Callout -->
+<div style="max-width:650px;margin:32px auto;padding:26px 30px;background:#f8faf2;border-left:4px solid #83a731;border-radius:0 10px 10px 0;box-sizing:border-box;">
+  <h3 style="font-size:17px;font-weight:700;color:#1a2e44;margin:0 0 12px;letter-spacing:-0.3px;">실제 환자 후기</h3>
+  <p style="font-size:15px;line-height:1.75;color:#374151;margin:0 0 18px;">김주인내과에는 <strong style="color:#1a2e44;">네이버 영수증 인증된 실제 환자 후기</strong>가 다수 있습니다. 실제로 진료받으신 분들의 솔직한 후기를 확인하실 수 있습니다.</p>
+  <a class="kji-review-link" href="/blog/gimjuinnaegwa-silje-hwanja-ribyu-yeongsujeung-hwagindoen-soljig-hugi-moeum-10m1.html" style="display:inline-block;color:#83a731;text-decoration:none;font-weight:700;font-size:15px;">영수증 인증 후기 보기 &rarr;</a>
+</div>
+<style>
+@keyframes kji-review-rainbow {
+  0%{color:#ff0000}14%{color:#ff8800}28%{color:#ffdd00}42%{color:#33cc33}57%{color:#3399ff}71%{color:#6633ff}85%{color:#cc33cc}100%{color:#ff0000}
+}
+.kji-review-link:hover {
+  animation: kji-review-rainbow 1.5s linear infinite;
+}
+@media (max-width:640px) {
+  .kji-review-link + style, div[style*="border-left:4px solid #83a731"] { margin: 20px 16px !important; padding: 20px 22px !important; }
+}
+</style>
+<!-- /Real Patient Reviews Callout -->
 
 <!--### 의료법 노출 체크 ###-->
 <!--<script type="text/javascript" src="/external/newcms.mcircle.co.kr/CMS_BasicJs_jquery.js"></script>-->
