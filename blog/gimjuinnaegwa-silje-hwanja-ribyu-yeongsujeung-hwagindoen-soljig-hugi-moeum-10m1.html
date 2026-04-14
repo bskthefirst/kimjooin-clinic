@@ -30,18 +30,46 @@
 .snb a, .snb a.on,
 .dropdown-content a,
 .mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
-.blog-article-body { line-height: 1.9; font-size: 16px; }
-.blog-article-body h2 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e8f0d8; }
-.blog-article-body h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; }
+.blog-article-body { line-height: 1.9; font-size: 16px; font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
+.blog-article-body h2 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e8f0d8; font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
+.blog-article-body h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
 .blog-article-body p { margin-bottom: 16px; }
 .blog-article-body ul, .blog-article-body ol { margin: 0 0 16px 20px; }
 .blog-article-body li { margin-bottom: 6px; }
 .blog-article-body table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
 .blog-article-body th, .blog-article-body td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e5e7eb; }
 .blog-article-body th { background: #f9fafb; font-weight: 600; }
-.blog-article-body blockquote { border-left: 3px solid #83a731; background: #f8faf2; padding: 14px 18px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+.blog-article-body blockquote {
+  border-left: 4px solid #83a731;
+  background: #f8faf2;
+  padding: 28px 34px;
+  margin: 36px 0 52px 0;
+  border-radius: 0 12px 12px 0;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
+}
+.blog-article-body blockquote p {
+  font-size: 19px !important;
+  line-height: 2.0 !important;
+  color: #1a2e44;
+  margin-bottom: 16px;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
+}
+.blog-article-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+.blog-article-body blockquote p em {
+  font-size: 14px !important;
+  color: #6b7280;
+  font-style: normal;
+  display: block;
+  margin-top: 6px;
+}
 .blog-article-body a { color: #2563eb; }
-.blog-article-body img { max-width: 100% !important; height: auto !important; }
+.blog-article-body img { max-width: 100% !important; height: auto !important; margin-top: 12px; margin-bottom: 12px; }
+@media (max-width: 640px) {
+  .blog-article-body blockquote { padding: 22px 24px; margin: 28px 0 40px 0; }
+  .blog-article-body blockquote p { font-size: 17px !important; line-height: 1.85 !important; }
+}
 .blog-article-meta { color: #888; font-size: 13px; margin-bottom: 24px; }
 .blog-back-link { display: inline-block; margin-bottom: 20px; color: #83a731; text-decoration: none; font-size: 14px; font-weight: 600; }
 .blog-back-link:hover { text-decoration: underline; }
