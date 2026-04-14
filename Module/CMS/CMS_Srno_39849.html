@@ -336,9 +336,11 @@
   color: #1a2e44 !important;
   font-weight: 700 !important;
 }
-.kji-review-callout a.kji-review-link {
+.kji-review-callout a.kji-review-link,
+.kji-review-callout a.kji-review-link:link,
+.kji-review-callout a.kji-review-link:visited {
   display: inline-block !important;
-  color: #83a731 !important;
+  color: #83a731;
   text-decoration: none !important;
   font-weight: 700 !important;
   font-size: 15px !important;
@@ -347,7 +349,8 @@
 @keyframes kji-review-rainbow {
   0%{color:#ff0000}14%{color:#ff8800}28%{color:#ffdd00}42%{color:#33cc33}57%{color:#3399ff}71%{color:#6633ff}85%{color:#cc33cc}100%{color:#ff0000}
 }
-.kji-review-callout a.kji-review-link:hover {
+.kji-review-callout a.kji-review-link:hover,
+.kji-review-callout a.kji-review-link:focus {
   animation: kji-review-rainbow 1.5s linear infinite;
 }
 @media (max-width:640px) {
