@@ -303,90 +303,256 @@
 </script>
 
 <link rel="stylesheet" type="text/css" href="/Module/Css/hp_type1/CMS/Skin001.css" />
-<div class="cms_skin">    <div class="cms_box01">
 
-        <div>
-	        <p style="text-align: center;"><img src="/external/fileupload.drline.net/Editor_images_000001_intro_doctor_01.jpg" title="" alt="1" style="vertical-align: baseline; border: 0px solid rgb(0, 0, 0); width: 650px; max-width: 100%; height: auto;" width="650" height="402"loading="lazy" /></p>
-        </div>
-    </div></div>
+<!-- 의료진 프로필 카드 -->
+<div class="kji-card">
 
-<!-- 의료진 약력 텍스트 -->
-<section class="kji-profile-text">
-  <h2 class="kji-profile-name">김주인 원장 <span class="kji-profile-degree">의학박사 · 내과전문의</span></h2>
-  <p class="kji-profile-award">부산일보가 선정한 <strong>호흡기·알레르기 Best Doctor</strong></p>
-  <ul class="kji-profile-list">
-    <li>내과전문의</li>
-    <li>인제의대 부산백병원 내과교수</li>
-    <li>미국 워싱턴 의대 및 Barnes Jewish 병원 연수</li>
-    <li>당뇨병·고혈압·천식 1등급 기관 <span class="kji-profile-note">(세브란스, 국립암센터와 더불어 3년 연속)</span></li>
-    <li>대한천식연구회 운영위원</li>
-    <li>부산지역 대학병원 교수들이 선정한 베스트 닥터 <span class="kji-profile-note">(폐암 및 천식분야, 2006년 7월 부산일보)</span></li>
-  </ul>
-</section>
+  <!-- 상단 배너 -->
+  <div class="kji-card-banner">
+    <div class="kji-card-banner-inner">
+      <div class="kji-card-bar"></div>
+      <div class="kji-card-banner-text">
+        <p class="kji-banner-sub">부산일보가 선정한</p>
+        <p class="kji-banner-main">호흡기, 알레르기 <strong>Best Doctor</strong></p>
+      </div>
+    </div>
+    <div class="kji-card-lung" aria-hidden="true">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+        <path d="M40 8 C40 8 38 14 38 20 C38 26 40 28 40 28 C40 28 42 26 42 20 C42 14 40 8 40 8Z" stroke="#a8d4e8" stroke-width="1.5" fill="none"/>
+        <path d="M38 22 C34 22 22 24 16 32 C10 40 10 52 14 60 C18 68 26 70 30 68 C34 66 36 60 36 54 L36 28" stroke="#a8d4e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M42 22 C46 22 58 24 64 32 C70 40 70 52 66 60 C62 68 54 70 50 68 C46 66 44 60 44 54 L44 28" stroke="#a8d4e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M22 44 C22 44 18 46 16 50" stroke="#a8d4e8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M58 44 C58 44 62 46 64 50" stroke="#a8d4e8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 본문: 사진 + 약력 -->
+  <div class="kji-card-body">
+
+    <div class="kji-card-photo-wrap">
+      <img src="/images/custom/doctor-portrait.jpg" alt="김주인 원장" class="kji-card-photo" width="220" height="292" loading="lazy">
+    </div>
+
+    <div class="kji-card-info">
+      <h2 class="kji-doctor-name">김주인 <span class="kji-doctor-wonjang">원장</span></h2>
+      <p class="kji-doctor-degree">(의학박사 / 내과전문의)</p>
+      <div class="kji-card-sep"><span class="kji-card-plus">✚</span></div>
+      <div class="kji-yakryeok-head">
+        <span class="kji-yakryeok-icon-circle">
+          <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><rect x="3" y="2" width="14" height="16" rx="2" stroke="white" stroke-width="1.5"/><line x1="6" y1="7" x2="14" y2="7" stroke="white" stroke-width="1.2"/><line x1="6" y1="10" x2="14" y2="10" stroke="white" stroke-width="1.2"/><line x1="6" y1="13" x2="11" y2="13" stroke="white" stroke-width="1.2"/></svg>
+        </span>
+        <span class="kji-yakryeok-label">약력</span>
+      </div>
+      <ul class="kji-yakryeok-list">
+        <li>내과전문의</li>
+        <li>인제의대 부산백병원 내과교수</li>
+        <li>미국 워싱턴 의대 및 Barnes Jewish 병원 연수</li>
+        <li>당뇨병, 고혈압, 천식 1등급 기관<br><span class="kji-note">(세브란스, 국립암센터와 더불어 3년 연속)</span></li>
+        <li>대한천식연구회 운영위원</li>
+        <li>부산지역 대학병원 교수들이 선정한 베스트 닥터<br><span class="kji-note">(폐암 및 천식분야, 2006년 7월 부산일보)</span></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 <style>
-.kji-profile-text {
+/* ── Card wrapper ── */
+.kji-card {
   max-width: 650px;
-  margin: 28px auto 0;
-  padding: 26px 30px 22px;
+  margin: 20px auto 28px;
   background: #ffffff;
-  border-top: 3px solid #83a731;
-  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+  overflow: hidden;
+  font-family: 'JejuMyeongjo', serif !important;
+  position: relative;
 }
-.kji-profile-text,
-.kji-profile-text h2,
-.kji-profile-text p,
-.kji-profile-text li,
-.kji-profile-text span,
-.kji-profile-text strong {
-  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', serif !important;
+
+/* ── Banner ── */
+.kji-card-banner {
+  background: #ffffff;
+  padding: 22px 28px 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8f0f8;
 }
-.kji-profile-name {
+.kji-card-banner-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.kji-card-bar {
+  width: 5px;
+  min-height: 54px;
+  background: #13a489;
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.kji-banner-sub {
+  font-size: 16px !important;
+  color: #13a489 !important;
+  margin: 0 0 4px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+}
+.kji-banner-main {
   font-size: 22px !important;
+  color: #0d2e6e !important;
+  margin: 0 !important;
   font-weight: 700 !important;
-  color: #1a2e44 !important;
+  line-height: 1.3 !important;
+}
+.kji-banner-main strong {
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  color: #0d2e6e !important;
+}
+.kji-card-lung {
+  flex-shrink: 0;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* ── Body ── */
+.kji-card-body {
+  display: flex;
+  gap: 0;
+  padding: 28px 28px 32px;
+  align-items: flex-start;
+  position: relative;
+}
+/* blue decoration bottom-left */
+.kji-card-body::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 100px;
+  height: 80px;
+  background: radial-gradient(ellipse at 30% 80%, #b8ddf4 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Photo ── */
+.kji-card-photo-wrap {
+  flex-shrink: 0;
+  width: 190px;
+  margin-right: 28px;
+}
+.kji-card-photo {
+  width: 190px !important;
+  height: auto !important;
+  border-radius: 14px !important;
+  display: block !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12) !important;
+}
+
+/* ── Info ── */
+.kji-card-info {
+  flex: 1;
+  min-width: 0;
+}
+.kji-doctor-name {
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: #0d2e6e !important;
   margin: 0 0 4px !important;
   padding: 0 !important;
   border: none !important;
-  letter-spacing: -0.3px !important;
-  line-height: 1.4 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -1px !important;
 }
-.kji-profile-degree {
+.kji-doctor-wonjang {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: #0d2e6e !important;
+  letter-spacing: 0 !important;
+}
+.kji-doctor-degree {
   font-size: 15px !important;
-  font-weight: 400 !important;
   color: #555 !important;
-}
-.kji-profile-award {
-  font-size: 14px !important;
-  color: #83a731 !important;
-  margin: 0 0 18px !important;
+  margin: 0 0 14px !important;
   font-weight: 400 !important;
 }
-.kji-profile-award strong {
-  font-weight: 700 !important;
-  color: #83a731 !important;
+.kji-card-sep {
+  text-align: center;
+  margin: 10px 0 14px;
+  position: relative;
 }
-.kji-profile-list {
+.kji-card-sep::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #c8d8e8;
+}
+.kji-card-plus {
+  position: relative;
+  background: #fff;
+  padding: 0 8px;
+  color: #13a489;
+  font-size: 16px;
+  font-weight: 700;
+}
+.kji-yakryeok-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.kji-yakryeok-icon-circle {
+  width: 34px;
+  height: 34px;
+  background: #13a489;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.kji-yakryeok-label {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #0d2e6e !important;
+}
+.kji-yakryeok-list {
   margin: 0 !important;
   padding: 0 0 0 18px !important;
   list-style: disc !important;
 }
-.kji-profile-list li {
-  font-size: 15px !important;
-  color: #374151 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 4px !important;
+.kji-yakryeok-list li {
+  font-size: 16px !important;
+  color: #1a2e44 !important;
+  line-height: 1.85 !important;
+  margin-bottom: 2px !important;
 }
-.kji-profile-note {
+.kji-note {
   font-size: 13px !important;
-  color: #777 !important;
+  color: #666 !important;
 }
-@media (max-width: 640px) {
-  .kji-profile-text { margin: 20px 16px 0 !important; padding: 22px 20px 18px !important; }
-  .kji-profile-name { font-size: 19px !important; }
-  .kji-profile-list li { font-size: 14px !important; }
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .kji-card { margin: 16px 0 20px; border-radius: 12px; }
+  .kji-card-banner { padding: 18px 18px 14px; }
+  .kji-banner-sub { font-size: 13px !important; }
+  .kji-banner-main { font-size: 17px !important; }
+  .kji-banner-main strong { font-size: 20px !important; }
+  .kji-card-lung { display: none; }
+  .kji-card-body { flex-direction: column; padding: 20px 18px 24px; gap: 18px; }
+  .kji-card-photo-wrap { width: 100%; margin-right: 0; text-align: center; }
+  .kji-card-photo { width: 160px !important; margin: 0 auto; }
+  .kji-doctor-name { font-size: 24px !important; }
+  .kji-yakryeok-list li { font-size: 14px !important; }
 }
 </style>
-<!-- /의료진 약력 텍스트 -->
+<!-- /의료진 프로필 카드 -->
 
 <!-- Real Patient Reviews Callout -->
 <div class="kji-review-callout">
