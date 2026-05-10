@@ -303,13 +303,6 @@ a {
   display: block !important;
   text-decoration: none !important;
 }
-.head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content a[href*="blog"],
-.mobile-menu-group a[href*="blog"] {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  font-weight: 600 !important;
-  font-size: 13px !important;
-  letter-spacing: 0.5px !important;
-}
 
 .head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content a:hover,
 .head_bar_2 .head_cont .nav .gnb .dropdown .dropdown-content a:focus {
