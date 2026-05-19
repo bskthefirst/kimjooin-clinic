@@ -109,6 +109,32 @@ a {
   font-size: 19px !important;
 }
 
+/* ---- Blog-style article body (reusable on CMS pages) ---- */
+.blog-article-body { line-height: 1.9; font-size: 16px; }
+.blog-article-body h2 { font-size: 24px; font-weight: 700; margin: 36px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #e8f0d8; line-height: 1.4 !important; }
+.blog-article-body h3 { font-size: 19px; font-weight: 600; margin: 26px 0 12px; line-height: 1.4 !important; }
+.blog-article-body p { margin-bottom: 18px !important; line-height: 1.9 !important; }
+.blog-article-body ul, .blog-article-body ol { margin: 0 0 18px 22px; }
+.blog-article-body li { margin-bottom: 10px !important; line-height: 1.8 !important; }
+.blog-article-body table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px; }
+.blog-article-body th, .blog-article-body td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #e5e7eb; }
+.blog-article-body th { background: #f9fafb; font-weight: 600; }
+.blog-article-body blockquote { border-left: 3px solid #83a731; background: #f8faf2; padding: 14px 18px; margin: 18px 0; border-radius: 0 8px 8px 0; line-height: 1.85 !important; }
+.blog-article-body a { color: #2563eb; }
+.geomsa-card { background:#f8faf2; border-left:3px solid #83a731; border-radius:0 8px 8px 0; padding:16px 20px; margin:18px 0 26px; }
+.geomsa-card ul { margin: 0 0 0 16px !important; padding: 0; }
+.geomsa-card li { margin-bottom: 10px !important; line-height: 1.8 !important; font-family: 'JejuMyeongjo', 'Noto Serif KR', serif !important; }
+.geomsa-card li:last-child { margin-bottom: 0 !important; }
+.geomsa-tag { display:inline-block; background:#83a731; color:#fff; font-size:12px; font-weight:700; padding:3px 10px; border-radius:4px; margin-bottom:12px; letter-spacing:0.3px; }
+.geomsa-hero { width: 100%; max-height: 320px; object-fit: cover; border-radius: 10px; margin-bottom: 24px; }
+@media (max-width: 640px) {
+  .blog-article-body { font-size: 15px; }
+  .blog-article-body h2 { font-size: 20px !important; }
+  .blog-article-body h3 { font-size: 17px !important; }
+  .blog-article-body table { font-size: 13px; }
+  .blog-article-body th, .blog-article-body td { padding: 8px 10px; }
+}
+
 /* ---- Box-sizing helpers ---- */
 
 .floating-booking,
