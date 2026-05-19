@@ -88,6 +88,27 @@ a {
   border-radius: var(--radius-sm) !important;
 }
 
+/* ---- CMS article body: larger, more readable typography ---- */
+.cms_v1.sub_contents p,
+.cms_v1.sub_contents li,
+.cms_v1.sub_contents td,
+.cms_v1.sub_contents th,
+.cms_v1.sub_contents .txt,
+.cms_v1.sub_contents .exclamation_box .txt {
+  font-size: 17px !important;
+  line-height: 1.85 !important;
+}
+.cms_v1.sub_contents h4 {
+  font-size: 22px !important;
+  margin-bottom: 14px !important;
+}
+.cms_v1.sub_contents h3 {
+  font-size: clamp(24px, 3vw, 30px) !important;
+}
+.cms_v1.sub_contents .exclamation_box strong {
+  font-size: 19px !important;
+}
+
 /* ---- Box-sizing helpers ---- */
 
 .floating-booking,
