@@ -88,6 +88,13 @@ a {
   border-radius: var(--radius-sm) !important;
 }
 
+/* ---- Fix legacy CMS skin clear:both that pushed article below SNB ---- */
+#sub_contents .cms_skin,
+#sub_contents .cms_skin .cms_box01,
+#sub_contents .cms_skin .cms_txt01 {
+  clear: none !important;
+}
+
 /* ---- Blog-style article body (reusable on CMS pages) ---- */
 /* All selectors scoped under .cms_v1.sub_contents to win specificity against
    legacy CMS skin rules. */
