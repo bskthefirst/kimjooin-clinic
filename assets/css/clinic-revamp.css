@@ -1931,6 +1931,12 @@ h2.hero-main-copy,
    SCROLL REVEAL ANIMATION
    ============================================================ */
 
+/* Blog post body: always visible regardless of any reveal state. */
+.blog-article-body {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 .reveal-up {
   opacity: 0;
   transform: translateY(22px);

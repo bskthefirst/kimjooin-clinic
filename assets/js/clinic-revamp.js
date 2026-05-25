@@ -364,7 +364,7 @@
   function initMotionEffects() {
     var targets = document.querySelectorAll(
       '.award-highlight, .contents_area_2, .contents_area_3, .contents_area_4, ' +
-      '#sub_contents .sub_head, #sub_contents .sub_con_area, .news'
+      '#sub_contents .sub_head, .news'
     );
     var i = 0;
 
@@ -399,12 +399,25 @@
           }
         });
       },
-      { threshold: 0.16, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0, rootMargin: '0px 0px -5% 0px' }
     );
 
     for (i = 0; i < targets.length; i++) {
       observer.observe(targets[i]);
     }
+
+    // Failsafe: reveal anything already in/above the viewport, so content can
+    // never stay stuck at opacity:0 if the observer doesn't fire on load.
+    function revealInView() {
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      for (var j = 0; j < targets.length; j++) {
+        if (targets[j].getBoundingClientRect().top < vh) {
+          targets[j].classList.add('is-visible');
+        }
+      }
+    }
+    revealInView();
+    window.addEventListener('load', revealInView);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
