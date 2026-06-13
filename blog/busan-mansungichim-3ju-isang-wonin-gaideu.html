@@ -73,9 +73,162 @@
 .blog-article-body h2 { line-height: 1.4 !important; }
 .blog-article-body h3 { line-height: 1.4 !important; }
 .blog-article-body blockquote { line-height: 1.85 !important; }
-.cause-card { background: #f8faf2; border-left: 4px solid #83a731; padding: 18px 22px; margin: 18px 0; border-radius: 0 8px 8px 0; }
-.cause-card h3 { margin-top: 4px !important; color: #1a2e44 !important; }
-.cause-card .check-this { margin-top: 10px; font-size: 14px; color: #555; }
+/* Hero image */
+.hero-img { box-shadow: 0 8px 28px rgba(0,0,0,0.10) !important; border-radius: 12px !important; }
+
+/* 핵심 요약 box */
+.summary-box {
+  background: linear-gradient(135deg, #f8faf2 0%, #eef5dd 100%);
+  border-left: 5px solid #83a731;
+  padding: 24px 28px;
+  margin: 32px 0;
+  border-radius: 0 14px 14px 0;
+  box-shadow: 0 2px 12px rgba(131,167,49,0.08);
+}
+.summary-box-label {
+  display: inline-block;
+  background: #83a731;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+.summary-box p { margin: 0 !important; font-size: 16px !important; line-height: 1.85 !important; color: #1f2937 !important; }
+
+/* Cause cards — numbered & polished */
+.cause-card {
+  background: #ffffff;
+  border: 1px solid #e8edd8;
+  padding: 26px 28px 22px;
+  margin: 24px 0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+.cause-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+.cause-header {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  margin-bottom: 8px !important;
+}
+.cause-num {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, #83a731 0%, #6b8a28 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(131,167,49,0.35);
+  font-family: -apple-system, sans-serif !important;
+}
+.cause-title {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #1a2e44 !important;
+  margin: 10px 0 0 0 !important;
+  line-height: 1.4 !important;
+  flex: 1;
+  padding-bottom: 4px;
+}
+.cause-card p { margin: 0 0 12px 0 !important; line-height: 1.85 !important; }
+.cause-card .check-this {
+  background: #f8faf2 !important;
+  padding: 14px 18px !important;
+  border-radius: 10px !important;
+  margin-top: 14px !important;
+  margin-bottom: 0 !important;
+  font-size: 14.5px !important;
+  color: #1f2937 !important;
+  line-height: 1.75 !important;
+  border-left: 3px solid #b8d176;
+}
+.cause-card .check-this strong { color: #1a2e44 !important; font-weight: 700 !important; }
+
+/* Visit info section */
+.visit-card {
+  background: linear-gradient(135deg, #f8faf2 0%, #ffffff 100%);
+  border: 1.5px solid #e8edd8;
+  padding: 28px 30px;
+  border-radius: 16px;
+  margin: 32px 0 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+.visit-card-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #1a2e44 !important;
+  margin: 0 0 18px 0 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid #e8f0d8 !important;
+  line-height: 1.4 !important;
+}
+.visit-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px !important;
+  font-size: 15.5px !important;
+  line-height: 1.7 !important;
+}
+.visit-card-icon {
+  width: 22px;
+  flex-shrink: 0;
+  color: #83a731;
+  font-weight: 700;
+  font-size: 16px;
+}
+.visit-card-content { flex: 1; color: #1f2937; }
+.visit-card-content strong { color: #1a2e44; }
+.visit-card-phone {
+  display: inline-block;
+  background: #83a731;
+  color: white !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  margin-top: 6px;
+  box-shadow: 0 3px 10px rgba(131,167,49,0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.visit-card-phone:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgba(131,167,49,0.4); }
+
+/* Section headings polish */
+.blog-article-body h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  position: relative;
+  padding-left: 14px !important;
+  margin-top: 44px !important;
+}
+.blog-article-body h2::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 6px; bottom: 6px;
+  width: 5px;
+  background: linear-gradient(180deg, #83a731 0%, #b8d176 100%);
+  border-radius: 3px;
+}
+
+@media (max-width: 640px) {
+  .cause-card { padding: 20px 18px 18px; }
+  .cause-header { gap: 12px !important; }
+  .cause-num { width: 38px; height: 38px; font-size: 17px; }
+  .cause-title { font-size: 17px !important; }
+  .visit-card { padding: 22px 20px; }
+  .visit-card-title { font-size: 18px !important; }
+  .summary-box { padding: 20px 22px; }
+}
 </style>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -261,15 +414,16 @@
   <h1 style="font-size:28px;font-weight:800;line-height:1.3;margin:0 0 8px;color:#1a2e44;">만성기침 3주 이상 — 단순 감기가 아닐 수 있는 5가지 원인</h1>
   <div style="color:#888;font-size:13px;margin-bottom:24px;">2026-06-13 · 부산 서면 호흡기내과 김주인내과</div>
   <div class="blog-article-body">
-<p><img src="/blog/images/clinic-consultation-room.jpg" alt="부산 서면 김주인내과 진료실 — 만성기침 호흡기내과 진료" width="100%" height="auto" style="max-width:700px;border-radius:8px;margin:0 auto;display:block;" loading="lazy"></p>
+<p><img class="hero-img" src="/blog/images/clinic-consultation-room.jpg" alt="부산 서면 김주인내과 진료실 — 만성기침 호흡기내과 진료" width="100%" height="auto" style="max-width:700px;margin:0 auto;display:block;" loading="lazy"></p>
 
 <p>"감기약을 먹어도 한 달째 기침이 안 떨어집니다." 호흡기내과를 찾으시는 분들이 가장 많이 하시는 말씀입니다. <strong>3주 이상 지속되는 기침은 단순 감기가 아닐 가능성이 높습니다.</strong> 의학적으로 8주 이상 지속되는 기침은 만성기침으로 분류되며, 단순 감기약만으로는 좀처럼 호전되지 않는 경우가 많습니다.</p>
 
 <p>본 글에서는 부산 서면 김주인내과에서 흔히 마주치는 <strong>만성기침의 5가지 대표적인 원인</strong>을 정리했습니다. 자신의 증상이 어디에 해당하는지 점검해 보시고, 해당된다면 호흡기 전문의의 진료를 받으시기 바랍니다.</p>
 
-<blockquote>
-<strong>요약</strong> — 만성기침의 흔한 5가지 원인은 ① 후비루(후두로 콧물이 넘어가는 증상) ② 천식 ③ 위식도역류 ④ 만성기관지염·COPD ⑤ 일부 혈압약 부작용입니다. 진단을 위해서는 폐기능검사·알레르기검사·위내시경 등 원내 검사가 필요할 수 있습니다.
-</blockquote>
+<div class="summary-box">
+<div class="summary-box-label">핵심 요약</div>
+<p>만성기침의 흔한 5가지 원인은 ① 후비루(후두로 콧물이 넘어가는 증상) ② 천식 ③ 위식도역류 ④ 만성기관지염·COPD ⑤ 일부 혈압약 부작용입니다. 진단을 위해서는 폐기능검사·알레르기검사·위내시경 등 원내 검사가 필요할 수 있습니다.</p>
+</div>
 
 <h2>그냥 감기가 아니라 만성기침인 이유</h2>
 
@@ -289,31 +443,46 @@
 <h2>만성기침의 5가지 대표적인 원인</h2>
 
 <div class="cause-card">
-<h3>1. 후비루 증후군 — 가장 흔한 원인</h3>
+<div class="cause-header">
+<div class="cause-num">1</div>
+<h3 class="cause-title">후비루 증후군 — 가장 흔한 원인</h3>
+</div>
 <p>코나 부비동의 분비물이 목 뒤로 넘어가면서 자극을 일으켜 발생하는 기침입니다. 만성기침 환자의 상당수가 이 원인에 해당합니다. 환절기·알레르기 비염·축농증을 앓고 계신 분에게 흔합니다.</p>
 <p class="check-this"><strong>이런 분이시라면 의심:</strong> 목에 무언가 걸린 느낌이 자주 들거나, 새벽·아침에 기침과 가래가 심하거나, 코막힘·콧물이 동반되는 경우. <a class="rn-link" href="/Module/CMS/CMS_Srno_39856.html">MAST 108종 알레르기검사로 원인 항원을 확인</a>하면 회피·치료 방향이 결정됩니다.</p>
 </div>
 
 <div class="cause-card">
-<h3>2. 천식 — 알레르기성·운동성 기침</h3>
+<div class="cause-header">
+<div class="cause-num">2</div>
+<h3 class="cause-title">천식 — 알레르기성·운동성 기침</h3>
+</div>
 <p>기관지가 좁아지면서 발생하는 기침으로, 야간이나 새벽·운동 시·찬 공기 노출 시 심해지는 특징이 있습니다. 천명음(쌕쌕거림)이나 가슴 답답함이 동반되기도 하지만, 기침만 있는 <strong>"기침형 천식"</strong>도 적지 않습니다.</p>
 <p class="check-this"><strong>이런 분이시라면 의심:</strong> 운동 후 또는 찬 공기에 노출되면 기침이 심해지는 경우, 잠들 무렵·새벽에 기침으로 깨는 경우. 정확한 진단을 위해 <a class="rn-link" href="/Module/CMS/CMS_Srno_39855.html">폐기능검사(PFT)가 필요</a>합니다.</p>
 </div>
 
 <div class="cause-card">
-<h3>3. 위식도역류 — 위산이 일으키는 기침</h3>
+<div class="cause-header">
+<div class="cause-num">3</div>
+<h3 class="cause-title">위식도역류 — 위산이 일으키는 기침</h3>
+</div>
 <p>위산이 식도로 역류하면서 후두·인두를 자극해 기침을 유발합니다. 소화기 증상 없이 기침만 나타나는 경우도 있어 놓치기 쉽습니다.</p>
 <p class="check-this"><strong>이런 분이시라면 의심:</strong> 식사 후 또는 누웠을 때 기침이 심해지거나, 신물·속쓰림·목이 칼칼한 증상이 동반되는 경우. <a class="rn-link" href="/Module/CMS/CMS_Srno_39858.html">위내시경 검사</a>로 역류성 식도염 등을 확인할 수 있습니다.</p>
 </div>
 
 <div class="cause-card">
-<h3>4. 만성기관지염·COPD — 흡연자에게 흔한 원인</h3>
+<div class="cause-header">
+<div class="cause-num">4</div>
+<h3 class="cause-title">만성기관지염·COPD — 흡연자에게 흔한 원인</h3>
+</div>
 <p>오랜 흡연으로 기관지에 만성 염증이 생긴 상태로, 가래를 동반한 기침이 수개월 이상 지속됩니다. 진행되면 만성폐쇄성폐질환(COPD)으로 발전하여 호흡곤란을 동반하게 됩니다.</p>
 <p class="check-this"><strong>이런 분이시라면 의심:</strong> 흡연력 10년 이상이신 분, 아침에 가래와 함께 기침이 심한 경우, 계단을 오를 때 숨이 차는 경우. 조기 진단이 매우 중요하며 <a class="rn-link" href="/Module/CMS/CMS_Srno_39855.html">폐기능검사</a>로 확인합니다.</p>
 </div>
 
 <div class="cause-card">
-<h3>5. 약물 부작용 — 의외로 흔한 원인</h3>
+<div class="cause-header">
+<div class="cause-num">5</div>
+<h3 class="cause-title">약물 부작용 — 의외로 흔한 원인</h3>
+</div>
 <p>고혈압 치료제 중 일부 계열(ACE 억제제)은 부작용으로 마른기침을 유발할 수 있습니다. 약을 끊거나 다른 계열로 바꾸면 호전되는 경우가 많지만, 임의로 중단하지 마시고 진료 시 반드시 복용 중인 약을 알려주십시오.</p>
 <p class="check-this"><strong>이런 분이시라면 의심:</strong> 혈압약을 새로 시작한 이후 마른기침이 생긴 경우. 진료 시 복용 약물 정보를 알려주시면 원인 감별에 큰 도움이 됩니다.</p>
 </div>
@@ -339,20 +508,39 @@
 
 <h2>오시는 길 · 진료시간</h2>
 
-<p><img src="/blog/images/clinic-entrance-door.jpg" alt="부산 서면 김주인내과 입구 — 호흡기내과 명의 진료" width="100%" height="auto" style="max-width:700px;border-radius:8px;margin:18px auto;display:block;" loading="lazy"></p>
+<p><img class="hero-img" src="/blog/images/clinic-entrance-door.jpg" alt="부산 서면 김주인내과 입구 — 호흡기내과 명의 진료" width="100%" height="auto" style="max-width:700px;margin:18px auto;display:block;" loading="lazy"></p>
 
-<p><strong>김주인내과</strong><br>
-부산광역시 부산진구 서면로 64 (부전동, 청석빌딩) 8층<br>
-<strong>서면역 7번 출구 도보 5분</strong><br>
-<a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기</a></p>
+<div class="visit-card">
+  <div class="visit-card-title">김주인내과</div>
 
-<ul>
-<li>평일: 오전 9시 15분 ~ 오후 6시 15분 (점심시간 12:50~13:50)</li>
-<li><strong>토요일: 오전 9시 15분 ~ 오후 2시 (점심시간 없이 진료)</strong></li>
-<li>일요일·공휴일 휴진</li>
-<li>전화: <strong>051-802-7550</strong> / 051-802-7552</li>
-<li>예약 없이 진료시간 내 방문 가능</li>
-</ul>
+  <div class="visit-card-row">
+    <div class="visit-card-icon">📍</div>
+    <div class="visit-card-content">
+      부산광역시 부산진구 서면로 64 (부전동, 청석빌딩) 8층<br>
+      <strong>서면역 7번 출구 도보 5분</strong> · <a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer" style="color:#2563eb;">네이버 지도</a>
+    </div>
+  </div>
+
+  <div class="visit-card-row">
+    <div class="visit-card-icon">🕐</div>
+    <div class="visit-card-content">
+      평일 <strong>오전 9시 15분 ~ 오후 6시 15분</strong> (점심 12:50~13:50)<br>
+      토요일 <strong>오전 9시 15분 ~ 오후 2시</strong> (점심시간 없이 진료)<br>
+      <span style="color:#888;font-size:14px;">일요일·공휴일 휴진</span>
+    </div>
+  </div>
+
+  <div class="visit-card-row">
+    <div class="visit-card-icon">✓</div>
+    <div class="visit-card-content">
+      <strong>예약 없이 진료시간 내 방문 가능</strong> · 위내시경·종합검진은 사전 예약 권장
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:20px;">
+    <a class="visit-card-phone" href="tel:051-802-7550">☎ 051-802-7550 전화 예약</a>
+  </div>
+</div>
 
 <hr>
 <h3 style="font-size:18px;font-weight:700;margin:24px 0 12px;">자주 묻는 질문</h3>
