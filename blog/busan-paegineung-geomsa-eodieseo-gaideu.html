@@ -165,9 +165,90 @@
   border-top: 1px dashed #e5e7eb;
 }
 .panel-card-meaning strong { color: #5b7a1e !important; font-weight: 700; }
+/* Step row — 3 numbered tiles */
+.step-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0;
+}
+.step-tile {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf2 100%);
+  border: 1.5px solid #d3e0a8;
+  border-radius: 14px;
+  padding: 20px 16px 18px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(131,167,49,0.08);
+  position: relative;
+}
+.step-num-circle {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, #83a731 0%, #6b8a28 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 900;
+  font-family: -apple-system, sans-serif !important;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(131,167,49,0.32);
+}
+.step-title {
+  font-size: 15.5px !important;
+  font-weight: 800 !important;
+  color: #1a2e44 !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+.step-sub {
+  font-size: 13px !important;
+  color: #4b5563 !important;
+  line-height: 1.5 !important;
+  margin: 4px 0 0 0 !important;
+  font-family: -apple-system, 'Hiragino Sans', sans-serif !important;
+}
+
+/* Compare row — 3 tiles (competitor vs us) */
+.compare-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+}
+.compare-tile {
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+.compare-tile.win {
+  background: linear-gradient(135deg, #83a731 0%, #5b7a1e 100%);
+  border-color: #5b7a1e;
+  box-shadow: 0 6px 18px rgba(131,167,49,0.25);
+}
+.compare-tile-label {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #9ca3af !important;
+  margin: 0 0 6px 0 !important;
+  letter-spacing: 0.3px;
+  font-family: -apple-system, sans-serif !important;
+}
+.compare-tile.win .compare-tile-label { color: #e8f0d8 !important; }
+.compare-tile-value {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #1a2e44 !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+.compare-tile.win .compare-tile-value { color: #ffffff !important; }
+
 @media (max-width: 640px) {
   .check-grid { grid-template-columns: 1fr; gap: 10px; }
   .panel-grid { grid-template-columns: 1fr; }
+  .step-row { grid-template-columns: 1fr; gap: 10px; }
+  .compare-row { grid-template-columns: 1fr; gap: 8px; }
 }
 </style>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -236,34 +317,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "부산에서 폐기능검사를 어디서 받아야 하나요?",
+      "name": "부산에서 폐기능검사 어디서 받아야 하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "폐기능검사는 호흡기내과에서 받으시는 것이 가장 정확합니다. 동네 일반 내과는 장비를 갖춘 곳이 드물고, 대학병원은 대기가 깁니다. 김주인내과는 인제대학교 부산백병원 내과 14년 교수 경력의 김주인 원장이 직접 진료하며 폐기능검사를 원내에서 시행합니다. 부산 서면역 7번 출구 도보 5분 — 051-802-7550."
+        "text": "호흡기내과에서 받으시는 것이 가장 정확합니다. 김주인내과는 부산백병원 14년 교수 경력의 김주인 원장이 진료하며 PFT를 원내 직접 시행합니다. 서면역 7번 출구 도보 5분 — 051-802-7550."
       }
     },
     {
       "@type": "Question",
-      "name": "폐기능검사는 어떤 분께 권장되나요?",
+      "name": "폐기능검사는 아픈가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "3주 이상 지속되는 만성기침, 가벼운 운동에도 숨이 차는 경우, 천식·COPD 진단·관리가 필요한 분, 흡연력이 길거나 가족력이 있는 분께 권장됩니다. 또한 알레르기성 비염·천식 의심 시, 코로나 후유증으로 호흡기 증상이 지속되는 경우에도 PFT가 도움이 됩니다."
+        "text": "전혀 아프지 않습니다. 마우스피스로 호흡하는 약 10~15분 검사이며, 침습적 절차나 주사가 없습니다. 검사 후 바로 일상 활동 가능합니다."
       }
     },
     {
       "@type": "Question",
-      "name": "폐기능검사는 어떻게 진행되나요? 아픈가요?",
+      "name": "결과는 언제 나오나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "전혀 아프지 않습니다. 마우스피스를 입에 물고 의료진의 안내에 따라 숨을 크게 들이마시고 세게 내쉬는 검사로, 약 10~15분이면 끝납니다. 침습적 절차나 주사가 없으며, 검사 후 바로 일상 활동이 가능합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "폐기능검사로 어떤 질환을 알 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "천식, 만성폐쇄성폐질환(COPD), 기침형 천식, 기관지확장증, 폐섬유화 등 호흡기 질환을 진단·감별할 수 있습니다. 또한 진단 후 치료 효과 평가와 경과 관찰에도 핵심적인 지표가 됩니다."
+        "text": "당일 즉시 출력되며, 부산백병원 14년 교수 출신 원장이 그 자리에서 해석해 드립니다. 천식·COPD 확진 시 약 처방·관리 계획까지 한 번에 결정됩니다."
       }
     },
     {
@@ -271,15 +344,15 @@
       "name": "검사 전 준비사항이 있나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "특별한 금식이나 준비는 필요 없습니다. 다만 검사 4시간 전에는 흡연을 피하시고, 천식 흡입제·기관지확장제 등 호흡기 약물을 복용 중이라면 사전 진료 시 알려주십시오. 약물의 효과를 정확히 평가하기 위해 일시 중단이 필요할 수 있습니다."
+        "text": "금식 불필요. 검사 4시간 전부터 금연해 주세요. 천식 흡입제·기관지확장제 복용 중이시면 사전에 알려주시면 됩니다 — 일시 중단이 필요할 수 있습니다."
       }
     },
     {
       "@type": "Question",
-      "name": "왜 김주인내과에서 폐기능검사를 받아야 하나요?",
+      "name": "왜 김주인내과인가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "폐기능검사는 결과 수치보다 누가 해석하느냐가 중요합니다. 김주인내과는 인제대학교 부산백병원 내과 14년 교수 경력의 김주인 원장이 직접 결과를 해석하고 본인의 증상·흡연력·가족력과 종합하여 진단합니다. 부산일보 선정 베스트닥터로 호흡기·알레르기 분야 명의입니다. 동네 내과 환경에서 대학병원급 진단을 받으실 수 있습니다."
+        "text": "폐기능검사는 결과 해석이 핵심입니다. 부산백병원 14년 교수 출신의 김주인 원장이 증상·흡연력·가족력을 종합하여 직접 진단합니다. 부산일보 선정 베스트닥터로, 동네 내과에서 대학병원급 진단을 받으실 수 있습니다."
       }
     }
   ]
@@ -373,9 +446,7 @@
   <div class="blog-article-body">
 <p><img class="hero-img" src="/blog/images/clinic-consultation-room.jpg" alt="부산 서면 김주인내과 진료실 — 폐기능검사 안내" width="100%" height="auto" style="max-width:700px;margin:0 auto;display:block;" loading="lazy"></p>
 
-<p>"부산에서 폐기능검사는 어디서 받아야 할까요?" 만성기침·천식·COPD가 의심되거나 호흡기 증상이 반복되시는 분이 자주 검색하는 질문입니다. 정답부터 말씀드리면 — <strong>폐기능검사는 호흡기 전문의가 직접 해석하는 곳에서 받으시는 것이 가장 정확합니다.</strong></p>
-
-<p>본 글에서는 부산백병원 14년 교수 경력의 김주인 원장이 진료하는 부산 서면 김주인내과의 폐기능검사(PFT) 가이드를 정리했습니다.</p>
+<p>"부산에서 폐기능검사는 어디서 받아야 할까요?" 만성기침·천식·COPD 의심으로 자주 검색되는 질문입니다. 답은 간단합니다 — <strong>호흡기 전문의가 결과를 직접 해석하는 곳</strong>입니다.</p>
 
 <div class="credentials-strip">
   <div class="credentials-badge">
@@ -497,46 +568,27 @@
 
 </div>
 
-<h2>폐기능검사 — 3단계 안내</h2>
+<h2>검사는 어떻게 진행되나요</h2>
 
-<div class="cause-card">
-<div class="cause-header">
-<div class="cause-num">1</div>
-<h3 class="cause-title">검사 전 — 별도 준비 거의 없음</h3>
-</div>
-<ul>
-<li>금식 <strong>불필요</strong></li>
-<li>검사 <strong>4시간 전</strong>은 흡연 피하기</li>
-<li>천식 흡입제·기관지확장제는 사전 진료 시 알려주십시오 (일시 중단 필요 가능)</li>
-<li>편안한 옷차림 권장</li>
-</ul>
-</div>
-
-<div class="cause-card">
-<div class="cause-header">
-<div class="cause-num">2</div>
-<h3 class="cause-title">검사 당일 — 10~15분, 통증 없음</h3>
-</div>
-<ul>
-<li>마우스피스를 입에 물고 코마개 착용</li>
-<li>의료진 안내에 따라 <strong>크게 들이마시고 세게 내쉬기</strong> 3~5회 반복</li>
-<li>천식 감별이 필요한 경우 <strong>기관지확장제 흡입 후 재측정</strong></li>
-<li>검사 후 바로 일상 활동 가능</li>
-</ul>
+<div class="step-row">
+  <div class="step-tile">
+    <span class="step-num-circle">1</span>
+    <p class="step-title">준비 거의 없음</p>
+    <p class="step-sub">금식 불필요<br>4시간 전 금연만</p>
+  </div>
+  <div class="step-tile">
+    <span class="step-num-circle">2</span>
+    <p class="step-title">10~15분 검사</p>
+    <p class="step-sub">통증 없음<br>마우스피스 호흡</p>
+  </div>
+  <div class="step-tile">
+    <span class="step-num-circle">3</span>
+    <p class="step-title">당일 명의 해석</p>
+    <p class="step-sub">14년 교수 직접<br>약·관리 계획 즉시</p>
+  </div>
 </div>
 
-<div class="cause-card">
-<div class="cause-header">
-<div class="cause-num">3</div>
-<h3 class="cause-title">결과 해석 — 원장이 직접 설명</h3>
-</div>
-<ul>
-<li>결과는 <strong>당일 즉시 출력</strong></li>
-<li>부산백병원 14년 교수 경력의 원장이 <strong>증상·흡연력·가족력과 종합하여 해석</strong></li>
-<li>천식·COPD 확진 시 <strong>약 처방·관리 계획 즉시 수립</strong></li>
-<li>추가 검사(흉부 X선·알레르기·기관지내시경 등)도 한 자리에서 결정</li>
-</ul>
-</div>
+<p class="check-callout">천식 감별이 필요한 경우 <strong>기관지확장제 흡입 후 재측정</strong>이 진행됩니다. 흡입제 복용 중이시면 사전 진료 시 알려주십시오 — 일시 중단이 필요할 수 있습니다.</p>
 
 <div class="mid-cta-band">
   <p class="mid-cta-band-title">기침·숨참이 오래 가시나요?</p>
@@ -544,11 +596,22 @@
   <a class="mid-cta-band-phone" href="tel:051-802-7550">☎ 051-802-7550</a>
 </div>
 
-<h2>부산에서 폐기능검사, 왜 김주인내과인가요</h2>
+<h2>왜 김주인내과인가요</h2>
 
-<p><img src="/blog/images/clinic-credentials.jpg" alt="부산 서면 김주인내과 — 부산일보 선정 베스트닥터 인증" width="100%" height="auto" style="max-width:700px;border-radius:8px;margin:18px auto;display:block;" loading="lazy"></p>
-
-<p>폐기능검사는 장비도 중요하지만 <strong>결과를 보는 의료진의 경험</strong>이 더 중요합니다. 같은 수치라도 흡연력·증상·가족력을 종합하여 해석해야 정확한 진단이 가능합니다.</p>
+<div class="compare-row">
+  <div class="compare-tile">
+    <p class="compare-tile-label">동네 일반 내과</p>
+    <p class="compare-tile-value">장비 없음<br>전문의 부재</p>
+  </div>
+  <div class="compare-tile">
+    <p class="compare-tile-label">대학병원</p>
+    <p class="compare-tile-value">예약 대기 길고<br>결과 회신 늦음</p>
+  </div>
+  <div class="compare-tile win">
+    <p class="compare-tile-label">김주인내과</p>
+    <p class="compare-tile-value">당일 검사·해석<br>14년 교수 명의</p>
+  </div>
+</div>
 
 <div class="doctor-card">
   <img class="doctor-card-img" src="/blog/images/clinic-credentials.jpg" alt="김주인 원장 — 부산백병원 14년 교수 출신">
@@ -558,20 +621,12 @@
     <ul class="doctor-card-creds">
       <li>인제대학교 부산백병원 내과 <strong>교수 14년</strong></li>
       <li>부산일보 선정 <strong>베스트닥터</strong> (호흡기·알레르기)</li>
-      <li>천식·COPD·만성기침 진료 다수 경험</li>
       <li>폐기능검사·기관지내시경 <strong>원내 직접 시행</strong></li>
     </ul>
   </div>
 </div>
 
-<ul>
-<li>동네 일반 내과 대부분은 <strong>폐기능검사 장비가 없습니다</strong></li>
-<li>대학병원은 <strong>예약·대기가 길고</strong> 결과까지 시일이 걸립니다</li>
-<li>김주인내과는 <strong>당일 검사·당일 해석</strong> + 대학병원급 진단 능력</li>
-<li>천식·COPD <strong>장기 관리</strong>까지 한 자리에서 가능</li>
-</ul>
-
-<p>관련 페이지: <a class="rn-link" href="/Module/CMS/CMS_Srno_39855.html">폐기능검사 상세 안내</a> · <a class="rn-link" href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 3주 이상 5가지 원인</a> · <a class="rn-link" href="/blog/busan-hohupgi-naegwa-myeongui-chucheon-gijun.html">부산 호흡기내과 명의 추천</a></p>
+<p>관련 페이지: <a class="rn-link" href="/Module/CMS/CMS_Srno_39855.html">폐기능검사 상세</a> · <a class="rn-link" href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 5가지 원인</a> · <a class="rn-link" href="/blog/busan-hohupgi-naegwa-myeongui-chucheon-gijun.html">부산 호흡기내과 명의 추천</a></p>
 
 <h2>오시는 길 · 진료시간</h2>
 
@@ -620,29 +675,29 @@
     </div>
     <div class="faq-card-a">
       <div class="faq-card-amark">A</div>
-      <p class="faq-card-answer">폐기능검사는 <strong>호흡기내과</strong>에서 받으시는 것이 가장 정확합니다. 동네 일반 내과는 장비가 없는 곳이 많고, 대학병원은 대기가 깁니다. 김주인내과는 <strong>인제대학교 부산백병원 내과 14년 교수 경력</strong>의 김주인 원장이 진료하며 폐기능검사를 <strong>원내에서 직접 시행</strong>합니다. 부산 서면역 7번 출구 도보 5분 — <a href="tel:051-802-7550" style="color:#2563eb;font-weight:700;">051-802-7550</a>.</p>
+      <p class="faq-card-answer"><strong>호흡기내과</strong>에서 받으시는 것이 가장 정확합니다. 김주인내과는 <strong>부산백병원 14년 교수 경력</strong>의 김주인 원장이 진료하며 PFT를 원내 직접 시행합니다. 서면역 7번 출구 도보 5분 — <a href="tel:051-802-7550" style="color:#2563eb;font-weight:700;">051-802-7550</a>.</p>
     </div>
   </div>
 
   <div class="faq-card">
     <div class="faq-card-q">
       <div class="faq-card-qmark">Q</div>
-      <p class="faq-card-question">폐기능검사는 어떤 분께 권장되나요?</p>
+      <p class="faq-card-question">폐기능검사는 아픈가요?</p>
     </div>
     <div class="faq-card-a">
       <div class="faq-card-amark">A</div>
-      <p class="faq-card-answer"><strong>3주 이상 만성기침</strong>, 가벼운 운동에도 숨이 차는 경우, 천식·COPD 진단·관리가 필요한 분, <strong>흡연력이 길거나 가족력</strong>이 있는 분께 권장됩니다. 코로나 후유증으로 호흡기 증상이 안 떨어지시는 경우에도 PFT가 도움이 됩니다.</p>
+      <p class="faq-card-answer"><strong>전혀 아프지 않습니다.</strong> 마우스피스로 호흡하는 약 <strong>10~15분</strong> 검사이며, 침습적 절차나 주사가 없습니다. 검사 후 바로 일상 활동 가능합니다.</p>
     </div>
   </div>
 
   <div class="faq-card">
     <div class="faq-card-q">
       <div class="faq-card-qmark">Q</div>
-      <p class="faq-card-question">폐기능검사는 아픈가요? 어떻게 진행되나요?</p>
+      <p class="faq-card-question">결과는 언제 나오나요?</p>
     </div>
     <div class="faq-card-a">
       <div class="faq-card-amark">A</div>
-      <p class="faq-card-answer"><strong>전혀 아프지 않습니다.</strong> 마우스피스를 입에 물고 의료진 안내에 따라 숨을 크게 들이마시고 세게 내쉬는 검사로, 약 <strong>10~15분</strong>이면 끝납니다. 침습적 절차나 주사가 없으며, 검사 후 바로 일상 활동이 가능합니다.</p>
+      <p class="faq-card-answer"><strong>당일 즉시</strong> 출력되며, 부산백병원 14년 교수 출신 원장이 <strong>그 자리에서 해석</strong>해 드립니다. 천식·COPD 확진 시 약 처방·관리 계획까지 한 번에 결정됩니다.</p>
     </div>
   </div>
 
@@ -653,18 +708,18 @@
     </div>
     <div class="faq-card-a">
       <div class="faq-card-amark">A</div>
-      <p class="faq-card-answer">금식은 필요 없습니다. 다만 <strong>검사 4시간 전 흡연 금지</strong>, 천식 흡입제·기관지확장제 복용 중이라면 사전 진료 시 알려주십시오. 약물 효과 평가를 위해 <strong>일시 중단이 필요할 수 있습니다.</strong> 자세한 안내는 전화 — <a href="tel:051-802-7550" style="color:#2563eb;font-weight:700;">051-802-7550</a>.</p>
+      <p class="faq-card-answer">금식 불필요. <strong>검사 4시간 전부터 금연</strong>해 주세요. 천식 흡입제·기관지확장제 복용 중이시면 사전에 알려주시면 됩니다 — <strong>일시 중단이 필요할 수 있습니다.</strong></p>
     </div>
   </div>
 
   <div class="faq-card">
     <div class="faq-card-q">
       <div class="faq-card-qmark">Q</div>
-      <p class="faq-card-question">왜 김주인내과에서 폐기능검사를 받아야 하나요?</p>
+      <p class="faq-card-question">왜 김주인내과인가요?</p>
     </div>
     <div class="faq-card-a">
       <div class="faq-card-amark">A</div>
-      <p class="faq-card-answer">폐기능검사는 <strong>결과 수치보다 누가 해석하느냐가 중요합니다.</strong> 김주인내과는 <strong>부산백병원 14년 교수 경력</strong>의 김주인 원장이 직접 결과를 해석하고 본인의 증상·흡연력·가족력과 종합하여 진단합니다. <strong>부산일보 선정 베스트닥터</strong>로 호흡기·알레르기 분야 명의입니다. 동네 내과 환경에서 <strong>대학병원급 진단</strong>을 받으실 수 있습니다.</p>
+      <p class="faq-card-answer">폐기능검사는 <strong>결과 해석이 핵심</strong>입니다. 부산백병원 14년 교수 출신의 김주인 원장이 증상·흡연력·가족력을 종합하여 직접 진단합니다. <strong>부산일보 선정 베스트닥터</strong> — 동네 내과에서 대학병원급 진단을 받으실 수 있습니다.</p>
     </div>
   </div>
 
