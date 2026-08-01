@@ -294,6 +294,121 @@
   <p>코막힘·콧물 등 <strong>코 증상이 중심</strong>이면 이비인후과, <strong>3주 넘는 기침이나 숨참·가슴 증상</strong>이 있으면 호흡기내과가 먼저입니다. 원인이 헷갈리는 <strong>만성기침</strong>은 후비루·천식·역류 등 감별이 필요해, 호흡기내과에서 검사로 정리하는 편이 빠릅니다.</p>
 </div>
 
+<style>
+#symptom-router{border:1.5px solid #e8edd8;border-radius:18px;background:linear-gradient(135deg,#f8faf2 0%,#ffffff 100%);padding:24px 22px;margin:26px 0 30px;box-shadow:0 4px 18px rgba(0,0,0,0.06);}
+#symptom-router *{font-family:-apple-system,'Hiragino Sans','Noto Sans CJK JP','Malgun Gothic',sans-serif !important;}
+.sr-head{font-size:15px;font-weight:800;color:#5a7a1e;letter-spacing:0.2px;margin-bottom:4px;}
+.sr-prompt{font-size:19px;font-weight:800;color:#1a2e44;margin:6px 0 16px;line-height:1.4;}
+.sr-opts{display:flex;flex-direction:column;gap:10px;}
+.sr-opt{text-align:left;background:#fff;border:1.5px solid #dbe6c4;border-radius:12px;padding:15px 18px;font-size:16px;font-weight:600;color:#1f2937;cursor:pointer;transition:all .15s ease;line-height:1.45;}
+.sr-opt:hover{border-color:#83a731;background:#f4f9e8;transform:translateY(-1px);box-shadow:0 3px 10px rgba(131,167,49,.18);}
+.sr-opt::after{content:"›";float:right;color:#83a731;font-weight:800;font-size:20px;line-height:1.2;}
+.sr-result[hidden],.sr-screen[hidden]{display:none;}
+.sr-verdict{display:inline-block;background:#83a731;color:#fff;font-size:14px;font-weight:800;padding:6px 16px;border-radius:20px;margin-bottom:12px;}
+.sr-verdict.alt{background:#6b7280;}
+.sr-vtitle{font-size:21px;font-weight:800;color:#1a2e44;margin:0 0 8px;line-height:1.4;}
+.sr-vtext{font-size:15.5px;color:#374151;line-height:1.75;margin:0 0 16px;}
+.sr-review{background:#fff;border-left:4px solid #b8d176;border-radius:0 10px 10px 0;padding:13px 16px;margin:0 0 18px;}
+.sr-review p{font-size:14.5px;color:#1f2937;line-height:1.7;margin:0 0 6px;font-style:italic;}
+.sr-review span{font-size:12px;color:#94a3b8;font-weight:600;}
+.sr-cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;}
+.sr-call{flex:1;min-width:180px;text-align:center;background:#83a731;color:#fff !important;font-size:17px;font-weight:800;padding:14px 18px;border-radius:12px;text-decoration:none !important;box-shadow:0 4px 12px rgba(131,167,49,.35);}
+.sr-call:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(131,167,49,.45);}
+.sr-map{flex:1;min-width:180px;text-align:center;background:#fff;border:1.5px solid #83a731;color:#5a7a1e !important;font-size:15px;font-weight:700;padding:14px 18px;border-radius:12px;text-decoration:none !important;}
+.sr-note{font-size:13px;color:#64748b;margin:0 0 14px;line-height:1.6;}
+.sr-restart{background:none;border:none;color:#83a731;font-size:14px;font-weight:700;cursor:pointer;padding:6px 0;}
+.sr-restart:hover{text-decoration:underline;}
+@media (max-width:640px){#symptom-router{padding:20px 16px;}.sr-prompt{font-size:17px;}.sr-opt{font-size:15px;padding:14px 15px;}.sr-vtitle{font-size:19px;}}
+</style>
+<div id="symptom-router" role="group" aria-label="증상별 진료과 자가 체크">
+  <div class="sr-screen" id="sr-start">
+    <div class="sr-head">🩺 30초 자가 체크</div>
+    <p class="sr-prompt">지금 가장 신경 쓰이는 증상은?</p>
+    <div class="sr-opts">
+      <button class="sr-opt" data-go="r-cough">기침이 3주 넘게 안 멎어요</button>
+      <button class="sr-opt" data-go="r-breath">숨이 차고 쌕쌕거려요</button>
+      <button class="sr-opt" data-go="r-smoke">담배를 오래 피웠고 기침·가래가 남아요</button>
+      <button class="sr-opt" data-go="r-allergy">비염과 기침이 같이 반복돼요</button>
+      <button class="sr-opt" data-go="r-nose">콧물·코막힘·재채기가 위주예요</button>
+      <button class="sr-opt" data-go="r-acute">열·누런 가래·몸살이 함께 있어요</button>
+    </div>
+  </div>
+
+  <div class="sr-screen" id="r-cough" hidden>
+    <div class="sr-verdict">→ 호흡기내과</div>
+    <p class="sr-vtitle">3주 넘는 기침, 호흡기내과가 먼저입니다</p>
+    <p class="sr-vtext">단순 감기가 아닐 수 있습니다. 후비루·기침형 천식·위식도역류 등 원인이 다양해, 폐기능검사·흉부 X선으로 감별이 필요합니다. 김주인내과는 이 검사를 <strong>원내에서</strong> 시행합니다.</p>
+    <div class="sr-review"><p>「부산에 몇 없는 호흡기 전문 내과에요. 천식 잘 봅니다.」</p><span>네이버 영수증 확인 리뷰 · 7번째 방문</span></div>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 지금 전화</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">예약 없이 진료시간 내 방문 가능 · 부산백병원 14년 교수 명의 진료</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+
+  <div class="sr-screen" id="r-breath" hidden>
+    <div class="sr-verdict">→ 호흡기내과</div>
+    <p class="sr-vtitle">숨참·쌕쌕거림은 폐기능검사가 필요합니다</p>
+    <p class="sr-vtext">천식이나 만성폐쇄성폐질환(COPD)일 수 있어, 호흡기내과에서 폐기능검사로 확인하는 것이 좋습니다. 방치하면 악화되기 쉬운 증상입니다.</p>
+    <div class="sr-review"><p>「원장님 실력이 확실하시네요 덕분에 살만해졌습니다 감사합니다!!」</p><span>네이버 영수증 확인 리뷰 · 11번째 방문</span></div>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 지금 전화</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">예약 없이 진료시간 내 방문 가능 · 부산백병원 14년 교수 명의 진료</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+
+  <div class="sr-screen" id="r-smoke" hidden>
+    <div class="sr-verdict">→ 호흡기내과</div>
+    <p class="sr-vtitle">오래된 흡연 기침, COPD 확인이 필요합니다</p>
+    <p class="sr-vtext">흡연력이 길고 기침·가래가 습관처럼 남아 있다면 만성폐쇄성폐질환(COPD) 가능성을 봐야 합니다. 폐기능검사로 조기에 확인할 수 있고, 금연 클리닉도 함께 진행합니다.</p>
+    <div class="sr-review"><p>「부산에 몇 없는 호흡기 전문 내과에요. 천식 잘 봅니다.」</p><span>네이버 영수증 확인 리뷰 · 7번째 방문</span></div>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 지금 전화</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">예약 없이 진료시간 내 방문 가능 · 부산백병원 14년 교수 명의 진료</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+
+  <div class="sr-screen" id="r-allergy" hidden>
+    <div class="sr-verdict">→ 알레르기·호흡기</div>
+    <p class="sr-vtitle">비염과 기침이 함께라면 원인 검사부터</p>
+    <p class="sr-vtext">비염과 기침·천식은 서로 연결되는 경우가 많습니다("하나의 기도"). 알레르기 검사로 원인 항원을 확인하고, 코와 기관지를 함께 보는 것이 도움이 됩니다. MAST·피부반응검사를 원내에서 시행합니다.</p>
+    <div class="sr-review"><p>「알레르기 검사 받고 왔어요~ 검사가 복잡할 줄 알았는데 의외로 간단하고 간호사분이 쉽게 안내해 주셔서 잘 마쳤습니다.」</p><span>네이버 영수증 확인 리뷰 · 5번째 방문</span></div>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 지금 전화</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">예약 없이 진료시간 내 방문 가능 · 부산백병원 14년 교수 명의 진료</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+
+  <div class="sr-screen" id="r-nose" hidden>
+    <div class="sr-verdict alt">이비인후과 우선</div>
+    <p class="sr-vtitle">코 증상만 있다면 이비인후과가 먼저일 수 있어요</p>
+    <p class="sr-vtext">증상이 코에만 몰려 있다면 이비인후과 진료가 우선입니다. 다만 <strong>계절마다 반복되는 알레르기 비염</strong>이거나 기침이 같이 온다면, 원인 항원 검사는 김주인내과(알레르기)에서 받으실 수 있습니다.</p>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 문의</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">알레르기 비염·기침이 반복되면 원인 검사를 권합니다</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+
+  <div class="sr-screen" id="r-acute" hidden>
+    <div class="sr-verdict alt">내과 (급성)</div>
+    <p class="sr-vtitle">열·누런 가래·몸살은 급성 감염부터 확인</p>
+    <p class="sr-vtext">고열과 누런 가래, 몸살이 함께라면 급성 기관지염·폐렴 등 감염을 먼저 확인해야 합니다. 흉부 X선으로 폐렴 여부를 감별합니다. 김주인내과도 <strong>당일 진료</strong> 가능합니다.</p>
+    <div class="sr-cta"><a class="sr-call" href="tel:051-802-7550">☎ 051-802-7550 지금 전화</a><a class="sr-map" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 서면역 7번출구 5분</a></div>
+    <p class="sr-note">예약 없이 진료시간 내 방문 가능 · 서면역 7번출구 도보 5분</p>
+    <button class="sr-restart" data-go="sr-start">← 다른 증상 선택</button>
+  </div>
+</div>
+<script>
+(function(){
+  var root=document.getElementById('symptom-router');
+  if(!root)return;
+  function show(id){
+    root.querySelectorAll('.sr-screen').forEach(function(s){s.hidden=(s.id!==id);});
+    if(id!=='sr-start'){root.scrollIntoView({behavior:'smooth',block:'start'});}
+    if(typeof gtag==='function'){try{gtag('event','symptom_router',{'result':id});}catch(e){}}
+  }
+  root.addEventListener('click',function(e){
+    var b=e.target.closest('[data-go]');
+    if(!b)return;
+    show(b.getAttribute('data-go'));
+  });
+})();
+</script>
+
 <p>"기침이 안 멎는데 이비인후과를 가야 하나, 내과를 가야 하나?" 진료실에서 가장 자주 듣는 질문 중 하나입니다. 두 과는 보는 영역이 겹치는 부분이 있어 헷갈리기 쉽습니다. 아래 기준으로 나누면 대부분 정리가 됩니다.</p>
 
 <h2>이비인후과와 내과(호흡기), 무엇이 다른가</h2>
