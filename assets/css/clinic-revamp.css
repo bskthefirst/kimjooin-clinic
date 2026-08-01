@@ -3370,3 +3370,57 @@ h2.hero-main-copy,
     font-size: 20px !important;
   }
 }
+
+/* Visit info card — shared definition (was previously only inline on some pages) */
+.visit-card {
+  background: linear-gradient(135deg, #f8faf2 0%, #ffffff 100%);
+  border: 1.5px solid #e8edd8;
+  padding: 28px 30px;
+  border-radius: 16px;
+  margin: 32px 0 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+.visit-card-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #1a2e44 !important;
+  margin: 0 0 18px 0 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid #e8f0d8 !important;
+  line-height: 1.4 !important;
+}
+.visit-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px !important;
+  font-size: 15.5px !important;
+  line-height: 1.7 !important;
+}
+.visit-card-icon {
+  width: 22px;
+  flex-shrink: 0;
+  color: #83a731;
+  font-weight: 700;
+  font-size: 16px;
+}
+.visit-card-content { flex: 1; color: #1f2937; }
+.visit-card-content strong { color: #1a2e44; }
+.visit-card-phone {
+  display: inline-block;
+  background: #83a731;
+  color: white !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  margin-top: 6px;
+  box-shadow: 0 3px 10px rgba(131,167,49,0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.visit-card-phone:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgba(131,167,49,0.4); }
+@media (max-width: 640px) {
+  .visit-card { padding: 22px 20px; }
+  .visit-card-title { font-size: 18px !important; }
+}
