@@ -3485,3 +3485,83 @@ h2.hero-main-copy,
   .summary-box { padding: 18px 18px !important; }
   .summary-box p { font-size: 15.5px !important; line-height: 1.75 !important; }
 }
+
+/* ============================================================
+   Article beautify pass — 2026-08-09
+   Universal typography polish for every blog post via the shared
+   stylesheet. Blog posts have NO .cms_v1.sub_contents wrapper and
+   style .blog-article-body unprefixed inline, so these rules are
+   unprefixed and rely on higher specificity (:first-of-type,
+   :hover, ::before pseudo-elements) to win over the inline <style>.
+   Per-page component classes (.check-item / .compare-tbl) are left
+   untouched; only generic article elements are enhanced.
+   ============================================================ */
+
+/* Lead paragraph — larger, calmer opening line.
+   (0,2,1) beats inline .blog-article-body p (0,1,1). */
+.blog-article-body > p:first-of-type {
+  font-size: 18.5px !important;
+  line-height: 1.85 !important;
+  color: #374151 !important;
+}
+
+/* Section headings — brand accent marks (pseudo-elements, no inline rival) */
+.blog-article-body h2::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background: #83a731;
+  vertical-align: middle;
+  margin: -2px 12px 0 0;
+}
+.blog-article-body h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #83a731;
+  vertical-align: middle;
+  margin: -2px 9px 0 0;
+}
+/* keep the FAQ / related-links helper headings clean (no marker) */
+.blog-article-body h3[style]::before,
+.faq-list h3::before { display: none !important; }
+
+/* Tables — rounded, framed, zebra rows */
+.blog-article-body table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid #e8ecf1 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+}
+.blog-article-body table th {
+  background: #eef3e0 !important;
+}
+.blog-article-body table tbody tr:nth-child(even) td {
+  background: #fafbf5 !important;
+}
+.blog-article-body table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* Article images — soft rounding */
+.blog-article-body img {
+  border-radius: 10px !important;
+}
+
+/* Links — refined underline + hover ((0,2,1) beats inline (0,1,1)) */
+.blog-article-body a:hover {
+  color: #1a2e44 !important;
+  text-decoration-color: #1a2e44 !important;
+  text-underline-offset: 3px !important;
+}
+
+@media (max-width: 640px) {
+  .blog-article-body > p:first-of-type { font-size: 16px !important; line-height: 1.75 !important; }
+  .blog-article-body h2::before { width: 16px; height: 3px; margin-right: 9px; }
+}
