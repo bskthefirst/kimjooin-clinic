@@ -472,6 +472,43 @@
         });
       }
     }
+
+    // Mobile horizontal-scroll top nav — one-tap navigation, replaces hamburger.
+    // Built from the existing .mobile-menu-nav links so no HTML edits are needed.
+    (function buildMobileTopnav() {
+      if (document.querySelector('.mobile-topnav')) return;
+      var src = document.querySelector('.mobile-menu-nav');
+      var header = document.querySelector('.header');
+      if (!src || !header || !header.parentNode) return;
+      var anchors = src.querySelectorAll('a');
+      if (!anchors.length) return;
+      var strip = document.createElement('nav');
+      strip.className = 'mobile-topnav';
+      strip.setAttribute('aria-label', '빠른 메뉴');
+      var here = location.pathname.replace(/\/index\.html$/, '/');
+      for (var i = 0; i < anchors.length; i++) {
+        var a = anchors[i];
+        var label = (a.textContent || '').trim();
+        if (!label) continue;
+        label = label.replace('초음파검사(심장.복부.갑상선)', '초음파검사');
+        var link = document.createElement('a');
+        link.href = a.getAttribute('href');
+        if (a.target) link.target = a.target;
+        if (a.rel) link.rel = a.rel;
+        link.textContent = label;
+        try {
+          var lp = new URL(link.href, location.origin).pathname.replace(/\/index\.html$/, '/');
+          if (lp === here) link.className = 'current';
+        } catch (e) {}
+        strip.appendChild(link);
+      }
+      header.parentNode.insertBefore(strip, header.nextSibling);
+      document.body.classList.add('has-mobile-topnav');
+      var cur = strip.querySelector('a.current');
+      if (cur && cur.scrollIntoView) {
+        try { cur.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {}
+      }
+    })();
   });
   // FAQ accordion
   document.addEventListener('DOMContentLoaded', function () {

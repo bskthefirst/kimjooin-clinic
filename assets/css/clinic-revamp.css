@@ -2477,6 +2477,47 @@ h2.hero-main-copy,
   color: #83a731 !important;
 }
 
+/* Mobile horizontal-scroll top nav (replaces hamburger; built by clinic-revamp.js) */
+.mobile-topnav { display: none; }
+@media (max-width: 768px) {
+  body.has-mobile-topnav .hamburger-btn { display: none !important; }
+  .mobile-topnav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    background: #ffffff;
+    border-bottom: 1px solid #e6ebd8;
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 9000;
+    scrollbar-width: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .mobile-topnav::-webkit-scrollbar { display: none; }
+  .mobile-topnav a {
+    flex: 0 0 auto;
+    font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2e44 !important;
+    background: #f4f7ec;
+    border: 1px solid #e0e8cf;
+    border-radius: 20px;
+    padding: 9px 16px;
+    line-height: 1;
+    text-decoration: none !important;
+  }
+  .mobile-topnav a.current {
+    background: #83a731;
+    color: #ffffff !important;
+    border-color: #83a731;
+  }
+}
+
 /* ============================================================
    RESPONSIVE — max-width: 768px (mobile)
    ============================================================ */
