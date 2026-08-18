@@ -364,7 +364,7 @@
   function initMotionEffects() {
     var targets = document.querySelectorAll(
       '.award-highlight, .contents_area_2, .contents_area_3, .contents_area_4, ' +
-      '#sub_contents .sub_head, .news'
+      '#sub_contents .sub_head, .news, .tp .reveal'
     );
     var i = 0;
 
@@ -418,6 +418,16 @@
     }
     revealInView();
     window.addEventListener('load', revealInView);
+
+    // Toss posts (.tp): force-reveal after a short delay so crawlers/idle users
+    // never see hidden content, even below the fold. Scoped to .tp so legacy
+    // pages keep their existing scroll behavior.
+    setTimeout(function () {
+      var tps = document.querySelectorAll('.tp .reveal');
+      for (var k = 0; k < tps.length; k++) {
+        tps[k].classList.add('is-visible');
+      }
+    }, 2600);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
