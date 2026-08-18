@@ -3708,6 +3708,10 @@ h2.hero-main-copy,
   box-shadow: 0 10px 26px rgba(131,167,49,.34); transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
 .tp .tp-cta:hover { transform: translateY(-2px); background: var(--navy); box-shadow: 0 14px 32px rgba(22,38,61,.28); }
 .tp .tp-cta-note { display:block; color: var(--muted); font-size: 14px; margin-top: 14px; }
+/* navy Naver-map pill */
+.tp .tp-cta-navy { background: #1a2e44 !important; box-shadow: 0 10px 26px rgba(26,46,68,.30) !important; }
+.tp .tp-cta-navy:hover { background: #10202f !important; box-shadow: 0 14px 32px rgba(16,32,47,.35) !important; }
+.tp .tp-cta-row { margin-top: 14px; }
 
 /* section headings */
 .tp .tp-kicker { color: var(--gd); font-weight: 700; font-size: 15px; letter-spacing: .04em; margin: 0 0 14px; }
