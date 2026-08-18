@@ -2483,19 +2483,19 @@ h2.hero-main-copy,
   body.has-mobile-topnav .hamburger-btn { display: none !important; }
   .mobile-topnav {
     display: flex;
-    gap: 8px;
+    gap: 9px;
     align-items: center;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
-    background: #ffffff;
-    border-bottom: 1px solid #e6ebd8;
-    padding: 10px 12px;
+    background: linear-gradient(180deg, #86aa33 0%, #78992a 100%);
+    border-bottom: none;
+    padding: 13px 14px 15px;
     position: sticky;
     top: 0;
     z-index: 9000;
     scrollbar-width: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 6px 14px rgba(58,78,20,0.18);
   }
   .mobile-topnav::-webkit-scrollbar { display: none; }
   .mobile-topnav a {
@@ -2503,18 +2503,21 @@ h2.hero-main-copy,
     font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important;
     font-size: 15px;
     font-weight: 700;
-    color: #1a2e44 !important;
-    background: #f4f7ec;
-    border: 1px solid #e0e8cf;
-    border-radius: 20px;
-    padding: 9px 16px;
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.45);
+    border-radius: 22px;
+    padding: 10px 18px;
     line-height: 1;
     text-decoration: none !important;
+    transition: background .15s ease;
   }
   .mobile-topnav a.current {
-    background: #83a731;
-    color: #ffffff !important;
-    border-color: #83a731;
+    background: #ffffff;
+    color: #5f7d24 !important;
+    border-color: #ffffff;
+    font-weight: 800;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
   }
 }
 
