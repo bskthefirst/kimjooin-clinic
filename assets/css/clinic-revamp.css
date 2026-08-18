@@ -3575,10 +3575,11 @@ h2.hero-main-copy,
   margin: 36px 0 !important;
   box-shadow: 0 8px 30px rgba(27, 46, 75, 0.07) !important;
 }
-/* one consistent font across the whole box — serif fallback keeps Latin/digits from switching to sans */
+/* match the site's exact global font stack so the box renders identically to the rest of the page
+   (JejuMyeongjo carries Hangul + Latin + digits; later fallbacks only cover glyphs Jeju lacks, e.g. ✓) */
 .cms_v1.sub_contents .symptom-router,
 .cms_v1.sub_contents .symptom-router * {
-  font-family: var(--font-display) !important;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-label {
   display: inline-block !important;
