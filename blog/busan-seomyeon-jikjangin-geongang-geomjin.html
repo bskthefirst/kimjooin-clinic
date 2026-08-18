@@ -5,6 +5,7 @@
 	<meta name="description" content="부산 서면 직장인을 위한 건강검진 가이드. 서면역 도보 5분, 토요일 점심시간 없이 진료, 원내 원스톱 검사. 바쁜 직장인이 미루지 않고 받는 법 — 김주인내과.">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>document.documentElement.className += ' tp-anim';</script>
 	<link rel="stylesheet" type="text/css" href="/assets/css/clinic-revamp.css?v=20260817d" />
 	<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/JejuMyeongjo.woff2" crossorigin>
 	<script type="text/javascript" src="/assets/js/clinic-revamp.js?v=20260525" defer></script>
@@ -92,7 +93,7 @@
 .tp .tp-trust img { width: 220px; max-width: 44vw; border-radius: 16px; flex-shrink:0; }
 .tp .tp-trust .tp-trust-copy { flex:1; min-width: 260px; }
 .tp .tp-trust .tp-kicker { color: #a8d24e; }
-.tp .tp-trust h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 800; line-height: 1.32; margin: 0 0 16px; color:#fff; letter-spacing:-.01em; }
+.tp .tp-trust h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 800; line-height: 1.32; margin: 0 0 16px; color:#ffffff !important; letter-spacing:-.01em; }
 .tp .tp-trust ul { list-style: none; margin: 0; padding: 0; }
 .tp .tp-trust li { position: relative; padding-left: 28px; margin-bottom: 12px; font-size: clamp(15.5px,2.1vw,18px);
   line-height: 1.6; color: #dbe3ec; }
@@ -127,10 +128,12 @@
 .tp .tp-related a { color: var(--gd); font-weight: 700; text-decoration: none; }
 .tp .tp-related li { margin-bottom: 12px; font-size: 17px; }
 
-/* reveal animation */
-.tp .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
-.tp .reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .tp .reveal { opacity:1; transform:none; transition:none; } }
+/* reveal animation — progressive enhancement: content is VISIBLE by default (SEO/crawler-safe),
+   hidden-then-revealed only when JS adds .tp-anim to <html>. Nothing ever stays hidden without JS. */
+.tp .reveal { transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+html.tp-anim .tp .reveal { opacity: 0; transform: translateY(26px); }
+html.tp-anim .tp .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { html.tp-anim .tp .reveal { opacity:1; transform:none; transition:none; } }
 
 @media (max-width: 640px) {
   .tp .tp-section { padding: 56px 20px; }
@@ -469,11 +472,14 @@
 <script>
 (function(){
   var els = document.querySelectorAll('.tp .reveal');
-  if (!('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
+  function showAll(){ for (var i=0;i<els.length;i++){ els[i].classList.add('in'); } }
+  if (!('IntersectionObserver' in window)) { showAll(); return; }
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   els.forEach(function(e){ io.observe(e); });
+  // failsafe: never leave content hidden (crawlers, idle users, edge cases)
+  setTimeout(showAll, 2500);
 })();
 </script>
 <script src="/assets/js/ga4-config.js?v=20260409"></script>
