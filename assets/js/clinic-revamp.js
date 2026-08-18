@@ -475,8 +475,15 @@
 
     // Mobile horizontal-scroll top nav — one-tap navigation, replaces hamburger.
     // Built from the existing .mobile-menu-nav links so no HTML edits are needed.
+    function scrollCurrentIntoView(strip) {
+      var cur = strip && strip.querySelector('a.current');
+      if (cur && cur.scrollIntoView) {
+        try { cur.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {}
+      }
+    }
     (function buildMobileTopnav() {
-      if (document.querySelector('.mobile-topnav')) return;
+      var existing = document.querySelector('.mobile-topnav');
+      if (existing) { scrollCurrentIntoView(existing); return; }  // static strip already in HTML
       var src = document.querySelector('.mobile-menu-nav');
       var header = document.querySelector('.header');
       if (!src || !header || !header.parentNode) return;

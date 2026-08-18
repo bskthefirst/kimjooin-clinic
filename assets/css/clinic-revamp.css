@@ -5,6 +5,14 @@
 
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
+/* Smooth same-origin page navigation (progressive: ignored where unsupported) */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}
+
 @font-face {
   font-family: 'JalnanGothic';
   src: url('/assets/fonts/JalnanGothic.otf') format('opentype'),
@@ -2526,8 +2534,9 @@ h2.hero-main-copy,
    ============================================================ */
 
 @media (max-width: 768px) {
+  /* Static .mobile-topnav is the mobile nav now — hamburger no longer needed. */
   .hamburger-btn {
-    display: inline-flex !important;
+    display: none !important;
   }
 
   .head_bar_2 .head_cont .nav {
