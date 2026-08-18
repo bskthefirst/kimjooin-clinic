@@ -3688,6 +3688,10 @@ h2.hero-main-copy,
 .tp { --g:#83a731; --gd:#5f7d24; --navy:#16263d; --ink:#2b3440; --muted:#6b7684; --soft:#f5f8ee; --line:#ebeef2;
   color: var(--ink); overflow: hidden; }
 .tp * { box-sizing: border-box; }
+/* serif-only stack: JejuMyeongjo is single-weight, so a sans fallback would steal bold headings.
+   Keeping only serif fallbacks makes bold headings synthesize from Jeju (never a gothic). */
+.tp, .tp * { font-family: 'JejuMyeongjo', 'Noto Serif KR', serif !important; }
+.tp .tp-hero h1 { text-align: center !important; }
 .tp .tp-section { padding: clamp(60px, 9vw, 116px) 24px; }
 .tp .tp-inner { max-width: 900px; margin: 0 auto; }
 .tp .tp-narrow { max-width: 760px; margin: 0 auto; }
