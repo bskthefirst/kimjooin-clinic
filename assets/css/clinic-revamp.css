@@ -3566,85 +3566,92 @@ h2.hero-main-copy,
   .blog-article-body h2::before { width: 16px; height: 3px; margin-right: 9px; }
 }
 
-/* ── Symptom router — exam-page conversion box (2026-08-17). CMS pages carry the .cms_v1.sub_contents wrapper. ── */
+/* ── Symptom router — exam-page conversion box (rev 2026-08-17b: larger type, aligned checks, one uniform serif). ── */
 .cms_v1.sub_contents .symptom-router {
   background: var(--brand-light) !important;
   border: 1px solid rgba(131, 167, 49, 0.28) !important;
-  border-left: 5px solid var(--brand) !important;
-  border-radius: 14px !important;
-  padding: 24px 26px !important;
-  margin: 30px 0 !important;
+  border-left: 6px solid var(--brand) !important;
+  border-radius: 16px !important;
+  padding: 34px 38px !important;
+  margin: 34px 0 !important;
+}
+/* one consistent font across the whole box — serif fallback keeps Latin/digits from switching to sans */
+.cms_v1.sub_contents .symptom-router,
+.cms_v1.sub_contents .symptom-router * {
+  font-family: var(--font-display) !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-title {
-  font-family: var(--font-display) !important;
-  font-size: 21px !important;
+  font-size: 26px !important;
   font-weight: 700 !important;
   color: var(--heading) !important;
-  margin: 0 0 18px !important;
+  margin: 0 0 24px !important;
+  line-height: 1.35 !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-title::before {
   content: "🔍";
-  margin-right: 8px;
+  margin-right: 10px;
 }
 .cms_v1.sub_contents .symptom-router .sr-list {
   list-style: none !important;
-  margin: 0 0 20px !important;
+  margin: 0 0 26px !important;
   padding: 0 !important;
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 12px 24px !important;
+  gap: 18px 36px !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-list li {
-  position: relative !important;
-  padding-left: 30px !important;
-  font-size: 15.5px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 13px !important;
+  padding: 0 !important;
+  font-size: 18px !important;
   line-height: 1.5 !important;
   color: #374151 !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-list li::before {
   content: "✓";
-  position: absolute !important;
-  left: 0;
-  top: 1px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  flex-shrink: 0 !important;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   background: var(--brand);
   border-radius: 50%;
+  margin-top: 1px;
 }
 .cms_v1.sub_contents .symptom-router .sr-verdict {
-  font-size: 16px !important;
+  font-size: 19px !important;
   font-weight: 700 !important;
   color: var(--heading) !important;
-  margin: 0 0 12px !important;
-  padding-top: 16px !important;
+  margin: 0 0 14px !important;
+  padding-top: 24px !important;
+  line-height: 1.5 !important;
   border-top: 1px dashed rgba(131, 167, 49, 0.45) !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-badge {
-  font-size: 13px !important;
+  font-size: 15px !important;
   color: var(--brand-dark) !important;
   font-weight: 600 !important;
-  margin: 0 0 18px !important;
-  line-height: 1.5 !important;
+  margin: 0 0 24px !important;
+  line-height: 1.55 !important;
 }
 .cms_v1.sub_contents .symptom-router .sr-badge::before {
   content: "🏆";
-  margin-right: 5px;
+  margin-right: 6px;
 }
 .cms_v1.sub_contents .symptom-router .sr-cta {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 10px !important;
   background: var(--brand) !important;
   color: #fff !important;
-  font-size: 17px !important;
+  font-size: 20px !important;
   font-weight: 700 !important;
-  padding: 14px 30px !important;
-  border-radius: 10px !important;
+  padding: 17px 40px !important;
+  border-radius: 12px !important;
   text-decoration: none !important;
   box-shadow: 0 4px 14px rgba(131, 167, 49, 0.35) !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
@@ -3655,10 +3662,13 @@ h2.hero-main-copy,
   background: var(--heading) !important;
 }
 .cms_v1.sub_contents .exam-award {
-  margin: 24px 0 8px !important;
+  margin: 26px 0 8px !important;
 }
 @media (max-width: 640px) {
-  .cms_v1.sub_contents .symptom-router { padding: 20px !important; }
-  .cms_v1.sub_contents .symptom-router .sr-list { grid-template-columns: 1fr !important; gap: 10px !important; }
-  .cms_v1.sub_contents .symptom-router .sr-cta { width: 100% !important; justify-content: center !important; }
+  .cms_v1.sub_contents .symptom-router { padding: 24px 22px !important; }
+  .cms_v1.sub_contents .symptom-router .sr-title { font-size: 22px !important; margin-bottom: 20px !important; }
+  .cms_v1.sub_contents .symptom-router .sr-list { grid-template-columns: 1fr !important; gap: 15px !important; }
+  .cms_v1.sub_contents .symptom-router .sr-list li { font-size: 16.5px !important; }
+  .cms_v1.sub_contents .symptom-router .sr-verdict { font-size: 17.5px !important; }
+  .cms_v1.sub_contents .symptom-router .sr-cta { width: 100% !important; justify-content: center !important; font-size: 18px !important; }
 }
