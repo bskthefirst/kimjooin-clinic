@@ -480,33 +480,34 @@
       var src = document.querySelector('.mobile-menu-nav');
       var header = document.querySelector('.header');
       if (!src || !header || !header.parentNode) return;
-      var anchors = src.querySelectorAll('a');
-      if (!anchors.length) return;
-      // Only show these items in the mobile strip (home, 의료진 약력, Blog, 소개글, + 검사들).
-      var allow = {
-        '/index.html': 1,
-        '/Module/CMS/CMS_Srno_39849.html': 1,                                                  // 의료진 약력
-        '/blog/posts.html': 1,                                                                 // Blog
-        '/blog/gimjuinnaegwa-geomsa-annaae-wii-naegyeong-paegineung-dongmaek-mast-bitaminD-pasangpung.html': 1, // 소개글
-        '/blog/busan-seomyeon-naegwa-piggeomsa-johungot.html': 1,                               // 피검사
-        '/Module/CMS/CMS_Srno_39855.html': 1,                                                  // 폐기능검사
-        '/Module/CMS/CMS_Srno_39856.html': 1,                                                  // 알레르기검사
-        '/Module/CMS/CMS_Srno_39857.html': 1,                                                  // 기관지내시경
-        '/Module/CMS/CMS_Srno_39858.html': 1,                                                  // 위내시경
-        '/Module/CMS/CMS_Srno_39859.html': 1                                                   // 초음파검사
-      };
+      if (!src.querySelector('a')) return;
+      // Curated items shown in the mobile strip, in this exact left-to-right order.
+      var order = [
+        '/index.html',                                                                          // 홈
+        '/Module/CMS/CMS_Srno_39849.html',                                                      // 의료진 약력
+        '/Module/Intro/GuideView.html',                                                         // 오시는길
+        '/blog/posts.html',                                                                     // Blog
+        '/blog/gimjuinnaegwa-geomsa-annaae-wii-naegyeong-paegineung-dongmaek-mast-bitaminD-pasangpung.html', // 소개글
+        '/blog/busan-seomyeon-naegwa-piggeomsa-johungot.html',                                   // 피검사
+        '/Module/CMS/CMS_Srno_39855.html',                                                      // 폐기능검사
+        '/Module/CMS/CMS_Srno_39856.html',                                                      // 알레르기검사
+        '/Module/CMS/CMS_Srno_39857.html',                                                      // 기관지내시경
+        '/Module/CMS/CMS_Srno_39858.html',                                                      // 위내시경
+        '/Module/CMS/CMS_Srno_39859.html'                                                       // 초음파검사
+      ];
       var strip = document.createElement('nav');
       strip.className = 'mobile-topnav';
       strip.setAttribute('aria-label', '빠른 메뉴');
       var here = location.pathname.replace(/\/index\.html$/, '/');
-      for (var i = 0; i < anchors.length; i++) {
-        var a = anchors[i];
-        if (!allow[a.getAttribute('href')]) continue;
+      for (var i = 0; i < order.length; i++) {
+        var href = order[i];
+        var a = src.querySelector('a[href="' + href + '"]');
+        if (!a) continue;
         var label = (a.textContent || '').trim();
         if (!label) continue;
         label = label.replace('초음파검사(심장.복부.갑상선)', '초음파검사');
         var link = document.createElement('a');
-        link.href = a.getAttribute('href');
+        link.href = href;
         if (a.target) link.target = a.target;
         if (a.rel) link.rel = a.rel;
         link.textContent = label;

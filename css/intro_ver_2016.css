@@ -143,3 +143,36 @@ table.f5_sitemap td.depth_2 a:before { content: ' '; position: absolute; width: 
 .menu3_tab ul li { display:block; float:left; height:48px; line-height:48px; margin-right:-1px; margin-bottom: 1px;}
 .menu3_tab ul li a {  display:block; height:48px; line-height:48px; padding:0 25px; font-size:15px; color:#363636; font-weight:normal; text-align:center; background:#fff; border:1px solid #727272 }
 .menu3_tab ul li a.on { background:#3f4044; color:#fff; border-color:#727272 }
+
+/* ============================================================
+   Mobile responsive — facility tour (.est) — added 2026-08-18
+   ============================================================ */
+@media (max-width: 768px) {
+  .est .space { padding: 30px 20px; background-size: 90px auto; }
+  .est .space h3 { font-size: 22px; line-height: 1.4; }
+  .est .space p.effort { font-size: 13px; }
+
+  .est .facility { margin-top: 32px; }
+  /* floor list becomes wrapping pills above the image */
+  .est .facility ul.floor {
+    float: none; width: 100%; margin: 0 0 18px;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .est .facility ul.floor h3 { flex: 0 0 100%; width: 100%; margin: 0 0 12px; font-size: 20px; }
+  .est .facility ul.floor li { flex: 0 0 auto; height: auto; border-bottom: none; }
+  .est .facility ul.floor li a {
+    padding: 9px 16px; font-size: 14px; font-weight: 700; line-height: 1;
+    border: 1px solid #e0e8cf; border-radius: 20px; background: #f4f7ec;
+    color: #1a2e44; white-space: nowrap;
+  }
+  .est .facility ul.floor li a:hover,
+  .est .facility ul.floor li.current a {
+    background: #83a731; color: #ffffff; border-color: #83a731;
+  }
+  /* image full width below the pills */
+  .est .facility .look {
+    float: none; width: 100%; border-radius: 14px; overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  .est .facility .look img { border-radius: 14px; }
+}
