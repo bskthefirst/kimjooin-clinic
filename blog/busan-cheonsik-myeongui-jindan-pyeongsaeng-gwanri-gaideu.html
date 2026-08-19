@@ -16,91 +16,19 @@
 	<link rel="stylesheet" type="text/css" href="/css/skin5004/color_blue.css" />
 	<link rel="canonical" href="https://kimjooin.com/blog/busan-cheonsik-myeongui-jindan-pyeongsaeng-gwanri-gaideu.html" />
 <style>
-@font-face { font-family: 'JejuMyeongjo'; src: url('/assets/fonts/JejuMyeongjo.woff2') format('woff2'), url('/assets/fonts/JejuMyeongjo.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'JejuMyeongjo'; src: url('/assets/fonts/JejuMyeongjo.woff2') format('woff2'),
+       url('/assets/fonts/JejuMyeongjo.otf') format('opentype'); font-display: swap; }
 * { font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
-.head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn, .head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn span { color: #ffffff !important; font-weight: 700 !important; }
-.head_bar_2 .head_cont .nav .gnb .dropdown + .dropdown::before { content: '|'; color: rgba(255,255,255,0.4); margin-right: 0; font-weight: 300; font-size: 14px; position: relative; top: -1px; }
-.sub_head h3, .sub_head h3 span, .sub_head em, .snb a, .snb a.on, .dropdown-content a, .mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
-.blog-article-body { line-height: 1.9; font-size: 17px; }
-.blog-article-body h2 { font-size: 23px; font-weight: 700; margin: 32px 0 12px; padding-bottom: 6px; }
-.blog-article-body h3 { font-size: 19px; font-weight: 600; margin: 24px 0 10px; }
-.blog-article-body p { margin-bottom: 16px; }
-.blog-article-body a { color: #2563eb; }
-.sub_container::before, .sub_container::after { display: none !important; content: none !important; }
-.sub_container { margin-top: 0 !important; display: flex !important; flex-wrap: wrap !important; gap: 20px !important; padding-top: 30px !important; }
-#sub_left { float: none !important; }
-#sub_contents { float: none !important; flex: 1 !important; min-width: 0 !important; }
-#sub_contents .sub_head { position: static !important; margin-bottom: 16px !important; }
-#sub_contents .sub_head ul { display: none !important; }
-.sub_con_area { display: block !important; }
-.rn-link{color:#2563eb;text-decoration:none;font-weight:600;font-size:16px;transition:color 0.3s;}
-.rn-link:hover{animation:rainbow 1.5s linear infinite;}
-@keyframes rainbow{0%{color:#ff0000}14%{color:#ff8800}28%{color:#ffdd00}42%{color:#33cc33}57%{color:#3399ff}71%{color:#6633ff}85%{color:#cc33cc}100%{color:#ff0000}}
-@media (max-width: 640px) { .blog-article-body { font-size: 17px; } .blog-article-body h2 { font-size: 22px !important; } .blog-article-body h3 { font-size: 18px !important; } .blog-article-body img { max-width: 100% !important; } }
-.blog-article-body p, .blog-article-body li, .blog-article-body h2, .blog-article-body h3 { font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', serif !important; }
-.blog-article-body p { line-height: 1.9 !important; margin-bottom: 18px !important; }
-.blog-article-body h2 { line-height: 1.4 !important; }
-.hero-img { box-shadow: 0 8px 28px rgba(0,0,0,0.10) !important; border-radius: 12px !important; }
-.blog-article-body h2 { border-bottom: none !important; padding-bottom: 0 !important; position: relative; padding-left: 14px !important; margin-top: 44px !important; }
-.blog-article-body h2::before { content: ''; position: absolute; left: 0; top: 6px; bottom: 6px; width: 5px; background: linear-gradient(180deg, #83a731 0%, #b8d176 100%); border-radius: 3px; }
-
-.check-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0 18px; }
-.check-item { background: #fff; border: 1px solid #e8edd8; border-radius: 12px; padding: 16px 18px; display: flex; align-items: center; gap: 12px; transition: box-shadow 0.18s ease, transform 0.18s ease; }
-.check-item:hover { box-shadow: 0 4px 14px rgba(131,167,49,0.14); transform: translateY(-1px); }
-.check-icon { font-size: 26px; flex-shrink: 0; line-height: 1; }
-.check-text { flex: 1; min-width: 0; }
-.check-title { font-size: 16px !important; font-weight: 800 !important; color: #1a2e44 !important; line-height: 1.3 !important; margin: 0 !important; }
-.check-sub { font-size: 13px !important; color: #6b7280 !important; margin: 2px 0 0 0 !important; line-height: 1.45 !important; font-family: -apple-system, 'Hiragino Sans', sans-serif !important; }
-.check-callout { background: linear-gradient(135deg, #f8faf2 0%, #eef5dd 100%); border-left: 4px solid #83a731; padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 18px 0 8px !important; font-size: 15.5px !important; line-height: 1.7 !important; color: #1f2937 !important; }
-.check-callout strong { color: #1a2e44 !important; }
-
-/* Type grid — 3 colored cards for asthma types */
-.type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px 0; }
-.type-card { background: linear-gradient(135deg, #fff 0%, #f8faf2 100%); border: 1.5px solid #d3e0a8; border-radius: 14px; padding: 22px 18px 20px; text-align: center; box-shadow: 0 2px 10px rgba(131,167,49,0.08); transition: box-shadow 0.18s ease, transform 0.18s ease; }
-.type-card:hover { box-shadow: 0 6px 18px rgba(131,167,49,0.18); transform: translateY(-1px); }
-.type-icon { font-size: 36px; line-height: 1; margin-bottom: 10px; }
-.type-title { font-size: 17px !important; font-weight: 800 !important; color: #1a2e44 !important; line-height: 1.3 !important; margin: 0 0 8px 0 !important; }
-.type-body { font-size: 13.5px !important; color: #4b5563 !important; line-height: 1.6 !important; margin: 0 !important; font-family: -apple-system, 'Hiragino Sans', sans-serif !important; }
-
-/* Step row */
-.step-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 22px 0; }
-.step-tile { background: linear-gradient(135deg, #fff 0%, #f8faf2 100%); border: 1.5px solid #d3e0a8; border-radius: 14px; padding: 20px 14px 18px; text-align: center; box-shadow: 0 2px 10px rgba(131,167,49,0.08); }
-.step-num-circle { width: 36px; height: 36px; background: linear-gradient(135deg, #83a731 0%, #6b8a28 100%); color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; font-family: -apple-system, sans-serif !important; margin-bottom: 10px; box-shadow: 0 3px 8px rgba(131,167,49,0.32); }
-.step-title { font-size: 15px !important; font-weight: 800 !important; color: #1a2e44 !important; line-height: 1.35 !important; margin: 0 !important; }
-.step-sub { font-size: 12.5px !important; color: #4b5563 !important; line-height: 1.5 !important; margin: 4px 0 0 0 !important; font-family: -apple-system, 'Hiragino Sans', sans-serif !important; }
-
-/* Compare row */
-.compare-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0; }
-.compare-tile { border-radius: 12px; padding: 18px 16px; text-align: center; border: 1px solid #e5e7eb; background: #f9fafb; }
-.compare-tile.win { background: linear-gradient(135deg, #83a731 0%, #5b7a1e 100%); border-color: #5b7a1e; box-shadow: 0 6px 18px rgba(131,167,49,0.25); }
-.compare-tile-label { font-size: 12px !important; font-weight: 700 !important; color: #9ca3af !important; margin: 0 0 6px 0 !important; letter-spacing: 0.3px; font-family: -apple-system, sans-serif !important; }
-.compare-tile.win .compare-tile-label { color: #e8f0d8 !important; }
-.compare-tile-value { font-size: 15px !important; font-weight: 800 !important; color: #1a2e44 !important; line-height: 1.4 !important; margin: 0 !important; }
-.compare-tile.win .compare-tile-value { color: #fff !important; }
-
-@media (max-width: 640px) {
-  .check-grid { grid-template-columns: 1fr; gap: 10px; }
-  .type-grid { grid-template-columns: 1fr; }
-  .step-row { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .compare-row { grid-template-columns: 1fr; gap: 8px; }
+.head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn,
+.head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn span { color: #ffffff !important; font-weight: 700 !important; }
+.head_bar_2 .head_cont .nav .gnb .dropdown + .dropdown::before {
+  content: '|'; color: rgba(255,255,255,0.4); margin-right: 0; font-weight: 300; font-size: 14px;
+  position: relative; top: -1px;
 }
-@media (max-width: 640px) {
-  .blog-article-body { line-height: 1.85 !important; }
-  .blog-article-body p { line-height: 1.85 !important; margin-bottom: 16px !important; }
-  .blog-article-body li { line-height: 1.75 !important; margin-bottom: 8px !important; }
-  .faq-card { padding: 16px 14px !important; }
-  .faq-card-question { font-size: 16px !important; }
-  .faq-card-answer { font-size: 15.5px !important; line-height: 1.75 !important; }
-  .mid-cta-band-phone { font-size: 20px !important; padding: 14px 28px !important; }
-  .visit-card-phone { font-size: 17px !important; padding: 14px 24px !important; display: inline-block !important; }
-  .credentials-badge-title { font-size: 14.5px !important; }
-  .doctor-card-name { font-size: 19px !important; }
-  .summary-box { padding: 18px 18px !important; }
-  .summary-box p { font-size: 15.5px !important; line-height: 1.75 !important; }
-  .floating-booking .cta-call { font-size: 16px !important; padding: 12px 18px !important; }
-}
-/* mobile-polish-v1 */
-
+.sub_head h3, .sub_head h3 span, .sub_head em,
+.snb a, .snb a.on,
+.dropdown-content a,
+.mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
 </style>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -185,188 +113,159 @@
     </nav>
 </div>
 
-<div style="max-width:800px;margin:30px auto;padding:0 24px;">
-  <div style="margin-bottom:8px;"><a href="/blog/posts.html" style="color:#83a731;text-decoration:none;font-size:14px;font-weight:600;">&#8592; 전체 글 목록</a></div>
-  <h1 style="font-size:28px;font-weight:800;line-height:1.3;margin:0 0 8px;color:#1a2e44;">부산 천식 명의 — 진단부터 평생 관리까지 완벽 가이드</h1>
-  <div style="color:#888;font-size:13px;margin-bottom:24px;">2026-06-26 · 부산 서면 김주인내과</div>
-  <div class="blog-article-body">
+<article class="tp">
+  <section class="tp-hero">
+    <div class="tp-narrow">
+      <span class="tp-eyebrow reveal">부산 서면 · 호흡기·알레르기내과</span>
+      <h1 class="reveal">부산 천식 명의,<br>진단부터 평생 관리까지</h1>
+      <p class="tp-lead reveal">"부산에서 천식 잘 보는 명의가 어디인가요?" 가장 많이 받는 질문입니다. 천식은 <strong>정확한 진단과 꾸준한 관리</strong>가 핵심이며, 같은 천식이라도 유형(알레르기성·기침형·운동성)에 따라 약과 관리법이 완전히 달라집니다.</p>
+      <a class="tp-cta reveal" href="tel:051-802-7550">☎ 051-802-7550 진료 문의</a>
+      <span class="tp-cta-note reveal">부산일보 '베스트 닥터' 소개 · 부산백병원 14년 교수 출신 · 서면역 도보 5분</span>
+    </div>
+  </section>
 
-<p><img class="hero-img" src="/blog/images/clinic-consultation-room.jpg" alt="부산 서면 김주인내과 진료실 — 천식 진단·관리" width="100%" height="auto" style="max-width:700px;margin:0 auto;display:block;" loading="lazy"></p>
+  <section class="tp-section">
+    <div class="tp-inner tp-prose">
+      <p class="tp-kicker reveal">핵심 요약</p>
+      <h2 class="tp-h2 reveal">천식은 완치보다<br>'관리'하는 질환입니다</h2>
+      <div class="reveal">
+        <blockquote>🔑 정확한 유형 진단(알레르기성·기침형·운동성), 본인에 맞는 흡입제 처방, 정기 폐기능 모니터링으로 <strong>증상 없는 일상</strong>이 가능합니다.</blockquote>
+      </div>
+      <div class="tp-exams reveal">
+        <div class="tp-exam"><div class="tp-exam-name">PFT</div><div class="tp-exam-why">원내 즉시 폐기능 진단</div></div>
+        <div class="tp-exam"><div class="tp-exam-name">14년</div><div class="tp-exam-why">대학병원 교수 경력</div></div>
+        <div class="tp-exam"><div class="tp-exam-name">평생 동행</div><div class="tp-exam-why">같은 의사가 꾸준히 관리</div></div>
+      </div>
+    </div>
+  </section>
 
-<p>"부산에서 천식 잘 보는 명의가 어디인가요?" 가장 많이 받는 질문 중 하나입니다. <strong>천식은 정확한 진단과 꾸준한 관리</strong>가 핵심입니다. 같은 천식이라도 유형에 따라 약과 관리법이 완전히 달라집니다.</p>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">이런 증상이면</p>
+      <h2 class="tp-h2 reveal">천식을<br>의심하세요</h2>
+      <div class="tp-cards">
+        <div class="tp-card reveal"><span class="tp-card-tag">🌙 야간</span><h3>밤·새벽 기침</h3><p>잠들 무렵·새벽에 기침으로 깹니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">🌬️ 숨소리</span><h3>쌕쌕거림(천명음)</h3><p>숨 쉴 때 휘파람 같은 소리가 납니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">🏃 운동</span><h3>운동 후 호흡곤란</h3><p>예전보다 빨리 숨이 찹니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">❄️ 찬 공기</span><h3>찬 공기에 악화</h3><p>겨울·환절기에 증상이 심해집니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">💨 가슴</span><h3>가슴 답답함</h3><p>조여드는 듯한 느낌이 반복됩니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">👨‍👩‍👧 가족력</span><h3>알레르기·가족력</h3><p>비염·아토피·천식 가족력이 있습니다.</p></div>
+      </div>
+      <p class="tp-p reveal" style="margin-top:24px;"><strong>기침만 있는 천식도 있습니다.</strong> '기침형 천식'은 천명음·호흡곤란 없이 만성기침만 나타나며 감기약·기침약으로 호전되지 않습니다. <a href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 5가지 원인</a>도 함께 확인해 보세요.</p>
+    </div>
+  </section>
 
-<div class="credentials-strip">
-  <div class="credentials-badge"><span class="credentials-badge-icon">🏥</span><p class="credentials-badge-title">부산백병원 내과</p><p class="credentials-badge-sub">교수 14년 경력</p></div>
-  <div class="credentials-badge"><span class="credentials-badge-icon">🫁</span><p class="credentials-badge-title">PFT·MAST 원내</p><p class="credentials-badge-sub">정밀 진단 가능</p></div>
-  <div class="credentials-badge"><span class="credentials-badge-icon">⭐</span><p class="credentials-badge-title">부산일보 베스트닥터</p><p class="credentials-badge-sub">호흡기·알레르기 선정</p></div>
-</div>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">유형별 분류</p>
+      <h2 class="tp-h2 reveal">천식 유형,<br>정확한 분류가 시작입니다</h2>
+      <div class="tp-cards">
+        <div class="tp-card reveal"><span class="tp-card-tag">🌿 알레르기성</span><h3>알레르기성 천식</h3><p>집먼지진드기·꽃가루 등 알레르겐이 원인. MAST 검사로 원인 물질을 확인합니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">💨 기침형</span><h3>기침형 천식</h3><p>증상은 만성기침뿐. 폐기능검사(PFT)로 가역적 기도 협착 확인이 핵심입니다.</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">🏃 운동성</span><h3>운동성 천식</h3><p>평소엔 멀쩡하다 운동 시에만 호흡곤란. 운동 전 흡입제 사용으로 예방합니다.</p></div>
+      </div>
+    </div>
+  </section>
 
-<div class="summary-box">
-<div class="summary-box-label">핵심 요약</div>
-<p>천식은 <strong>완치보다 관리하는 질환</strong>입니다. 정확한 유형 진단(알레르기성·기침형·운동성), 본인에 맞는 흡입제 처방, 정기 폐기능 모니터링으로 <strong>증상 없는 일상</strong>이 가능합니다.</p>
-<div class="stat-row">
-  <div class="stat-item"><span class="stat-num">PFT</span><span class="stat-label">원내 즉시 진단</span></div>
-  <div class="stat-item"><span class="stat-num">14년</span><span class="stat-label">대학병원 교수 경력</span></div>
-  <div class="stat-item"><span class="stat-num">평생 동행</span><span class="stat-label">한 의사 꾸준한 관리</span></div>
-</div>
-</div>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">진단부터 평생 관리까지</p>
+      <h2 class="tp-h2 reveal">천식 관리는<br>4단계로 이어집니다</h2>
+      <div class="tp-steps">
+        <div class="tp-step reveal"><span class="tp-step-num">1</span><div><h3>정밀 진단</h3><p>폐기능검사(PFT) + 알레르기검사, 증상·가족력을 종합해 유형을 분류합니다.</p></div></div>
+        <div class="tp-step reveal"><span class="tp-step-num">2</span><div><h3>맞춤 처방</h3><p>유형별 흡입제를 중증도에 맞춰 조정합니다.</p></div></div>
+        <div class="tp-step reveal"><span class="tp-step-num">3</span><div><h3>정기 점검</h3><p>분기별 폐기능검사로 약 효과를 확인합니다.</p></div></div>
+        <div class="tp-step reveal"><span class="tp-step-num">4</span><div><h3>평생 동행</h3><p>같은 의사가 꾸준히 관리합니다.</p></div></div>
+      </div>
+      <p class="tp-p reveal" style="margin-top:24px;">천식은 <strong>의사를 자주 바꾸지 않는 것</strong>이 중요합니다. 본인의 폐기능 변화 패턴, 어떤 약에 잘 반응하는지, 계절별 양상까지 꾸준히 보는 의사만이 알 수 있습니다.</p>
+    </div>
+  </section>
 
-<h2>이런 증상이면 천식 의심하세요</h2>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <div class="tp-callout reveal">
+        <p class="tp-callout-title">밤·새벽 기침이 계속되시나요?</p>
+        <p class="tp-callout-sub">14년 교수 경력 호흡기 명의가 정밀 진단부터 평생 관리까지. 전화 한 통이면 됩니다.</p>
+        <a class="tp-cta" href="tel:051-802-7550">☎ 051-802-7550</a>
+        <div class="tp-cta-row"><a class="tp-cta tp-cta-navy reveal" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 네이버 지도 바로가기</a></div>
+      </div>
+    </div>
+  </section>
 
-<p>하나라도 해당하시면 정확한 진단이 필요합니다.</p>
+  <section class="tp-section tp-trust">
+    <div class="tp-inner">
+      <img src="/images/awards/award-3years-respiratory.jpg" alt="김주인내과 3년 연속 호흡기질환 우수 병원 선정" loading="lazy" />
+      <div class="tp-trust-copy">
+        <p class="tp-kicker reveal">김주인내과 · 김주인 원장</p>
+        <h2 class="reveal">같은 천식도, 누가 보느냐에<br>따라 관리가 달라집니다</h2>
+        <ul>
+          <li class="reveal">인제대학교 <strong>부산백병원 내과 교수 14년</strong> 경력</li>
+          <li class="reveal">부산일보 '베스트 닥터'에 소개된 호흡기·알레르기 명의</li>
+          <li class="reveal">천식·COPD·만성기침 진료 다수 경험</li>
+          <li class="reveal">폐기능·알레르기·기관지내시경 <strong>원내 직접 시행</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<div class="check-grid">
-  <div class="check-item"><span class="check-icon">🌙</span><div class="check-text"><p class="check-title">밤·새벽 기침</p><p class="check-sub">잠들 무렵·새벽에 기침으로 깸</p></div></div>
-  <div class="check-item"><span class="check-icon">🌬️</span><div class="check-text"><p class="check-title">쌕쌕거림(천명음)</p><p class="check-sub">숨 쉴 때 휘파람 같은 소리</p></div></div>
-  <div class="check-item"><span class="check-icon">🏃</span><div class="check-text"><p class="check-title">운동 후 호흡곤란</p><p class="check-sub">예전보다 빨리 숨참</p></div></div>
-  <div class="check-item"><span class="check-icon">❄️</span><div class="check-text"><p class="check-title">찬 공기에 악화</p><p class="check-sub">겨울·환절기 증상 심해짐</p></div></div>
-  <div class="check-item"><span class="check-icon">💨</span><div class="check-text"><p class="check-title">가슴 답답함</p><p class="check-sub">조여드는 듯한 느낌 반복</p></div></div>
-  <div class="check-item"><span class="check-icon">👨‍👩‍👧</span><div class="check-text"><p class="check-title">알레르기·가족력</p><p class="check-sub">비염·아토피·천식 가족</p></div></div>
-</div>
+  <section class="tp-section">
+    <div class="tp-inner tp-prose">
+      <p class="tp-kicker reveal">이런 분께 특히 권합니다</p>
+      <h2 class="tp-h2 reveal">지금 진료가<br>도움이 되는 경우</h2>
+      <div class="reveal">
+        <ul>
+          <li>처음 천식 진단을 받았거나 의심되시는 분 — 정확한 유형 분류부터 시작</li>
+          <li>다른 병원 약이 잘 안 듣는 것 같으신 분 — 처방 적절성 평가</li>
+          <li>밤·새벽 기침, 운동 시 숨참이 3개월 이상 지속되시는 분</li>
+          <li>꾸준한 관리를 받을 한 곳을 찾고 계신 분</li>
+          <li>천식 합병증·동반 질환(비염·축농증)까지 함께 보고 싶으신 분</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<p class="check-callout"><strong>기침만 있는 천식도 있습니다.</strong> '기침형 천식'은 천명음·호흡곤란 없이 만성기침만 나타나며, 감기약·기침약으로는 호전되지 않습니다. <a class="rn-link" href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 5가지 원인</a>도 함께 확인해 보세요.</p>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">오시는 길 · 진료시간</p>
+      <h2 class="tp-h2 reveal">서면역 7번 출구, 도보 5분</h2>
+      <div class="tp-visit reveal">
+        <div class="tp-visit-row"><div class="tp-visit-ic">📍</div><div class="t">부산광역시 부산진구 서면로 64 (부전동, 청석빌딩) 8층<br><strong>서면역 7번 출구 도보 5분</strong> · <a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer" style="color:#5f7d24;font-weight:700;">네이버 지도</a></div></div>
+        <div class="tp-visit-row"><div class="tp-visit-ic">🕐</div><div class="t">평일 <strong>오전 9시 15분 ~ 오후 6시 15분</strong> (점심 12:50~13:50)<br>토요일 <strong>오전 9시 15분 ~ 오후 2시</strong> — 점심시간 없이 진료<br><span style="color:#6b7684;font-size:15px;">일요일·공휴일 휴진</span></div></div>
+        <div class="tp-visit-row"><div class="tp-visit-ic">✓</div><div class="t"><strong>기존 처방전·약 봉투를 가지고 오시면</strong> 더 정확한 평가가 가능합니다.</div></div>
+      </div>
+      <div class="tp-final" style="margin-top:36px;">
+        <a class="tp-cta reveal" href="tel:051-802-7550">☎ 051-802-7550 천식 진료 문의</a>
+        <div class="tp-cta-row"><a class="tp-cta tp-cta-navy reveal" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 네이버 지도 바로가기</a></div>
+      </div>
+    </div>
+  </section>
 
-<h2>천식 유형 — 정확한 분류가 시작</h2>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">자주 묻는 질문</p>
+      <h2 class="tp-h2 reveal">천식 명의, 이런 게 궁금하시죠</h2>
+      <div class="tp-faq">
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">부산에서 천식 명의 어디인가요?</p><p class="tp-faq-a">김주인내과는 부산백병원 내과 14년 교수 경력의 김주인 원장이 진료합니다. 부산일보 '베스트 닥터' 소개(호흡기·알레르기)로 천식·COPD·만성기침 정밀 진단을 직접 시행합니다. 서면역 7번 출구 도보 5분 — <a href="tel:051-802-7550">051-802-7550</a>.</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">천식은 평생 약을 먹어야 하나요?</p><p class="tp-faq-a">천식은 완치보다 관리하는 질환입니다. 다만 꾸준한 흡입제 사용과 정기 점검으로 증상 없이 정상적인 일상이 가능합니다. 유형·중증도에 따라 약물 종류와 횟수가 조정됩니다.</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">다른 병원에서 처방받고 있는데 옮겨도 되나요?</p><p class="tp-faq-a">가능합니다. 기존 처방전·약 봉투를 가지고 오시면 부산백병원 14년 교수 경력의 원장이 현재 치료 적절성을 평가하고 필요 시 조정을 안내해 드립니다. 같은 약이라도 본인 폐기능에 맞춰 더 정밀한 관리가 가능합니다.</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">기침만 있어도 천식일 수 있나요?</p><p class="tp-faq-a">네. '기침형 천식'은 천명음·호흡곤란 없이 만성기침만 나타나는 형태로, 일반 감기약·기침약으로는 호전되지 않습니다. 정확한 진단은 폐기능검사(PFT)로 확인합니다.</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">검사·진료는 한 자리에서 가능한가요?</p><p class="tp-faq-a">네. 폐기능검사·알레르기검사(MAST)·기관지내시경·피검사를 원내 직접 시행합니다. 천식 정밀 진단부터 평생 관리까지 한 자리에서 받으실 수 있습니다.</p></div>
+      </div>
+    </div>
+  </section>
 
-<p>같은 '천식'이라도 유형에 따라 치료 전략이 다릅니다.</p>
+  <section class="tp-section">
+    <div class="tp-narrow tp-related">
+      <h2 class="tp-h2 reveal" style="font-size:clamp(22px,3.4vw,30px);">같이 읽어보세요</h2>
+      <ul style="margin:20px 0 0;padding-left:20px;list-style:disc;">
+        <li class="reveal"><a href="/Module/CMS/CMS_Srno_39852_ContentsSrno_8766.html">기관지 천식 — 증상·진단·치료</a></li>
+        <li class="reveal"><a href="/blog/busan-paegineung-geomsa-eodieseo-gaideu.html">부산 폐기능검사 — 어디서 받아야 할까</a></li>
+        <li class="reveal"><a href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 3주 이상 — 5가지 원인</a></li>
+      </ul>
+    </div>
+  </section>
+</article>
 
-<div class="type-grid">
-  <div class="type-card">
-    <div class="type-icon">🌿</div>
-    <p class="type-title">알레르기성 천식</p>
-    <p class="type-body">집먼지진드기·꽃가루 등 알레르겐이 원인. MAST 검사로 원인 물질 확인 가능</p>
-  </div>
-  <div class="type-card">
-    <div class="type-icon">💨</div>
-    <p class="type-title">기침형 천식</p>
-    <p class="type-body">증상은 만성기침뿐. PFT로 가역적 기도 협착 확인이 핵심</p>
-  </div>
-  <div class="type-card">
-    <div class="type-icon">🏃</div>
-    <p class="type-title">운동성 천식</p>
-    <p class="type-body">평소엔 멀쩡하다가 운동 시에만 호흡곤란. 운동 전 흡입제 사용으로 예방</p>
-  </div>
-</div>
-
-<h2>진단부터 평생 관리까지 — 4단계</h2>
-
-<div class="step-row">
-  <div class="step-tile">
-    <span class="step-num-circle">1</span>
-    <p class="step-title">정밀 진단</p>
-    <p class="step-sub">PFT + 알레르기<br>증상·가족력 종합</p>
-  </div>
-  <div class="step-tile">
-    <span class="step-num-circle">2</span>
-    <p class="step-title">맞춤 처방</p>
-    <p class="step-sub">유형별 흡입제<br>중증도별 조정</p>
-  </div>
-  <div class="step-tile">
-    <span class="step-num-circle">3</span>
-    <p class="step-title">정기 점검</p>
-    <p class="step-sub">분기 PFT<br>약 효과 확인</p>
-  </div>
-  <div class="step-tile">
-    <span class="step-num-circle">4</span>
-    <p class="step-title">평생 동행</p>
-    <p class="step-sub">같은 의사<br>꾸준한 관리</p>
-  </div>
-</div>
-
-<p class="check-callout">천식은 <strong>의사를 자주 바꾸지 않는 것</strong>이 중요합니다. 본인의 폐기능 변화 패턴, 어떤 약에 잘 반응하는지, 계절별 양상까지 <strong>꾸준히 보는 의사만이 알 수 있습니다.</strong></p>
-
-<div class="mid-cta-band">
-  <p class="mid-cta-band-title">밤·새벽 기침이 계속되시나요?</p>
-  <p class="mid-cta-band-sub">14년 교수 경력 호흡기 명의가 정밀 진단부터 평생 관리까지. 전화 한 통이면 됩니다.</p>
-  <a class="mid-cta-band-phone" href="tel:051-802-7550">☎ 051-802-7550</a>
-</div>
-
-<h2>왜 김주인내과인가요</h2>
-
-<div class="compare-row">
-  <div class="compare-tile"><p class="compare-tile-label">일반 내과</p><p class="compare-tile-value">기침약 처방<br>정밀 진단 부재</p></div>
-  <div class="compare-tile"><p class="compare-tile-label">대학병원</p><p class="compare-tile-value">진단력 강하나<br>대기 길고 멀음</p></div>
-  <div class="compare-tile win"><p class="compare-tile-label">김주인내과</p><p class="compare-tile-value">14년 교수 명의<br>평생 같은 의사</p></div>
-</div>
-
-<div class="doctor-card">
-  <img class="doctor-card-img" src="/blog/images/clinic-credentials.jpg" alt="김주인 원장 — 부산백병원 14년 교수 출신">
-  <div class="doctor-card-info">
-    <p class="doctor-card-name">김주인 원장</p>
-    <p class="doctor-card-role">부산 서면 김주인내과 · 호흡기·알레르기 내과 전문의</p>
-    <ul class="doctor-card-creds">
-      <li>인제대학교 부산백병원 내과 <strong>교수 14년</strong></li>
-      <li>부산일보 <strong>'베스트 닥터'</strong> 소개 (호흡기·알레르기)</li>
-      <li>천식·COPD·만성기침 진료 다수 경험</li>
-      <li>폐기능·알레르기·기관지내시경 <strong>원내 직접</strong></li>
-    </ul>
-  </div>
-</div>
-
-<h2>이런 분께 특히 권합니다</h2>
-
-<ul>
-<li><strong>처음 천식 진단</strong>을 받았거나 의심되시는 분 — 정확한 유형 분류부터 시작</li>
-<li>다른 병원 약이 <strong>잘 안 듣는</strong> 것 같으신 분 — 처방 적절성 평가</li>
-<li>밤·새벽 기침, 운동 시 숨참이 <strong>3개월 이상</strong> 지속되시는 분</li>
-<li><strong>꾸준한 관리</strong>를 받을 한 곳을 찾고 계신 분</li>
-<li>천식 합병증·동반 질환(비염·축농증)까지 함께 보고 싶으신 분</li>
-</ul>
-
-<p>관련 가이드: <a class="rn-link" href="/blog/busan-paegineung-geomsa-eodieseo-gaideu.html">폐기능검사</a> · <a class="rn-link" href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 5가지 원인</a> · <a class="rn-link" href="/blog/busan-gigwanji-naesigyeong-gaideu.html">기관지내시경</a> · <a class="rn-link" href="/blog/busan-misemeonji-hwangsa-hohupgi-gwanri-cheonsik-copd.html">미세먼지·황사 호흡기 관리</a></p>
-
-<h2>오시는 길 · 진료시간</h2>
-
-<p><img class="hero-img" src="/blog/images/clinic-entrance-door.jpg" alt="부산 서면 김주인내과 입구 — 천식 진료" width="100%" height="auto" style="max-width:700px;margin:18px auto;display:block;" loading="lazy"></p>
-
-<div class="visit-card">
-  <div class="visit-card-title">김주인내과</div>
-  <div class="visit-card-row"><div class="visit-card-icon">📍</div><div class="visit-card-content">부산광역시 부산진구 서면로 64 (부전동, 청석빌딩) 8층<br><strong>서면역 7번 출구 도보 5분</strong> · <a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer" style="color:#2563eb;">네이버 지도</a></div></div>
-  <div class="visit-card-row"><div class="visit-card-icon">🕐</div><div class="visit-card-content">평일 <strong>오전 9시 15분 ~ 오후 6시 15분</strong> (점심 오후 12시 50분 ~ 오후 1시 50분)<br>토요일 <strong>오전 9시 15분 ~ 오후 2시</strong> (점심시간 없이 진료)<br><span style="color:#888;font-size:14px;">일요일·공휴일 휴진</span></div></div>
-  <div class="visit-card-row"><div class="visit-card-icon">✓</div><div class="visit-card-content"><strong>기존 처방전·약 봉투를 가지고 오시면</strong> 더 정확한 평가가 가능합니다</div></div>
-  <div style="text-align:center;margin-top:20px;"><a class="visit-card-phone" href="tel:051-802-7550">☎ 051-802-7550 천식 진료 문의</a></div>
-</div>
-
-<hr>
-<h3 style="font-size:19px;font-weight:700;margin:24px 0 12px;">자주 묻는 질문</h3>
-<div class="faq-list">
-
-<div class="faq-card highlight">
-<div class="faq-card-q"><div class="faq-card-qmark">Q</div><p class="faq-card-question">부산에서 천식 명의 어디인가요?</p></div>
-<div class="faq-card-a"><div class="faq-card-amark">A</div><p class="faq-card-answer">김주인내과는 <strong>부산백병원 내과 14년 교수 경력</strong>의 김주인 원장이 진료합니다. <strong>부산일보 '베스트 닥터' 소개</strong>(호흡기·알레르기)로 천식·COPD·만성기침 정밀 진단을 직접 시행합니다. 서면역 7번 출구 도보 5분 — <a href="tel:051-802-7550" style="color:#2563eb;font-weight:700;">051-802-7550</a>.</p></div>
-</div>
-
-<div class="faq-card">
-<div class="faq-card-q"><div class="faq-card-qmark">Q</div><p class="faq-card-question">천식은 평생 약을 먹어야 하나요?</p></div>
-<div class="faq-card-a"><div class="faq-card-amark">A</div><p class="faq-card-answer">천식은 <strong>완치보다 관리하는 질환</strong>입니다. 다만 꾸준한 흡입제 사용과 정기 점검으로 <strong>증상 없이 정상적인 일상</strong>이 가능합니다. 유형·중증도에 따라 약물 종류와 횟수가 조정됩니다.</p></div>
-</div>
-
-<div class="faq-card">
-<div class="faq-card-q"><div class="faq-card-qmark">Q</div><p class="faq-card-question">다른 병원에서 처방받고 있는데 옮겨도 되나요?</p></div>
-<div class="faq-card-a"><div class="faq-card-amark">A</div><p class="faq-card-answer">가능합니다. <strong>기존 처방전·약 봉투</strong>를 가지고 오시면 부산백병원 14년 교수 경력의 원장이 현재 치료 적절성을 평가하고 필요 시 조정을 안내해 드립니다. 같은 약이라도 본인 폐기능에 맞춰 더 정밀한 관리가 가능합니다.</p></div>
-</div>
-
-<div class="faq-card">
-<div class="faq-card-q"><div class="faq-card-qmark">Q</div><p class="faq-card-question">기침만 있어도 천식일 수 있나요?</p></div>
-<div class="faq-card-a"><div class="faq-card-amark">A</div><p class="faq-card-answer">네. <strong>'기침형 천식'</strong>은 천명음·호흡곤란 없이 만성기침만 나타나는 형태로, 일반 감기약·기침약으로는 호전되지 않습니다. 정확한 진단은 <strong>폐기능검사(PFT)</strong>로 확인합니다.</p></div>
-</div>
-
-<div class="faq-card">
-<div class="faq-card-q"><div class="faq-card-qmark">Q</div><p class="faq-card-question">검사·진료는 한 자리에서 가능한가요?</p></div>
-<div class="faq-card-a"><div class="faq-card-amark">A</div><p class="faq-card-answer">네. <strong>폐기능검사·알레르기검사(MAST)·기관지내시경·피검사</strong>를 원내 직접 시행합니다. 천식 정밀 진단부터 평생 관리까지 <strong>한 자리</strong>에서 받으실 수 있습니다.</p></div>
-</div>
-
-</div>
-
-<hr>
-<h3 style="font-size:19px;font-weight:700;margin-bottom:12px;">같이 읽어보세요</h3>
-<ul>
-  <li><a class="rn-link" href="/blog/busan-paegineung-geomsa-eodieseo-gaideu.html">부산 폐기능검사 — 어디서 받아야 할까</a></li>
-  <li><a class="rn-link" href="/blog/busan-mansungichim-3ju-isang-wonin-gaideu.html">만성기침 3주 이상 — 단순 감기가 아닐 수 있는 5가지 원인</a></li>
-  <li><a class="rn-link" href="/blog/busan-hohupgi-naegwa-myeongui-chucheon-gijun.html">부산 호흡기내과 명의 추천 — 의사 선택 기준</a></li>
-</ul>
-  </div>
-</div>
 
 <div class="footer"><div class="foot_cont"><div class="copyright">
 <h4>김주인내과</h4>
