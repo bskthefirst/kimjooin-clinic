@@ -34,35 +34,42 @@
 .dropdown-content a,
 .mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
 
+/* Blog page title */
+.blog-index-title { font-size: clamp(28px, 5vw, 40px); font-weight: 800; color: #1a2e44; margin: 4px 0 6px; letter-spacing: -0.01em;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
+.blog-index-sub { font-size: 16px; color: #6b7684; margin: 0 0 28px; line-height: 1.6;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important; }
+
 /* Blog filter buttons */
-.blog-filters { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.blog-filters { display: flex; gap: 10px; margin-bottom: 28px; flex-wrap: wrap; }
 .blog-filter-btn {
-  padding: 8px 20px; border: 2px solid #83a731; border-radius: 24px;
-  background: #fff; color: #83a731; font-size: 14px; font-weight: 700;
-  cursor: pointer; transition: all 0.2s; font-family: -apple-system, sans-serif !important;
+  padding: 10px 20px; border: 1.5px solid #dbe6c4; border-radius: 24px;
+  background: #f4f7ec; color: #5f7d24; font-size: 14px; font-weight: 700;
+  cursor: pointer; transition: all 0.16s; font-family: -apple-system, sans-serif !important;
 }
-.blog-filter-btn:hover { background: #f0f7e4; }
-.blog-filter-btn.active { background: #83a731; color: #fff; }
+.blog-filter-btn:hover { background: #eaf1d8; border-color: #83a731; }
+.blog-filter-btn.active { background: #83a731; color: #fff; border-color: #83a731; box-shadow: 0 4px 12px rgba(131,167,49,0.28); }
 
 /* Blog post cards */
-.blog-post-list { display: flex; flex-direction: column; gap: 16px; }
+.blog-post-list { display: flex; flex-direction: column; gap: 14px; }
 .blog-post-item {
-  display: block; padding: 20px 24px; background: #fff; border: 1px solid #e5e7eb;
-  border-radius: 10px; text-decoration: none; color: inherit;
-  transition: box-shadow 0.2s, transform 0.15s;
+  display: block; padding: 24px 28px; background: #fff; border: 1.5px solid #e6ebd8;
+  border-radius: 16px; text-decoration: none; color: inherit;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  transition: box-shadow 0.16s ease, transform 0.16s ease, border-color 0.16s ease;
 }
-.blog-post-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); transform: translateY(-1px); }
+.blog-post-item:hover { box-shadow: 0 12px 26px rgba(131,167,49,0.18); transform: translateY(-3px); border-color: #83a731; }
 .blog-post-item h4 {
-  font-size: 16px; font-weight: 700; margin: 0 0 6px; line-height: 1.5;
-  color: #1a1a1a; font-family: -apple-system, 'Pretendard', sans-serif !important;
+  font-size: clamp(17px, 2.4vw, 19px); font-weight: 700; margin: 8px 0 6px; line-height: 1.5;
+  color: #1a2e44; font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
 }
 .blog-post-item p {
-  font-size: 13px; color: #777; margin: 0; line-height: 1.5;
-  font-family: -apple-system, 'Pretendard', sans-serif !important;
+  font-size: 15px; color: #6b7684; margin: 0; line-height: 1.6;
+  font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
 }
 .blog-post-lang {
-  display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px;
-  border-radius: 4px; margin-bottom: 8px; text-transform: uppercase;
+  display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px;
+  border-radius: 20px; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em;
   font-family: -apple-system, sans-serif !important;
 }
 .blog-post-lang.en { background: #eff6ff; color: #2563eb; }
@@ -88,6 +95,7 @@
 #sub_contents { float: none !important; flex: 1 !important; min-width: 0 !important; }
 #sub_contents .sub_head { position: static !important; margin-bottom: 16px !important; }
 #sub_contents .sub_head ul { display: none !important; }
+#sub_contents .sub_head { display: none !important; }
 .sub_con_area { display: block !important; }
 </style>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -327,6 +335,9 @@
 
 			<!-- sub_con_section -->
 			<div class="sub_con_area">
+
+				<h2 class="blog-index-title">김주인내과 블로그</h2>
+				<p class="blog-index-sub">호흡기·알레르기·내시경·건강검진 — 부산 서면 김주인내과의 진료·검사 안내와 건강 가이드. 언어별로 골라 보세요.</p>
 
 				<!-- Blog Filters -->
 				<div class="blog-filters">
