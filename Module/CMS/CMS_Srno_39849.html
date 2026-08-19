@@ -366,6 +366,12 @@
 </div>
 
 <style>
+/* Force JejuMyeongjo serif across the profile card + review callout
+   (beats skin5004/style.css's `p { Spoqa sans !important }`) */
+.kji-card, .kji-card *,
+.kji-review-callout, .kji-review-callout * {
+  font-family: 'JejuMyeongjo', 'Noto Serif KR', serif !important;
+}
 /* ── Card wrapper ── */
 .kji-card {
   max-width: 650px;
