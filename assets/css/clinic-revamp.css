@@ -3766,6 +3766,31 @@ h2.hero-main-copy,
 .tp .tp-cta-navy:hover { background: #1d4ed8 !important; box-shadow: 0 14px 32px rgba(29,78,216,.38) !important; }
 .tp .tp-cta-row { margin-top: 14px; }
 
+/* clickable link-cards (page leads) — pop more than a plain exam row */
+.tp .tp-links { display: grid; gap: 14px; margin-top: 34px; }
+.tp a.tp-link {
+  display: flex; align-items: center; gap: 18px;
+  background: #fff; border: 1.5px solid #e6ebd8; border-radius: 18px;
+  padding: 22px 24px; text-decoration: none !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.tp a.tp-link:hover, .tp a.tp-link:focus {
+  transform: translateY(-3px); border-color: var(--g);
+  box-shadow: 0 14px 28px rgba(131,167,49,0.22);
+}
+.tp .tp-link .tp-link-body { flex: 1; min-width: 0; }
+.tp .tp-link .tp-link-title { font-size: clamp(19px, 2.6vw, 23px); font-weight: 800; color: var(--navy); margin: 0; line-height: 1.35; }
+.tp .tp-link .tp-link-sub { font-size: clamp(14.5px, 2vw, 16.5px); color: var(--muted); margin: 5px 0 0; line-height: 1.5; }
+.tp .tp-link .tp-link-arrow {
+  flex-shrink: 0; width: 46px; height: 46px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--g), var(--gd)); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 800; line-height: 1;
+  box-shadow: 0 5px 14px rgba(131,167,49,0.34); transition: transform .16s ease;
+}
+.tp a.tp-link:hover .tp-link-arrow, .tp a.tp-link:focus .tp-link-arrow { transform: translateX(4px); }
+
 /* section headings */
 .tp .tp-kicker { color: var(--gd); font-weight: 700; font-size: 15px; letter-spacing: .04em; margin: 0 0 14px; }
 .tp .tp-h2 { font-size: clamp(26px, 4.6vw, 42px); font-weight: 800; line-height: 1.32; color: var(--navy); margin: 0 0 18px; letter-spacing: -0.01em; }
