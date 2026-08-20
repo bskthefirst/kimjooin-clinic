@@ -67,6 +67,16 @@
   font-size: 15px; color: #6b7684; margin: 0; line-height: 1.6;
   font-family: 'JejuMyeongjo', 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', serif !important;
 }
+/* Per-language fonts — JejuMyeongjo is Korean-only, so CN/JP/RU need their own */
+.blog-post-item[data-lang="cn"] h4, .blog-post-item[data-lang="cn"] p {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Hiragino Sans GB', 'Apple SD Gothic Neo', sans-serif !important;
+}
+.blog-post-item[data-lang="jp"] h4, .blog-post-item[data-lang="jp"] p {
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', 'Meiryo', sans-serif !important;
+}
+.blog-post-item[data-lang="ru"] h4, .blog-post-item[data-lang="ru"] p {
+  font-family: Georgia, 'Times New Roman', -apple-system, serif !important;
+}
 .blog-post-lang {
   display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px;
   border-radius: 20px; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em;
