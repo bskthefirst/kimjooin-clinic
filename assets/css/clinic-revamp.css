@@ -3766,6 +3766,16 @@ h2.hero-main-copy,
 .tp .tp-cta-navy:hover { background: #1d4ed8 !important; box-shadow: 0 14px 32px rgba(29,78,216,.38) !important; }
 .tp .tp-cta-row { margin-top: 14px; }
 
+/* upright inline photo band (never rotated) */
+.tp .tp-photoband { margin: 8px 0 4px; }
+.tp .tp-photoband figure { margin: 0 auto; max-width: 940px; padding: 0 clamp(20px, 5vw, 40px); }
+.tp .tp-photoband img {
+  width: 100%; height: auto; max-height: 440px; object-fit: cover;
+  border-radius: 20px; box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: block; transform: none !important; rotate: none !important;
+}
+.tp .tp-photoband figcaption { text-align: center; color: var(--muted); font-size: 14px; margin-top: 12px; }
+
 /* clickable link-cards (page leads) — pop more than a plain exam row */
 .tp .tp-links { display: grid; gap: 14px; margin-top: 34px; }
 .tp a.tp-link {
