@@ -493,14 +493,15 @@
         '/index.html',                                                                          // 홈
         '/Module/CMS/CMS_Srno_39849.html',                                                      // 의료진 약력
         '/Module/Intro/GuideView.html',                                                         // 오시는길
-        '/blog/posts.html',                                                                     // Blog
+        '/blog/posts.html',                                                                     // 건강 게시판
         '/blog/gimjuinnaegwa-geomsa-annaae-wii-naegyeong-paegineung-dongmaek-mast-bitaminD-pasangpung.html', // 소개글
         '/blog/busan-seomyeon-naegwa-piggeomsa-johungot.html',                                   // 피검사
         '/Module/CMS/CMS_Srno_39855.html',                                                      // 폐기능검사
         '/Module/CMS/CMS_Srno_39856.html',                                                      // 알레르기검사
-        '/Module/CMS/CMS_Srno_39857.html',                                                      // 기관지내시경
         '/Module/CMS/CMS_Srno_39858.html',                                                      // 위내시경
-        '/Module/CMS/CMS_Srno_39859.html'                                                       // 초음파검사
+        '/Module/CMS/CMS_Srno_39859.html',                                                      // 초음파검사
+        '/Module/CMS/CMS_Srno_39860.html',                                                      // 동맥경화검사
+        '/Module/CMS/CMS_Srno_39867.html'                                                       // 건강검진
       ];
       var strip = document.createElement('nav');
       strip.className = 'mobile-topnav';
