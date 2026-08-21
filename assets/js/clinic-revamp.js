@@ -495,6 +495,7 @@
         '/Module/Intro/GuideView.html',                                                         // 오시는길
         '/blog/posts.html',                                                                     // 건강 게시판
         '/blog/gimjuinnaegwa-geomsa-annaae-wii-naegyeong-paegineung-dongmaek-mast-bitaminD-pasangpung.html', // 소개글
+        '/Module/CMS/CMS_Srno_39852.html',                                                      // 천식·알레르기내과
         '/blog/busan-seomyeon-naegwa-piggeomsa-johungot.html',                                   // 피검사
         '/Module/CMS/CMS_Srno_39855.html',                                                      // 폐기능검사
         '/Module/CMS/CMS_Srno_39856.html',                                                      // 알레르기검사
