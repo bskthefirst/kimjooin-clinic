@@ -382,7 +382,38 @@
   <div class="credentials-badge"><span class="credentials-badge-icon">⭐</span><p class="credentials-badge-title">부산일보 베스트닥터</p><p class="credentials-badge-sub">호흡기·알레르기 선정</p></div>
 </div>
 
-<h2>1. 폐기능 검사</h2>
+<style>
+.toc-box{background:#f5f8ee;border:1px solid #e3ead2;border-radius:16px;padding:22px 26px 24px;margin:8px 0 34px;}
+.toc-title{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:800;color:#16263d;margin:0 0 14px;}
+.toc-title::before{content:"📋";font-size:18px;}
+.toc-list{list-style:none;margin:0;padding:0;counter-reset:toc;}
+.toc-list li{counter-increment:toc;margin:0 0 10px;line-height:1.5;}
+.toc-list li a{color:#2b3440 !important;text-decoration:none;font-size:16px;font-weight:600;}
+.toc-list li a:hover{color:#5f7d24 !important;text-decoration:underline;}
+.toc-list li::before{content:counter(toc) ". ";color:#5f7d24;font-weight:800;margin-right:2px;}
+.toc-extra{margin-top:16px;padding-top:14px;border-top:1px solid #e3ead2;display:flex;gap:18px;flex-wrap:wrap;}
+.toc-extra a{color:#5f7d24 !important;text-decoration:none;font-size:15px;font-weight:700;}
+.toc-extra a:hover{text-decoration:underline;}
+.blog-article-body h2[id], .blog-article-body h3[id]{scroll-margin-top:24px;}
+</style>
+<nav class="toc-box" aria-label="목차">
+  <p class="toc-title">이 글의 검사 목차</p>
+  <ol class="toc-list">
+    <li><a href="#pft">폐기능 검사</a></li>
+    <li><a href="#ultrasound">초음파 검사 (복부·갑상선)</a></li>
+    <li><a href="#endoscopy">위내시경 검사</a></li>
+    <li><a href="#arteriosclerosis">동맥경화검사</a></li>
+    <li><a href="#mast">MAST 알레르기 검사</a></li>
+    <li><a href="#vitamind">비타민D 피검사</a></li>
+    <li><a href="#tetanus">파상풍 예방접종</a></li>
+  </ol>
+  <div class="toc-extra">
+    <a href="#visit">📍 방문 안내</a>
+    <a href="#faq">💬 자주 묻는 질문</a>
+  </div>
+</nav>
+
+<h2 id="pft">1. 폐기능 검사</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">호흡기</span>
@@ -401,7 +432,7 @@
   <li>수술 전 호흡기 합병증 위험도 평가가 필요한 분</li>
 </ul>
 
-<h2>2. 초음파 검사 (복부·갑상선)</h2>
+<h2 id="ultrasound">2. 초음파 검사 (복부·갑상선)</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">초음파</span>
@@ -420,7 +451,7 @@
   <li>정기 건강검진으로 복부 장기를 확인하고 싶은 분</li>
 </ul>
 
-<h2>3. 위내시경 검사</h2>
+<h2 id="endoscopy">3. 위내시경 검사</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">소화기</span>
@@ -439,7 +470,7 @@
   <li>국가 건강검진 위내시경 항목 해당자</li>
 </ul>
 
-<h2>4. 동맥경화검사</h2>
+<h2 id="arteriosclerosis">4. 동맥경화검사</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">심혈관</span>
@@ -476,7 +507,7 @@
   <a class="mid-cta-band-phone" href="tel:051-802-7550">☎ 051-802-7550</a>
 </div>
 
-<h2>5. MAST 알레르기 검사</h2>
+<h2 id="mast">5. MAST 알레르기 검사</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">알레르기</span>
@@ -498,7 +529,7 @@
   <li>어떤 음식에 알레르기가 있는지 확인하고 싶은 분</li>
 </ul>
 
-<h2>6. 비타민D 피검사</h2>
+<h2 id="vitamind">6. 비타민D 피검사</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">피검사</span>
@@ -530,7 +561,7 @@
   <li>정기 건강검진에서 비타민D 수치를 확인하고 싶은 분</li>
 </ul>
 
-<h2>7. 파상풍 예방접종 (Td / Tdap)</h2>
+<h2 id="tetanus">7. 파상풍 예방접종 (Td / Tdap)</h2>
 
 <div class="geomsa-card">
   <span class="geomsa-tag">예방접종</span>
@@ -555,7 +586,7 @@
 </ul>
 
 <hr>
-<h2>김주인내과 방문 안내</h2>
+<h2 id="visit">김주인내과 방문 안내</h2>
 
 <div class="doctor-card">
   <img class="doctor-card-img" src="/blog/images/clinic-credentials.jpg" alt="김주인 원장 — 부산백병원 14년 교수 출신">
@@ -581,7 +612,7 @@
 <p>위내시경 등 일부 검사는 사전 예약이 필요하거나 준비 사항이 있으므로, 방문 전 전화로 확인하시면 대기 없이 검사받으실 수 있습니다.</p>
 
 <hr>
-<h3 style="font-size:18px;font-weight:700;margin:24px 0 12px;">자주 묻는 질문</h3>
+<h3 id="faq" style="font-size:18px;font-weight:700;margin:24px 0 12px;">자주 묻는 질문</h3>
 <div class="faq-list">
 
   <div class="faq-card highlight">
