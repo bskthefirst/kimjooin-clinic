@@ -64,12 +64,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39857.html</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39858.html</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -554,12 +548,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39852_ContentsSrno_9497.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39853.html</loc>
     <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -690,5 +678,29 @@
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeon-jikjangin-geongang-geomjin.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/kimjooin-clinic-test-guide-busan.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/jin-zhu-ren-nei-ke-jian-cha-wan-quan-zhi-nan-fu-shan.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/fu-shan-kinjooin-naika-kensa-kanzen-gaido.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
