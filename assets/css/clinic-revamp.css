@@ -3903,3 +3903,45 @@ h2.hero-main-copy,
   .tp .tp-prose table { font-size: 14px; }
   .tp .tp-prose th, .tp .tp-prose td { padding: 10px 12px; }
 }
+
+/* ================================================================
+   Mobile bottom action bar (2026-09-30)
+   Replaces the three stacked floating pills (전화 / 오시는길 / 인스타), which sat
+   over body text on phones. Same links and same phone_click tracking; only the
+   layout changes. Specificity (.floating-booking a.cta-*) is deliberately higher
+   than the per-page inline overrides (.floating-booking .cta-call) on ~59 pages.
+   ================================================================ */
+@media (max-width: 768px) {
+  .floating-booking {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    justify-content: stretch !important;
+    gap: 0 !important;
+    padding-bottom: env(safe-area-inset-bottom) !important;
+    background: #ffffff !important;
+    box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.16) !important;
+  }
+  .floating-booking a,
+  .floating-booking a.cta-call,
+  .floating-booking a.cta-directions,
+  .floating-booking a.cta-instagram {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 54px !important;
+    padding: 0 6px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    transform: none !important;
+  }
+  .floating-booking a.cta-call { flex: 1.7 1 0 !important; order: 1 !important; font-size: 15px !important; }
+  .floating-booking a.cta-directions { order: 2 !important; border-left: 1px solid rgba(255, 255, 255, 0.35) !important; }
+  .floating-booking a.cta-instagram { order: 3 !important; border-left: 1px solid rgba(255, 255, 255, 0.35) !important; }
+  .footer .foot_cont { padding-bottom: calc(84px + env(safe-area-inset-bottom)) !important; }
+}
