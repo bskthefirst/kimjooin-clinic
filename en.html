@@ -38,6 +38,7 @@
 		"@graph": [
 			{
 				"@type": "MedicalClinic",
+				"@id": "https://kimjooin.com/#clinic",
 				"name": "Kim Joo-in Internal Medicine Clinic",
 				"alternateName": ["김주인내과", "金周仁內科"],
 				"url": "https://kimjooin.com/en.html",
@@ -62,6 +63,12 @@
 						"@type": "OpeningHoursSpecification",
 						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
 						"opens": "09:15",
+						"closes": "12:50"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "13:50",
 						"closes": "18:15"
 					},
 					{
@@ -71,7 +78,7 @@
 						"closes": "14:00"
 					}
 				],
-				"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology", "Allergy"],
+				"medicalSpecialty": ["Pulmonary", "PrimaryCare", "Gastroenterologic"],
 				"availableLanguage": ["Korean", "English"],
 				"availableService": [
 					{"@type": "MedicalProcedure", "name": "Pulmonary Function Test"},
@@ -97,10 +104,11 @@
 				"name": "Dr. Kim Joo-in",
 				"alternateName": ["김주인", "金周仁"],
 				"description": "14-year professor at Inje University Busan Paik Hospital. Clinical & Research Fellow at Washington University in St. Louis School of Medicine and Barnes-Jewish Hospital. Best Doctor award in Respiratory & Allergy Medicine.",
-				"medicalSpecialty": ["Pulmonology", "Allergy", "InternalMedicine"],
+				"medicalSpecialty": ["Pulmonary", "PrimaryCare"],
 				"availableLanguage": ["Korean", "English"],
 				"worksFor": {
 					"@type": "MedicalClinic",
+					"@id": "https://kimjooin.com/#clinic",
 					"name": "Kim Joo-in Internal Medicine Clinic"
 				},
 				"alumniOf": [
