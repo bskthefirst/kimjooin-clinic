@@ -37,6 +37,7 @@
 		"@graph": [
 			{
 				"@type": "MedicalClinic",
+				"@id": "https://kimjooin.com/#clinic",
 				"name": "キム・ジュイン内科",
 				"alternateName": ["김주인내과", "金周仁內科"],
 				"url": "https://kimjooin.com/jp.html",
@@ -61,6 +62,12 @@
 						"@type": "OpeningHoursSpecification",
 						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
 						"opens": "09:15",
+						"closes": "12:50"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "13:50",
 						"closes": "18:15"
 					},
 					{
@@ -70,7 +77,7 @@
 						"closes": "14:00"
 					}
 				],
-				"medicalSpecialty": ["Pulmonology", "InternalMedicine", "Gastroenterology", "Allergy"],
+				"medicalSpecialty": ["Pulmonary", "PrimaryCare", "Gastroenterologic"],
 				"availableLanguage": ["Korean", "English"],
 				"availableService": [
 					{"@type": "MedicalProcedure", "name": "肺機能検査"},
@@ -90,7 +97,7 @@
 				"name": "金周仁（キム・ジュイン）",
 				"alternateName": ["Kim Joo-in", "金周仁"],
 				"description": "仁済大学釜山ペク病院内科教授を14年歴任。米国ワシントン大学医学部およびBarnes-Jewish病院にて臨床研究フェロー。釜山日報ベストドクター受賞。",
-				"medicalSpecialty": ["Pulmonology", "Allergy", "InternalMedicine"],
+				"medicalSpecialty": ["Pulmonary", "PrimaryCare"],
 				"availableLanguage": ["Korean", "English"],
 				"alumniOf": [
 					{"@type": "EducationalOrganization", "name": "仁済大学医学部"},
