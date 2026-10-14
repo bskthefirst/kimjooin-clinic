@@ -3952,3 +3952,13 @@ html[lang^="zh"] .floating-booking a,
 html[lang^="ja"] .floating-booking a {
   font-family: -apple-system, 'Hiragino Sans', 'PingFang SC', 'PingFang TC', 'Noto Sans CJK JP', 'Noto Sans SC', 'Noto Sans TC', 'Microsoft YaHei', 'Meiryo', sans-serif !important;
 }
+
+/* 참고 자료 (sources) — small, quiet line at the very end of a post. Still real text, so
+   search engines and AI read it; the same list is in the Article JSON-LD as "citation". */
+.tp section.tp-sources { padding: 0 24px 40px !important; background: transparent !important; }
+.tp section.tp-sources .tp-narrow { border-top: 1px solid rgba(139,149,161,0.18); padding-top: 18px; }
+.tp section.tp-sources p { font-size: 12.5px !important; line-height: 1.75 !important; color: #8b95a1 !important; margin: 0 !important; }
+.tp section.tp-sources .tp-sources-label { font-size: 12px !important; font-weight: 700 !important; letter-spacing: 0.02em; margin-bottom: 2px !important; }
+.tp section.tp-sources a { color: #8b95a1 !important; font-weight: 400 !important; text-decoration: none !important; border-bottom: 1px solid rgba(139,149,161,0.3); }
+.tp section.tp-sources a:hover { color: #4e5968 !important; }
+@media (max-width: 768px) { .tp section.tp-sources { padding: 0 20px 32px !important; } }
