@@ -279,6 +279,29 @@
     }
   }
 
+  // Bottom bar labels for the EN/CN/JP/RU pages (the Korean labels stay as they are).
+  // Chinese pages all use lang="zh", so Traditional is detected from the title.
+  function floatingLabels() {
+    var lang = (document.documentElement.getAttribute('lang') || 'ko').toLowerCase();
+    if (lang.indexOf('en') === 0) {
+      return { call: '☎ Call Now', dir: 'Directions', insta: 'Instagram' };
+    }
+    if (lang.indexOf('ja') === 0) {
+      return { call: '☎ 電話で予約', dir: 'アクセス', insta: '公式Instagram' };
+    }
+    if (lang.indexOf('ru') === 0) {
+      return { call: '☎ Позвонить', dir: 'Как добраться', insta: 'Instagram' };
+    }
+    if (lang.indexOf('zh') === 0) {
+      var hant = lang.indexOf('hant') !== -1 || lang.indexOf('tw') !== -1 ||
+        /[國醫灣過來體檢預費診療韓說與們]/.test(document.title || '');
+      return hant
+        ? { call: '☎ 電話預約', dir: '交通路線', insta: '官方Instagram' }
+        : { call: '☎ 电话预约', dir: '交通路线', insta: '官方Instagram' };
+    }
+    return null;
+  }
+
   function ensureFloatingButtons() {
     var wrappers = document.querySelectorAll('.floating-booking');
     var i = 0;
@@ -315,6 +338,14 @@
         dirBtn.target = '_blank';
         dirBtn.rel = 'noopener noreferrer';
         dirBtn.textContent = '오시는길';
+      }
+
+      var labels = floatingLabels();
+      if (labels) {
+        var hangul = /[가-힣]/;
+        if (callBtn && hangul.test(callBtn.textContent)) { callBtn.textContent = labels.call; }
+        if (hangul.test(dirBtn.textContent)) { dirBtn.textContent = labels.dir; }
+        if (hangul.test(instaBtn.textContent)) { instaBtn.textContent = labels.insta; }
       }
 
       if (callBtn) {

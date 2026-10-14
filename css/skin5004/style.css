@@ -23,9 +23,9 @@ li, ol, ul { margin: 0; padding: 0; list-style: none inside }
 .head_bar_2 .head_cont { margin: 0 auto; width: 1091px; }
 .head_bar_2 .head_cont:before, .head_bar_2 .head_cont:after { content: " "; display: table; }
 .head_bar_2 .head_cont:after { clear: both; }
-.head_bar_2 .head_cont h1 { float: left; width: 240px; }
-.head_bar_2 .head_cont h1 a { display: block; font-size: 24px; color: #333333; width: 240px; height: 78px; }
-.head_bar_2 .head_cont h1 a img { display: inline-block; }
+.head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo { float: left; width: 240px; }
+.head_bar_2 .head_cont h1 a, .head_bar_2 .head_cont .site-logo a { display: block; font-size: 24px; color: #333333; width: 240px; height: 78px; }
+.head_bar_2 .head_cont h1 a img, .head_bar_2 .head_cont .site-logo a img { display: inline-block; }
 .head_bar_2 .head_cont .nav { float: right; width: calc(100% - 260px); position: relative; }
 .head_bar_2 .head_cont .nav .gnb { width: 100%; text-align: left; display: flex; justify-content: flex-start; align-items: flex-start; gap: 42px; }
 .head_bar_2 .head_cont .nav .gnb:before, .head_bar_2 .head_cont .nav .gnb:after { content: " "; display: table; }

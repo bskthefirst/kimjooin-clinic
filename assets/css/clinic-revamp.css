@@ -220,21 +220,21 @@ a {
   display: none !important;
 }
 
-.head_bar_2 .head_cont h1 {
+.head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo {
   float: none !important;
   flex-shrink: 0 !important;
   width: auto !important;
   margin: 0 !important;
 }
 
-.head_bar_2 .head_cont h1 a {
+.head_bar_2 .head_cont h1 a, .head_bar_2 .head_cont .site-logo a {
   display: flex !important;
   align-items: center !important;
   height: 80px !important;
   width: auto !important;
 }
 
-.head_bar_2 .head_cont h1 {
+.head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo {
   display: flex !important;
   align-items: center !important;
   gap: 0 !important;
@@ -269,7 +269,7 @@ a {
   color: #ffffff !important;
 }
 
-.head_bar_2 .head_cont h1 a img {
+.head_bar_2 .head_cont h1 a img, .head_bar_2 .head_cont .site-logo a img {
   height: 50px !important;
   width: auto !important;
   mix-blend-mode: multiply !important;
@@ -2290,15 +2290,15 @@ h2.hero-main-copy,
     max-width: 1131px !important;
   }
 
-  .head_bar_2 .head_cont h1 {
+  .head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo {
     width: 200px !important;
   }
 
-  .head_bar_2 .head_cont h1 a {
+  .head_bar_2 .head_cont h1 a, .head_bar_2 .head_cont .site-logo a {
     width: 200px !important;
   }
 
-  .head_bar_2 .head_cont h1 a img {
+  .head_bar_2 .head_cont h1 a img, .head_bar_2 .head_cont .site-logo a img {
     max-width: 200px !important;
     height: auto !important;
   }
@@ -2341,13 +2341,13 @@ h2.hero-main-copy,
     height: auto !important;
   }
 
-  .head_bar_2 .head_cont h1 {
+  .head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo {
     float: none !important;
     width: 100% !important;
     text-align: center !important;
   }
 
-  .head_bar_2 .head_cont h1 a {
+  .head_bar_2 .head_cont h1 a, .head_bar_2 .head_cont .site-logo a {
     margin: 0 auto !important;
   }
 
@@ -2711,7 +2711,7 @@ h2.hero-main-copy,
     gap: 8px !important;
   }
 
-  .head_bar_2 .head_cont h1 a img {
+  .head_bar_2 .head_cont h1 a img, .head_bar_2 .head_cont .site-logo a img {
     height: 40px !important;
   }
 
@@ -3370,7 +3370,7 @@ h2.hero-main-copy,
    (flexbox unreliable due to legacy width:240px on h1 a)
    ============================================================ */
 @media (max-width: 1024px) {
-  .head_bar_2 .head_cont h1 {
+  .head_bar_2 .head_cont h1, .head_bar_2 .head_cont .site-logo {
     position: relative !important;
     width: 100% !important;
     display: block !important;
@@ -3379,13 +3379,13 @@ h2.hero-main-copy,
     padding-right: 90px !important; /* room for lang buttons */
   }
 
-  .head_bar_2 .head_cont h1 a {
+  .head_bar_2 .head_cont h1 a, .head_bar_2 .head_cont .site-logo a {
     display: inline-flex !important;
     margin: 0 !important;
     width: auto !important;
   }
 
-  .head_bar_2 .head_cont h1 a img {
+  .head_bar_2 .head_cont h1 a img, .head_bar_2 .head_cont .site-logo a img {
     height: 36px !important;
     width: auto !important;
     max-width: 150px !important;
@@ -3944,4 +3944,11 @@ h2.hero-main-copy,
   .floating-booking a.cta-directions { order: 2 !important; border-left: 1px solid rgba(255, 255, 255, 0.35) !important; }
   .floating-booking a.cta-instagram { order: 3 !important; border-left: 1px solid rgba(255, 255, 255, 0.35) !important; }
   .footer .foot_cont { padding-bottom: calc(84px + env(safe-area-inset-bottom)) !important; }
+}
+
+/* Bottom bar on Chinese/Japanese pages: JejuMyeongjo maps CJK ideographs to blank
+   glyphs, so the translated labels disappeared. Use a CJK sans font there. */
+html[lang^="zh"] .floating-booking a,
+html[lang^="ja"] .floating-booking a {
+  font-family: -apple-system, 'Hiragino Sans', 'PingFang SC', 'PingFang TC', 'Noto Sans CJK JP', 'Noto Sans SC', 'Noto Sans TC', 'Microsoft YaHei', 'Meiryo', sans-serif !important;
 }
