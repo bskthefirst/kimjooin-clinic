@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /BasicJS/
-Disallow: /css/
-Disallow: /Module/Css/
 Disallow: /Module/Intro/EstView_SrnoCheck_
 
 Sitemap: https://kimjooin.com/sitemap.xml
