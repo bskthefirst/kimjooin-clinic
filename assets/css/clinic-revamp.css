@@ -3969,3 +3969,17 @@ html[lang^="ja"] .floating-booking a {
 .kj-sources .kj-sources-label { font-size: 12px !important; font-weight: 700 !important; letter-spacing: 0.02em; display: block; margin-bottom: 2px; }
 .kj-sources a { color: #8b95a1 !important; font-weight: 400 !important; font-size: 12.5px !important; text-decoration: none !important; border-bottom: 1px solid rgba(139,149,161,0.3); background: none !important; }
 .kj-sources a:hover { color: #4e5968 !important; }
+
+/* ── Answer-first box (2026-10-18): a 2-sentence answer that names the clinic, near the top of
+   home, MAST, 천식·알레르기, 폐기능, 위내시경, en.html and the English-speaking doctor post.
+   AI answers quote the top of a page most, so the clinic name sits in each sentence. ── */
+.kj-answer { max-width: 620px; margin: 0 auto 26px !important; padding: 16px 22px !important;
+  background: #f3f7e8; border-radius: 16px; color: #22303f !important;
+  font-size: clamp(15.5px, 2vw, 17.5px) !important; line-height: 1.75 !important;
+  text-align: center; word-break: keep-all; }
+.kj-answer strong { color: #16263d !important; font-weight: 700 !important; }
+.en-card .kj-answer { max-width: none; margin: 0 0 16px !important; text-align: left; }
+.section-intro .kj-answer { margin-top: 18px !important; }
+/* match each page's own font: serif on the Korean home intro, one sans face inside the English card */
+.section-intro .kj-answer, .section-intro .kj-answer * { font-family: 'JejuMyeongjo', serif !important; }
+.en-card .kj-answer strong { font-family: inherit !important; }
