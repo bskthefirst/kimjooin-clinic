@@ -308,12 +308,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-xi-mian-kurinitukugaido-yu-yue-nasiying-yu-ok-hfg.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/blog/fu-shan-nojin-zhu-ren-nei-ke-shi-ji-nohuan-zhe-rebiyuwogong-kai-simasu-4947.html</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -766,5 +760,47 @@
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/zai-fu-shan-gan-mao-le-zen-me-ban-yao-dian-mai-yao-huan-shi-kan-yi-sheng.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/zai-fu-shan-gan-mao-le-zen-me-ban-yao-ju-mai-yao-hai-shi-kan-yi-sheng.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/fu-shan-ryokou-chuu-ni-kaze-wo-hiitara-yakkyoku-ka-byouin-ka.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/iv-drip-in-korea-how-to-get-one-in-busan-seomyeon.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/han-guo-ren-wei-shen-me-ai-da-dian-di-fu-shan-ying-yang-dian-di.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/han-guo-ren-wei-shen-me-ai-da-dian-di-fu-shan-ying-yang-dian-di-zh-hant.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/kankoku-no-tenteki-suaek-fu-shan-seomyeon.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

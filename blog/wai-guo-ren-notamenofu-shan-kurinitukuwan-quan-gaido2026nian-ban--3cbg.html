@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/clinic-revamp.css?v=20261013b" />
-	<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/JejuMyeongjo.woff2" crossorigin>
 	<script type="text/javascript" src="/assets/js/clinic-revamp.js?v=20261013b" defer></script>
 	<title>外国人のための釜山クリニック完全ガイド（2026年版） | 김주인내과</title>
 		<link rel="stylesheet" type="text/css" href="/Module/Css/hp_type1/module.css" />
@@ -21,59 +20,14 @@
 * { font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', -apple-system, 'Yu Gothic', 'Noto Sans JP', 'Meiryo', sans-serif !important; }
 .head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn,
 .head_bar_2 .head_cont .nav .gnb .dropdown a.dropbtn span { color: #ffffff !important; font-weight: 700 !important; }
-.head_bar_2 .head_cont .nav .gnb .dropdown + .dropdown::before {
-  content: '|'; color: rgba(255,255,255,0.4); margin-right: 0; font-weight: 300; font-size: 14px;
-  position: relative; top: -1px;
-}
-/* CJK fix for sub_head, sidebar, breadcrumb */
-.sub_head h3, .sub_head h3 span, .sub_head em,
-.snb a, .snb a.on,
-.dropdown-content a,
-.mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans CJK JP', 'Noto Sans SC', 'Microsoft YaHei', 'JejuMyeongjo', sans-serif !important; }
-.blog-article-body { line-height: 1.9; font-size: 17px; }
-.blog-article-body h2 { font-size: 23px; font-weight: 700; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e8f0d8; }
-.blog-article-body h3 { font-size: 19px; font-weight: 600; margin: 24px 0 10px; }
-.blog-article-body p { margin-bottom: 16px; }
-.blog-article-body ul, .blog-article-body ol { margin: 0 0 16px 20px; }
-.blog-article-body li { margin-bottom: 6px; }
-.blog-article-body table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-.blog-article-body th, .blog-article-body td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e5e7eb; }
-.blog-article-body th { background: #f9fafb; font-weight: 600; }
-.blog-article-body blockquote { border-left: 3px solid #83a731; background: #f8faf2; padding: 14px 18px; margin: 16px 0; border-radius: 0 8px 8px 0; }
-.blog-article-body a { color: #2563eb; }
-.blog-article-meta { color: #888; font-size: 13px; margin-bottom: 24px; }
-.blog-back-link { display: inline-block; margin-bottom: 20px; color: #83a731; text-decoration: none; font-size: 14px; font-weight: 600; }
-.blog-back-link:hover { text-decoration: underline; }
-
-/* Kill clearfix pseudo-elements that conflict with flexbox */
-.sub_container::before, .sub_container::after { display: none !important; content: none !important; }
-.sub_container { margin-top: 0 !important; display: flex !important; flex-wrap: wrap !important; gap: 20px !important; padding-top: 30px !important; }
-#sub_left { float: none !important; }
-#sub_contents { float: none !important; flex: 1 !important; min-width: 0 !important; }
-#sub_contents .sub_head { position: static !important; margin-bottom: 16px !important; }
-#sub_contents .sub_head ul { display: none !important; }
-.sub_con_area { display: block !important; }
-.rn-link{color:#2563eb;text-decoration:none;font-weight:600;font-size:16px;transition:color 0.3s;}
-.rn-link:hover{animation:rainbow 1.5s linear infinite;}
-@keyframes rainbow{0%{color:#ff0000}14%{color:#ff8800}28%{color:#ffdd00}42%{color:#33cc33}57%{color:#3399ff}71%{color:#6633ff}85%{color:#cc33cc}100%{color:#ff0000}}
-@media (max-width: 640px) {
-  .blog-article-body { line-height: 1.85 !important; }
-  .blog-article-body p { line-height: 1.85 !important; margin-bottom: 16px !important; }
-  .blog-article-body li { line-height: 1.75 !important; margin-bottom: 8px !important; }
-  .faq-card { padding: 16px 14px !important; }
-  .faq-card-question { font-size: 16px !important; }
-  .faq-card-answer { font-size: 15.5px !important; line-height: 1.75 !important; }
-  .mid-cta-band-phone { font-size: 20px !important; padding: 14px 28px !important; }
-  .visit-card-phone { font-size: 17px !important; padding: 14px 24px !important; display: inline-block !important; }
-  .credentials-badge-title { font-size: 14.5px !important; }
-  .doctor-card-name { font-size: 19px !important; }
-  .summary-box { padding: 18px 18px !important; }
-  .summary-box p { font-size: 15.5px !important; line-height: 1.75 !important; }
-  .floating-booking .cta-call { font-size: 16px !important; padding: 12px 18px !important; }
-}
-/* mobile-polish-v1 */
-
+.tp .tp-hero h1, .tp .tp-lead, .tp .tp-h2, .tp .tp-p, .tp .tp-kicker, .tp .tp-card h3, .tp .tp-card p,
+.tp .tp-exam-name, .tp .tp-exam-why, .tp .tp-step h3, .tp .tp-step p, .tp .tp-scn, .tp blockquote,
+.tp .tp-prose li, .tp .tp-prose p, .tp .tp-faq-q, .tp .tp-faq-a, .tp .tp-callout-title, .tp .tp-callout-sub,
+.tp .tp-link-title, .tp .tp-link-sub, .tp .tp-trust h2, .tp .tp-trust li { word-break: normal; line-break: strict; overflow-wrap: break-word; }
+.sub_head h3, .sub_head h3 span, .sub_head em, .snb a, .snb a.on, .dropdown-content a,
+.mobile-menu-nav a { font-family: -apple-system, 'Hiragino Sans', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif !important; }
 </style>
+<style>.tp, .tp * { font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', -apple-system, 'Yu Gothic', 'Noto Sans JP', 'Meiryo', sans-serif !important; }</style>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <script type="application/ld+json">
@@ -81,11 +35,12 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "外国人のための釜山クリニック完全ガイド（2026年版）",
-  "description": "...",
+  "description": "外国人のための釜山クリニック完全ガイド（2026年版）。金周仁内科クリニック、釜山西面駅7番出口から徒歩5分。英語での診療対応可能。電話 051-802-7550。",
   "url": "https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html",
   "datePublished": "2026-03-28",
   "dateModified": "2026-10-20",
   "inLanguage": "ja",
+  "image": "https://kimjooin.com/images/clinic/reception.jpg",
   "author": {
     "@type": "Organization",
     "name": "Kim Joo-in Internal Medicine Clinic",
@@ -93,7 +48,9 @@
   },
   "publisher": {
     "@type": "MedicalClinic",
+    "@id": "https://kimjooin.com/#clinic",
     "name": "Kim Joo-in Internal Medicine Clinic",
+    "alternateName": "김주인내과",
     "url": "https://kimjooin.com",
     "telephone": "051-802-7550",
     "address": {
@@ -127,39 +84,29 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "name": "外国人のための釜山クリニック完全ガイド（2026年版）",
-  "description": "...",
+  "description": "外国人のための釜山クリニック完全ガイド（2026年版）。金周仁内科クリニック、釜山西面駅7番出口から徒歩5分。英語での診療対応可能。電話 051-802-7550。",
   "url": "https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html",
   "inLanguage": "ja",
-  "lastReviewed": "2026-04-05",
-  "reviewedBy": {
-    "@type": "Physician",
-    "name": "キム・ジュイン院長",
-    "medicalSpecialty": "Pulmonary",
-    "worksFor": {
-      "@type": "MedicalClinic",
-      "name": "Kim Joo-in Internal Medicine Clinic",
-      "url": "https://kimjooin.com"
-    }
-  },
   "publisher": {
     "@type": "MedicalClinic",
+    "@id": "https://kimjooin.com/#clinic",
     "name": "Kim Joo-in Internal Medicine Clinic",
     "url": "https://kimjooin.com"
   }
 }
 </script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "ja",
   "mainEntity": [
     {
       "@type": "Question",
       "name": "釜山で韓国語ができなくても病院に行けますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "西面の金周仁内科のような英語対応クリニックを利用できます。キム院長は英語で診察可能です。西面駅7番出口から徒歩5分です。"
+        "text": "はい。西面のキム・ジュイン内科では、院長が英語で診察します。翻訳アプリを使ってもかまいません。西面駅7番出口から徒歩5分です。"
       }
     },
     {
@@ -167,7 +114,7 @@
       "name": "釜山での診察費用はいくらですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "診察料金は保険加入状況により異なります。韓国健康保険加入者は大幅に安くなります。検査、薬、処置は別途料金です。詳細は 051-802-7550 までお問い合わせください。"
+        "text": "旅行者は韓国の健康保険が使えないため、全額自己負担です。料金は診察や検査の内容によって異なります。詳しくは受付か 051-802-7550 にお問い合わせください。"
       }
     },
     {
@@ -175,7 +122,7 @@
       "name": "病院に行くときに何を持参すればいいですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "旅行者の方はパスポートがなくても受診できます。ただし、カルテや処方箋には身分証の番号が必要で、旅行者は通常パスポート番号を使うため、お持ちいただくと安心です。韓国の健康保険を使う在住の方は、外国人登録証かパスポートを必ずお持ちください。法律により、保険を適用する前に写真付きの身分証を確認する必要があります。お支払いはクレジットカード（海外発行のVisa・Mastercardも可）または現金です。服用中の薬のリストや検査結果があれば、あわせてお持ちください。"
+        "text": "旅行者の方はパスポートがなくても受診できます。ただし、カルテや処方箋には身分証の番号が必要で、旅行者は通常パスポート番号を使うため、お持ちいただくと安心です。韓国の健康保険を使う在住の方は、外国人登録証かパスポートを必ずお持ちください。法律により、保険を適用する前に写真付きの身分証を確認する必要があります。お支払いはクレジットカード（海外発行のVisa・Mastercardも可）または現金です。"
       }
     },
     {
@@ -183,7 +130,7 @@
       "name": "釜山では予約が必要ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "いいえ。金周仁内科を含む韓国の多くのクリニックは診療時間内であれば予約不要です。大病院の専門医は予約が必要です。"
+        "text": "いいえ。キム・ジュイン内科は診療時間内であれば予約不要です。胃内視鏡と総合健診は事前予約をおすすめします。"
       }
     },
     {
@@ -191,7 +138,15 @@
       "name": "診察にはどのくらい時間がかかりますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "一般的な診察は相談と処方を含めて15～30分です。待ち時間は通常10～30分。多くの欧米諸国よりかなり短いです。"
+        "text": "一般的な診察は相談と処方を含めて15〜30分、待ち時間は通常10〜30分です。混み具合によって変わります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "日曜日や夜に具合が悪くなったら？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "キム・ジュイン内科は日曜・祝日は休診です。軽い症状なら薬局やコンビニの常備薬を利用できます。緊急時は119に電話するか救急室へ。1330（韓国観光案内電話）では日本語で相談できます。"
       }
     }
   ]
@@ -204,19 +159,16 @@
 	<meta property="og:url" content="https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html" />
 	<meta property="og:site_name" content="Kim Joo-in Internal Medicine Clinic" />
 	<meta property="og:locale" content="ja_JP" />
-	<meta property="og:image" content="https://kimjooin.com/blog/images/clinic-waiting-area.jpg" />
-	<meta name="naver:thumbnail" content="https://kimjooin.com/blog/images/clinic-waiting-area.jpg" />
+	<meta property="og:image" content="https://kimjooin.com/images/clinic/reception.jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="900" />
-	<meta property="og:image:alt" content="金周仁内科待合室" />
+	<meta property="og:image:alt" content="釜山・西面 キム・ジュイン内科の受付" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://kimjooin.com/blog/images/clinic-waiting-area.jpg" />
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://kimjooin.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kimjooin.com/blog/posts.html"}, {"@type": "ListItem", "position": 3, "name": "外国人のための釜山クリニック完全ガイド（2026年版）", "item": "https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html"}]}
-</script>
+	<meta name="twitter:image" content="https://kimjooin.com/images/clinic/reception.jpg" />
 </head>
+
 <body>
-<div class="floating-booking"><a class="cta-call" href="tel:051-802-7550">&#9742; 電話で予約</a></div>
+<div class="floating-booking"><a class="cta-call" href="tel:051-802-7550">&#9742; 즉시 전화 예약</a></div>
 
 	<div id="wrap">
 		<div class="header">
@@ -305,173 +257,176 @@
     </nav>
 </div>
 
-<div style="max-width:800px;margin:30px auto;padding:0 24px;">
-  <div style="margin-bottom:8px;">
-    <a href="/blog/posts.html" style="color:#83a731;text-decoration:none;font-size:14px;font-weight:600;">&#8592; Back to all posts</a>
+<article class="tp">
+  <section class="tp-hero">
+    <div class="tp-narrow">
+      <span class="tp-eyebrow reveal">釜山・西面 · 内科</span>
+      <h1 class="reveal">外国人のための釜山クリニック完全ガイド（2026年版）</h1>
+      <p class="tp-lead reveal">釜山で体調を崩したとき、韓国語ができなくても大丈夫です。予約なしで行ける内科の使い方、持ち物、支払い、薬局での薬の受け取りまでをまとめました。</p>
+      <a class="tp-cta reveal" href="tel:051-802-7550">☎ 電話 051-802-7550</a>
+      <span class="tp-cta-note reveal">予約不要 · 西面駅7番出口から徒歩5分</span>
+    </div>
+  </section>
+
+  <div class="tp-photoband reveal">
+    <figure>
+      <img src="/images/clinic/reception.jpg" alt="釜山・西面 キム・ジュイン内科の受付" loading="lazy" width="1200" height="440">
+      <figcaption>キム・ジュイン内科 · 西面駅7番出口から徒歩5分</figcaption>
+    </figure>
   </div>
-  <h1 style="font-size:28px;font-weight:800;line-height:1.3;margin:0 0 8px;color:#1a2e44;">外国人のための釜山クリニック完全ガイド（2026年版）</h1>
-  <div style="color:#888;font-size:13px;margin-bottom:24px;">2026-03-28</div>
-  <div class="blog-article-body">
-<p><img src="/blog/images/clinic-waiting-area.jpg" alt="金周仁内科待合室" width="100%" height="auto" style="max-width:700px;border-radius:8px;margin:0 auto;display:block;" loading="lazy"></p>
 
+  <section class="tp-section">
+    <div class="tp-inner tp-prose">
+      <p class="tp-kicker reveal">まとめ</p>
+      <h2 class="tp-h2 reveal">風邪・発熱・咳なら、まず街の内科へ</h2>
+      <div class="reveal">
+        <blockquote>韓国では、風邪や発熱、咳などは街の内科クリニック（의원）で、予約なしで診てもらえます。西面駅近くのキム・ジュイン内科（金周仁内科）は<strong>英語で診察</strong>でき、旅行者は<strong>パスポートがなくても受診できます</strong>（お持ちいただくと安心です）。手術や救急が必要なときは、大きな病院の救急室へ行ってください。</blockquote>
+      </div>
+    </div>
+  </section>
 
-<p>釜山で体調を崩したとき、韓国語ができなかったらどうしますか？このガイドでは、外国人が釜山で病院にかかる方法をまとめました。</p>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">どこへ行く？</p>
+      <h2 class="tp-h2 reveal">症状に合わせて、行く場所を選ぶ</h2>
+      <div class="tp-cards" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))">
+        <div class="tp-card reveal"><span class="tp-card-tag">내과 · 의원</span><h3>内科クリニック</h3><p>風邪・発熱・咳・喘息・アレルギーなど。予約なしで当日受診できます。</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">약국</span><h3>薬局</h3><p>市販の風邪薬や解熱剤を買えます。病院の処方箋の薬もここで受け取ります。</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">응급실</span><h3>救急室（119）</h3><p>ひどい息苦しさ、胸の痛み、大きなけがなどの緊急時。119に電話してください。</p></div>
+        <div class="tp-card reveal"><span class="tp-card-tag">1330</span><h3>韓国観光案内電話</h3><p>日本語で相談できる電話窓口です。困ったときに使えます。</p></div>
+      </div>
+    </div>
+  </section>
 
-<h2>
-  <a name="%E9%9F%93%E5%9B%BD%E8%AA%9E%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E5%A4%A7%E4%B8%88%E5%A4%AB" href="#%E9%9F%93%E5%9B%BD%E8%AA%9E%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E5%A4%A7%E4%B8%88%E5%A4%AB">
-  </a>
-  韓国語ができなくても大丈夫？
-</h2>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">受診の流れ</p>
+      <h2 class="tp-h2 reveal">キム・ジュイン内科での受診の流れ</h2>
+      <div class="tp-steps">
+        <div class="tp-step reveal"><div class="tp-step-num">1</div><h3>来院・受付</h3><p>予約は不要です。旅行者はパスポートがなくても受診できますが、カルテと処方箋に番号が必要なため、お持ちいただくと安心です。</p></div>
+        <div class="tp-step reveal"><div class="tp-step-num">2</div><h3>英語で診察</h3><p>院長は英語で診察します。翻訳アプリを使ってもかまいません。</p></div>
+        <div class="tp-step reveal"><div class="tp-step-num">3</div><h3>必要なら院内で検査</h3><p>インフルエンザ・コロナの迅速検査、胸部X線、血液検査などを院内で行えます。</p></div>
+        <div class="tp-step reveal"><div class="tp-step-num">4</div><h3>お支払い</h3><p>クレジットカード（海外発行のVisa・Mastercardも可）または現金。</p></div>
+        <div class="tp-step reveal"><div class="tp-step-num">5</div><h3>薬局で薬を受け取る</h3><p>処方箋を近くの薬局（약국）に持って行きます。処方箋は標準の書式なので、言葉が通じなくても大丈夫です。</p></div>
+      </div>
+    </div>
+  </section>
 
-<p>大丈夫です。釜山には基本的な英語での診療が可能な医師がいるクリニックがあります。</p>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <div class="tp-callout reveal">
+        <p class="tp-callout-title">具合が悪いときは、そのままお越しください</p>
+        <p class="tp-callout-sub">診療時間内は予約不要です。わからないことはお電話ください。</p>
+        <a class="tp-cta" href="tel:051-802-7550">☎ 051-802-7550</a>
+        <div class="tp-cta-row"><a class="tp-cta tp-cta-navy reveal" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 Naver 地図</a></div>
+      </div>
+    </div>
+  </section>
 
-<p><strong>キム・ジュイン内科</strong>は西面駅7番出口から徒歩5分。金周仁院長は米国ワシントン大学医学部およびBarnes-Jewish病院で研修経験があり、基本的な英語での診療相談が可能です。</p>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">診療内容</p>
+      <h2 class="tp-h2 reveal">キム・ジュイン内科で診てもらえること</h2>
+      <div class="tp-exams">
+        <div class="tp-exam reveal"><div class="tp-exam-name">風邪・インフルエンザ・発熱</div><div class="tp-exam-why">インフルエンザ・コロナの迅速検査ができます。くわしくは<a href="/blog/fu-shan-ryokou-chuu-ni-kaze-wo-hiitara-yakkyoku-ka-byouin-ka.html">旅行中に風邪をひいたら</a>。</div></div>
+        <div class="tp-exam reveal"><div class="tp-exam-name">2週間以上続く咳</div><div class="tp-exam-why">胸部X線や肺機能検査で原因を調べます。</div></div>
+        <div class="tp-exam reveal"><div class="tp-exam-name">喘息・アレルギー（春の黄砂シーズン）</div><div class="tp-exam-why">アレルギー検査ができます。黄砂・花粉・PM2.5で症状が悪化しやすい時期です。</div></div>
+        <div class="tp-exam reveal"><div class="tp-exam-name">疲れ・食事がとれない</div><div class="tp-exam-why">医師が診察したうえで栄養点滴を行えます。くわしくは<a href="/blog/kankoku-no-tenteki-suaek-fu-shan-seomyeon.html">韓国の点滴（スエク）とは？</a>。</div></div>
+        <div class="tp-exam reveal"><div class="tp-exam-name">英文診断書</div><div class="tp-exam-why">海外旅行保険の請求、会社や学校への提出用に発行できます。</div></div>
+      </div>
+    </div>
+  </section>
 
-<h2>
-  <a name="%E3%81%A9%E3%82%93%E3%81%AA%E7%97%87%E7%8A%B6%E3%82%92%E8%A8%BA%E3%81%A6%E3%82%82%E3%82%89%E3%81%88%E3%82%8B" href="#%E3%81%A9%E3%82%93%E3%81%AA%E7%97%87%E7%8A%B6%E3%82%92%E8%A8%BA%E3%81%A6%E3%82%82%E3%82%89%E3%81%88%E3%82%8B">
-  </a>
-  どんな症状を診てもらえる？
-</h2>
-
+  <section class="tp-section">
+    <div class="tp-inner tp-prose">
+      <p class="tp-kicker reveal">費用と保険</p>
+      <h2 class="tp-h2 reveal">費用と海外旅行保険</h2>
+      <div class="reveal">
+<p>旅行者は韓国の健康保険が使えないため、診察料は全額自己負担です。料金は診察や検査の内容によって異なるので、受付でお尋ねください。</p>
+<p>海外旅行保険に入っている方は、請求のために次の書類をもらっておきましょう。</p>
 <ul>
-<li>風邪、インフルエンザ、発熱</li>
-<li>2週間以上続く咳</li>
-<li>喘息・アレルギー（春の黄砂シーズンは要注意）</li>
-<li>胃の不調 — 胃カメラ検査も可能</li>
-<li>糖尿病・高血圧の管理</li>
-<li>総合健康診断</li>
+<li><strong>領収書</strong>（영수증）</li>
+<li><strong>診療費の明細</strong>（진료비 세부내역서）</li>
+<li>必要なら<strong>英文の診断書</strong></li>
 </ul>
+<p>韓国の健康保険に加入している在住の方は、外国人登録証かパスポートを必ずお持ちください。法律により、保険を適用する前に写真付きの身分証を確認します。</p>
+      </div>
+    </div>
+  </section>
 
-<p>手術や救急の場合は釜山ペク病院や海雲台ペク病院へ。それ以外は近くの内科クリニックの方が早くて手頃です。</p>
+  <section class="tp-section tp-trust">
+    <div class="tp-inner">
+      <img src="/images/awards/award-3years-respiratory.jpg" alt="キム・ジュイン内科 — 3年連続 呼吸器疾患の優秀病院" loading="lazy" />
+      <div class="tp-trust-copy">
+        <p class="tp-kicker reveal">キム・ジュイン内科 · キム・ジュイン院長</p>
+        <h2 class="reveal">大学病院での経験をもつ、街の内科</h2>
+        <ul>
+          <li class="reveal">仁済大学 <strong>釜山白病院で内科教授を14年</strong>務めた経歴</li>
+          <li class="reveal"><strong>釜山日報「ベストドクター」で紹介</strong>（呼吸器・アレルギー）</li>
+          <li class="reveal"><strong>健康保険審査評価院から3年連続</strong>で呼吸器疾患の優秀病院に選定</li>
+          <li class="reveal">肺機能検査・アレルギー検査・超音波・内視鏡を<strong>院内で実施</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<h2>
-  <a name="%E8%B2%BB%E7%94%A8%E3%81%AF" href="#%E8%B2%BB%E7%94%A8%E3%81%AF">
-  </a>
-  費用は？
-</h2>
+  <section class="tp-section">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">アクセス・診療時間</p>
+      <h2 class="tp-h2 reveal">西面駅7番出口から徒歩5分</h2>
+      <div class="tp-visit reveal">
+        <div class="tp-visit-row"><div class="tp-visit-ic">📍</div><div class="t">釜山広域市 釜山鎮区 西面路64 青石ビル8階<br>(부산광역시 부산진구 서면로 64 청석빌딩 8층 — タクシーの運転手に見せてください)<br><strong>西面駅7番出口から徒歩5分</strong> · <a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer" style="color:#5f7d24;font-weight:700;">Naver 地図</a></div></div>
+        <div class="tp-visit-row"><div class="tp-visit-ic">🕐</div><div class="t">平日 <strong>9:15〜18:15</strong>（昼休み 12:50〜13:50）<br>土曜 <strong>9:15〜14:00</strong>（昼休みなし）<br><span style="color:#6b7684;font-size:15px;">日曜・祝日は休診</span></div></div>
+        <div class="tp-visit-row"><div class="tp-visit-ic">✓</div><div class="t"><strong>診療時間内は予約なしで受診できます</strong> · 胃内視鏡と総合健診は事前予約をおすすめします。</div></div>
+        <div class="tp-visit-row"><div class="tp-visit-ic">💳</div><div class="t"><strong>旅行者はパスポートがなくても受診できます</strong>（お持ちいただくと安心です）· お支払いはクレジットカード（海外発行のVisa・Mastercardも可）または現金</div></div>
+      </div>
+      <div class="tp-final" style="margin-top:36px;">
+        <a class="tp-cta reveal" href="tel:051-802-7550">☎ 電話 051-802-7550</a>
+        <div class="tp-cta-row"><a class="tp-cta tp-cta-navy reveal" href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">📍 Naver 地図</a></div>
+      </div>
+      <p style="color:#6b7684;font-size:14px;line-height:1.7;margin:32px auto 0;max-width:620px;text-align:center;">この記事は一般的な健康情報です。診断と治療は医師の診察で行います。</p>
+    </div>
+  </section>
 
-<p>韓国の医療費は欧米と比べて非常にリーズナブルです。韓国の国民健康保険（NHIS）に加入している外国人居住者はさらにお得です。</p>
+  <section class="tp-section tp-soft">
+    <div class="tp-inner">
+      <p class="tp-kicker reveal">よくある質問</p>
+      <h2 class="tp-h2 reveal">よくある質問</h2>
+      <div class="tp-faq">
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">釜山で韓国語ができなくても病院に行けますか？</p><p class="tp-faq-a">はい。西面のキム・ジュイン内科では、院長が英語で診察します。翻訳アプリを使ってもかまいません。西面駅7番出口から徒歩5分です。</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">釜山での診察費用はいくらですか？</p><p class="tp-faq-a">旅行者は韓国の健康保険が使えないため、全額自己負担です。料金は診察や検査の内容によって異なります。詳しくは受付か 051-802-7550 にお問い合わせください。</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">病院に行くときに何を持参すればいいですか？</p><p class="tp-faq-a">旅行者の方はパスポートがなくても受診できます。ただし、カルテや処方箋には身分証の番号が必要で、旅行者は通常パスポート番号を使うため、お持ちいただくと安心です。韓国の健康保険を使う在住の方は、外国人登録証かパスポートを必ずお持ちください。法律により、保険を適用する前に写真付きの身分証を確認する必要があります。お支払いはクレジットカード（海外発行のVisa・Mastercardも可）または現金です。</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">釜山では予約が必要ですか？</p><p class="tp-faq-a">いいえ。キム・ジュイン内科は診療時間内であれば予約不要です。胃内視鏡と総合健診は事前予約をおすすめします。</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">診察にはどのくらい時間がかかりますか？</p><p class="tp-faq-a">一般的な診察は相談と処方を含めて15〜30分、待ち時間は通常10〜30分です。混み具合によって変わります。</p></div>
+        <div class="tp-faq-item reveal"><p class="tp-faq-q">日曜日や夜に具合が悪くなったら？</p><p class="tp-faq-a">キム・ジュイン内科は日曜・祝日は休診です。軽い症状なら薬局やコンビニの常備薬を利用できます。緊急時は119に電話するか救急室へ。1330（韓国観光案内電話）では日本語で相談できます。</p></div>
+      </div>
+    </div>
+  </section>
 
-<p><strong>旅行者：</strong> 自費で受診後、英語の領収書をもらい、帰国後に海外旅行保険で請求できます。</p>
+  <section class="tp-section">
+    <div class="tp-narrow tp-related">
+      <h2 class="tp-h2 reveal" style="font-size:clamp(22px,3.4vw,30px);">関連記事</h2>
+      <ul style="margin:20px 0 0;padding-left:20px;list-style:disc;">
+        <li class="reveal"><a href="/blog/fu-shan-ryokou-chuu-ni-kaze-wo-hiitara-yakkyoku-ka-byouin-ka.html">釜山旅行中に風邪をひいたら？薬局で薬を買うか、病院に行くか</a></li>
+        <li class="reveal"><a href="/blog/kankoku-no-tenteki-suaek-fu-shan-seomyeon.html">韓国の点滴（スエク）とは？釜山・西面で受ける前に知っておきたいこと</a></li>
+        <li class="reveal"><a href="/blog/fu-shan-deying-wen-zhen-duan-shu-woqu-de-surufang-fa-bizabao-xian-da-shi-guan-ti-chu-yong-42dm.html">釜山で英文診断書を取得する方法</a></li>
+        <li class="reveal"><a href="/blog/fu-shan-deinhuruenzayu-fang-jie-zhong-woshou-kerufang-fa-wai-guo-ren-gaido2026nian-ban--2naf.html">釜山でインフルエンザ予防接種を受ける方法</a></li>
+        <li class="reveal"><a href="/blog/fu-shan-noarerugisizun-huang-sha-hua-fen-pm25dui-ce-gaido-c1p.html">釜山のアレルギーシーズン — 黄砂・花粉・PM2.5対策ガイド</a></li>
+        <li class="reveal"><a href="/blog/fu-shan-kinjooin-naika-kensa-kanzen-gaido.html">金主仁内科 検査ガイド</a></li>
+      </ul>
+    </div>
+  </section>
 
-<p>具体的な費用は検査内容によりますので、事前にお電話でご確認ください。</p>
+  <section class="tp-section tp-sources">
+    <div class="tp-narrow">
+      <p class="tp-sources-label">参考資料</p>
+      <p class="tp-sources-list"><a href="https://www.nhis.or.kr/english/wbheaa02900m01.do" target="_blank" rel="noopener noreferrer">韓国国民健康保険公団 — 外国人向け案内（英語）</a> · <a href="https://www.busan.com/view/busan/view.php?code=2019030619201563105" target="_blank" rel="noopener noreferrer">釜山日報 —【微小粒子状物質の災害】頭からつま先まで害のない所はない（2019年、キム・ジュイン院長のコメント掲載、韓国語）</a></p>
+      <p class="tp-sources-note">公的機関の資料と報道記事をもとにキム・ジュイン内科がまとめました。</p>
+    </div>
+  </section>
+</article>
 
-<h2>
-  <a name="%E4%BA%88%E7%B4%84%E3%81%AF%E5%BF%85%E8%A6%81" href="#%E4%BA%88%E7%B4%84%E3%81%AF%E5%BF%85%E8%A6%81">
-  </a>
-  予約は必要？
-</h2>
 
-<p>ほとんどの韓国の内科は予約不要。診療時間内に直接お越しください。旅行者はパスポートがなくても受診できますが、お持ちいただくと安心です。</p>
-
-<h2>
-  <a name="%E5%87%A6%E6%96%B9%E7%AE%8B%E3%81%AF" href="#%E5%87%A6%E6%96%B9%E7%AE%8B%E3%81%AF">
-  </a>
-  処方箋は？
-</h2>
-
-<p>医師が処方箋を発行します。近くの薬局（약국）に持っていけばOK。薬剤師が英語を話せなくても、処方箋は標準化されているので問題ありません。</p>
-
-<h2>
-  <a name="%E8%8B%B1%E6%96%87%E8%A8%BA%E6%96%AD%E6%9B%B8%E3%81%AE%E7%99%BA%E8%A1%8C" href="#%E8%8B%B1%E6%96%87%E8%A8%BA%E6%96%AD%E6%9B%B8%E3%81%AE%E7%99%BA%E8%A1%8C">
-  </a>
-  英文診断書の発行
-</h2>
-
-<p>キム・ジュイン内科では<strong>英文診断書（英文医師意見書）</strong>をその場で発行しています。</p>
-
-<ul>
-<li>
-<strong>ビザ申請</strong> — 留学・就労ビザ・移民関連の大使館提出用</li>
-<li>
-<strong>保険請求</strong> — 海外旅行保険の英文証明書</li>
-<li>
-<strong>会社提出</strong> — 外資系企業への病欠証明</li>
-<li>
-<strong>大学入学</strong> — 海外大学の健康証明書</li>
-</ul>
-
-<p>韓国人の方も留学や海外就職の準備で英文診断書が必要な場合、当院で発行可能です。</p>
-
-<h2>
-  <a name="%E9%BB%84%E7%A0%82%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B33%E6%9C%886%E6%9C%88" href="#%E9%BB%84%E7%A0%82%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B33%E6%9C%886%E6%9C%88">
-  </a>
-  黄砂・アレルギーシーズン（3月〜6月）
-</h2>
-
-<p>外国人が最も驚くのがこの時期。ゴビ砂漠から飛来する黄砂、花粉、PM2.5が重なり、咳・くしゃみ・目のかゆみが悪化します。</p>
-
-<p>市販の抗ヒスタミン薬で1週間改善しない場合は、肺機能検査やアレルギー検査を受けましょう。</p>
-
-<h2>
-  <a name="%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%90%91%E3%81%91%E5%81%A5%E5%BA%B7%E8%A8%BA%E6%96%AD" href="#%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%90%91%E3%81%91%E5%81%A5%E5%BA%B7%E8%A8%BA%E6%96%AD">
-  </a>
-  外国人向け健康診断
-</h2>
-
-<p>韓国の健康診断は世界トップクラスの品質で、費用はリーズナブル。血液検査、心電図、超音波、胃カメラ、肺機能検査、骨密度検査まで午前中に完了できます。</p>
-
-<h2>
-  <a name="%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9" href="#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9">
-  </a>
-  アクセス
-</h2>
-
-<p><strong>キム・ジュイン内科</strong><br>
-釜山鎮区西面路64番地 青石ビル8階 | 西面駅7番出口 徒歩5分</p>
-
-<ul>
-<li>電話: 051-802-7550 / 051-802-7552</li>
-<li>診療時間: 平日 09:15〜18:15 | 土曜 09:15〜14:00</li>
-<li>予約不要</li>
-<li>基本的な英語での診療可能</li>
-<li>英文診断書の即日発行</li>
-<li><a href="https://naver.me/FG72nreF" target="_blank" rel="noopener noreferrer">Naver地図</a></li>
-</ul>
-
-<p><strong>金周仁院長の経歴：</strong></p>
-
-<ul>
-<li>仁済大学釜山ペク病院 内科教授14年</li>
-<li>米国ワシントン大学医学部 &amp; Barnes-Jewish Hospital研修</li>
-<li>釜山日報ベストドクター（呼吸器・アレルギー）</li>
-<li>3年連続 優秀呼吸器疾患病院</li>
-</ul>
-<hr>
-<h3 style="font-size:18px;font-weight:700;margin:24px 0 12px;">よくある質問</h3>
-<div class="faq-list">
-  <div class="faq-item" style="margin-bottom:18px;">
-    <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#1f2937;">釜山で韓国語ができなくても病院に行けますか？</h4>
-    <p style="margin:0;color:#374151;">西面の金周仁内科のような英語対応クリニックを利用できます。キム院長は英語で診察可能です。西面駅7番出口から徒歩5分です。</p>
-  </div>
-  <div class="faq-item" style="margin-bottom:18px;">
-    <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#1f2937;">釜山での診察費用はいくらですか？</h4>
-    <p style="margin:0;color:#374151;">診察料金は保険加入状況により異なります。韓国健康保険加入者は大幅に安くなります。検査、薬、処置は別途料金です。詳細は 051-802-7550 までお問い合わせください。</p>
-  </div>
-  <div class="faq-item" style="margin-bottom:18px;">
-    <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#1f2937;">病院に行くときに何を持参すればいいですか？</h4>
-    <p style="margin:0;color:#374151;">旅行者の方はパスポートがなくても受診できます。ただし、カルテや処方箋には身分証の番号が必要で、旅行者は通常パスポート番号を使うため、お持ちいただくと安心です。韓国の健康保険を使う在住の方は、外国人登録証かパスポートを必ずお持ちください。法律により、保険を適用する前に写真付きの身分証を確認する必要があります。お支払いはクレジットカード（海外発行のVisa・Mastercardも可）または現金です。服用中の薬のリストや検査結果があれば、あわせてお持ちください。</p>
-  </div>
-  <div class="faq-item" style="margin-bottom:18px;">
-    <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#1f2937;">釜山では予約が必要ですか？</h4>
-    <p style="margin:0;color:#374151;">いいえ。金周仁内科を含む韓国の多くのクリニックは診療時間内であれば予約不要です。大病院の専門医は予約が必要です。</p>
-  </div>
-  <div class="faq-item" style="margin-bottom:18px;">
-    <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#1f2937;">診察にはどのくらい時間がかかりますか？</h4>
-    <p style="margin:0;color:#374151;">一般的な診察は相談と処方を含めて15～30分です。待ち時間は通常10～30分。多くの欧米諸国よりかなり短いです。</p>
-  </div>
-</div>
-
-<hr>
-<h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">Read Next</h3>
-<ul>
-  <li><a class="rn-link" href="/blog/fu-shan-nojin-zhu-ren-nei-ke-shi-ji-nohuan-zhe-rebiyuwogong-kai-simasu-4947.html">&#9733; 実際の患者レビューを公開</a></li>
-  <li><a class="rn-link" href="/blog/fu-shan-deinhuruenzayu-fang-jie-zhong-woshou-kerufang-fa-wai-guo-ren-gaido2026nian-ban--2naf.html">インフルエンザ予防接種ガイド</a></li>
-  <li><a class="rn-link" href="/blog/fu-shan-deying-wen-zhen-duan-shu-woqu-de-surufang-fa-bizabao-xian-da-shi-guan-ti-chu-yong-42dm.html">英文診断書を取得する方法</a></li>
-</ul>
-  <div class="kj-sources"><span class="kj-sources-label">参考資料</span><div><a href="https://www.nhis.or.kr/english/wbheaa02900m01.do" target="_blank" rel="noopener noreferrer">韓国国民健康保険公団 — 外国人向け案内（英語）</a> · <a href="https://www.busan.com/view/busan/view.php?code=2019030619201563105" target="_blank" rel="noopener noreferrer">釜山日報 —【微小粒子状物質の災害】頭からつま先まで害のない所はない（2019年、キム・ジュイン院長のコメント掲載、韓国語）</a></div><div>公的機関の資料と報道記事をもとにキム・ジュイン内科がまとめました。</div></div>
-</div>
-</div>
 
 <!-- footer -->
 		<div class="footer">
@@ -479,13 +434,13 @@
 				<div class="copyright">
 					<h4>김주인내과</h4>
 					<address>
-						부산 부산진구 서면로 64 (부전동, 청석빌딩) 8층<br>
+						부산광역시 부산진구 서면로 64 청석빌딩 8층<br>
 						서면역 7번출구 도보 5분
 					</address>
 					<p class="footer-phones">TEL. 051-802-7550 / 051-802-7552</p>
 					<p class="footer-hours">평일 오전 9시 15분 ~ 오후 6시 15분 | 토요일 오전 9시 15분 ~ 오후 2시 | 점심 오후 12시 50분 ~ 오후 1시 50분<br>토요일은 점심시간 없이 진료합니다</p>
 					<p class="footer-lang"><a href="/en.html">EN</a> | <a href="/cn.html">CN</a> | <a href="/zh-hant.html" style="font-family:'PingFang TC','Microsoft JhengHei','Noto Sans TC',sans-serif !important">繁體</a> | <a href="/jp.html">JP</a> | <a href="/blog/posts.html">건강 게시판</a></p>
-</div>
+				</div>
 			</div>
 		</div>
 		<!-- /footer -->
@@ -494,5 +449,8 @@
 <script src="/assets/js/ga4-config.js?v=20260409"></script>
 <script src="/assets/js/ga4-global.js?v=20260409"></script>
 <script src="/assets/js/ga4-events.js?v=20260519"></script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kimjooin.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kimjooin.com/blog/posts.html"}, {"@type": "ListItem", "position": 3, "name": "外国人のための釜山クリニック完全ガイド（2026年版）", "item": "https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html"}]}
+</script>
 </body>
 </html>
