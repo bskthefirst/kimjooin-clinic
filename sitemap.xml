@@ -170,12 +170,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/blog/what-real-patients-say-about-kim-joo-in-internal-medicine-in-busan-37cl.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/blog/allergy-season-in-busan-yellow-dust-pollen-pm25-guide-for-foreigners-4g1d.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -248,12 +242,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/blog/fu-shan-jin-zhu-ren-nei-ke-zhen-shi-huan-zhe-ping-jie-da-gong-kai-3pa4.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/blog/fu-shan-guo-min-ji-jie-huang-sha-hua-fen-yu-pm25ying-dui-zhi-nan-c5f.html</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -286,12 +274,6 @@
   <url>
     <loc>https://kimjooin.com/blog/wai-guo-ren-notamenofu-shan-kurinitukuwan-quan-gaido2026nian-ban--3cbg.html</loc>
     <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kimjooin.com/blog/fu-shan-nojin-zhu-ren-nei-ke-shi-ji-nohuan-zhe-rebiyuwogong-kai-simasu-4947.html</loc>
-    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -430,12 +412,6 @@
   </url>
   <!-- Korean posts: existing, written for Korean-reading foreigners -->
   <url>
-    <loc>https://kimjooin.com/blog/gimjuinnaegwa-silje-hwanja-ribyu-yeongsujeung-hwagindoen-soljig-hugi-moeum-10m1.html</loc>
-    <lastmod>2026-08-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/blog/oegugineul-wihan-busan-byeongweon-jinryo-wanjeon-gaideu-2026-14cl.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -454,12 +430,6 @@
     <priority>0.7</priority>
   </url>
   <!-- Russian posts (targeting Russian-speaking foreigners in Busan) -->
-  <url>
-    <loc>https://kimjooin.com/blog/patient-reviews-kim-joo-in-clinic-busan-russian.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
   <url>
     <loc>https://kimjooin.com/blog/english-speaking-doctor-busan-russian.html</loc>
     <lastmod>2026-10-20</lastmod>
