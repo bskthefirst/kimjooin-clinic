@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/cn.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/zh-hant.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/jp.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://kimjooin.com/" />
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/blog/posts.html</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -195,12 +195,6 @@
   </url>
   <url>
     <loc>https://kimjooin.com/blog/wai-guo-ren-zai-fu-shan-kan-bing-wan-quan-zhi-nan-2026nian-ban--3p41.html</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kimjooin.com/blog/tai-wan-ren-de-fu-shan-xi-mian-sheng-huo-quan-gong-lue-mei-shi-jiao-tong-kan-bing-ci-gao-ding-497f.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -684,24 +678,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kimjooin.com/blog/zai-fu-shan-gan-mao-le-zen-me-ban-yao-dian-mai-yao-huan-shi-kan-yi-sheng.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kimjooin.com/blog/zai-fu-shan-gan-mao-le-zen-me-ban-yao-ju-mai-yao-hai-shi-kan-yi-sheng.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kimjooin.com/blog/fu-shan-ryokou-chuu-ni-kaze-wo-hiitara-yakkyoku-ka-byouin-ka.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kimjooin.com/blog/iv-drip-in-korea-how-to-get-one-in-busan-seomyeon.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -709,19 +685,19 @@
   </url>
   <url>
     <loc>https://kimjooin.com/blog/han-guo-ren-wei-shen-me-ai-da-dian-di-fu-shan-ying-yang-dian-di.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kimjooin.com/blog/han-guo-ren-wei-shen-me-ai-da-dian-di-fu-shan-ying-yang-dian-di-zh-hant.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kimjooin.com/blog/kankoku-no-tenteki-suaek-fu-shan-seomyeon.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
