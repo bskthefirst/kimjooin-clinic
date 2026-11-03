@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/blog/posts.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -481,7 +481,7 @@
   </url>
   <url>
     <loc>https://kimjooin.com/Module/CMS/CMS_Srno_39860.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -706,5 +706,11 @@
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kimjooin.com/blog/busan-seomyeon-dongmaekgyeonghwa-geomsa-suchi-pwv-abi.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
