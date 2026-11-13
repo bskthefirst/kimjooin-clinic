@@ -545,7 +545,7 @@
         if (!a) continue;
         var label = (a.textContent || '').trim();
         if (!label) continue;
-        label = label.replace('초음파검사(심장.복부.갑상선)', '초음파검사');
+        label = label.replace(/^초음파검사\(.*\)$/, '초음파검사');
         var link = document.createElement('a');
         link.href = href;
         if (a.target) link.target = a.target;
